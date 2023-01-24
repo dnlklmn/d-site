@@ -1,6 +1,6 @@
 :root {
-  --primary: #DD0CFF;
-  --secondary: #aabaAA;
+  --primary: #dd0cff;
+  --secondary: #aabaaa;
   --text-contrast: #151515;
   --hero-font-family: Abril Fatface;
   --hero-font-weight: Regular;
@@ -20,6 +20,15 @@
   --subtitle-paragraph-indent: 0px;
   --subtitle-text-case: none;
   --subtitle-text-decoration: none;
-  --bg-default: #F8F8F8;
-  --bg-dip: #CFCECE;
+  --bg-default: #f8f8f8;
+  --bg-dip: #cfcece;
+  --label-font-family: Inter;
+  --label-font-weight: Semi Bold;
+  --label-line-height: AUTO;
+  --label-font-size: 24px;
+  --label-letter-spacing: 0%;
+  --label-paragraph-spacing: 0;
+  --label-paragraph-indent: 0px;
+  --label-text-case: none;
+  --label-text-decoration: none;
 }

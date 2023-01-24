@@ -22,4 +22,13 @@
   --subtitle-text-decoration: none;
   --bg-default: #151515;
   --bg-dip: #424242;
+  --label-font-family: Inter;
+  --label-font-weight: Semi Bold;
+  --label-line-height: AUTO;
+  --label-font-size: 24px;
+  --label-letter-spacing: 0%;
+  --label-paragraph-spacing: 0;
+  --label-paragraph-indent: 0px;
+  --label-text-case: none;
+  --label-text-decoration: none;
 }
