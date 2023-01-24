@@ -17,6 +17,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "tokens-global": "npx token-transformer tokens/donnie.json tokens/global.json global  --resolveReferences --expandTypography=false",
+    "tokens-light": "npx token-transformer tokens/donnie.json tokens/light.json light  --resolveReferences --expandTypography=true",
+    "tokens-dark": "npx token-transformer tokens/donnie.json tokens/dark.json dark  --resolveReferences --expandTypography=true",
+    "build-sd": "npx style-dictionary build --config styles/scripts/build-style-dictionary.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
