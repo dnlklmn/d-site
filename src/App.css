@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: var(--bg-default);
 }
 
 .App-logo {
@@ -28,13 +29,24 @@
   border-radius: 100px;
 }
 
-.App-header {
-  background-color: var(--secondary);
-  min-height: 100vh;
+.toggle-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
+  gap: 16px;
+}
+
+.label {
+}
+
+.App-header {
+  background: var(--bg-default);
+  padding: 24px 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: var(--text-contrast);
 }

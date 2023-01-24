@@ -9,7 +9,7 @@
   },
   "text": {
     "contrast": {
-      "value": "#252525",
+      "value": "#151515",
       "type": "color"
     }
   },
@@ -87,6 +87,16 @@
     "textDecoration": {
       "value": "{textDecoration.none}",
       "type": "textDecoration"
+    }
+  },
+  "bg": {
+    "default": {
+      "value": "#F8F8F8",
+      "type": "color"
+    },
+    "dip": {
+      "value": "#CFCECE",
+      "type": "color"
     }
   }
 }

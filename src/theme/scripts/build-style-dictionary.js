@@ -43,7 +43,8 @@ function getStyleDictionaryConfig(theme, sourcePath) {
             destination: `${theme}.css`,
             format: "css/variables",
             // selector: `.${theme}-theme`,
-            selector: `:root[data-theme="${theme}"]`,
+            selector:
+              theme === "dark" ? `:root[data-theme="${theme}"]` : `:root`,
             filter: ({ isSource }) => {
               return isSource;
             },

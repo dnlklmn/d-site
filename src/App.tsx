@@ -19,11 +19,10 @@ function setTheme(themeName: string) {
 
 function App() {
   const [, rerenderSwitch] = React.useState("");
-  const [checked, setChecked] = React.useState(true);
 
-  const [toggleDirection, setToggleDirection] = React.useState(0);
+  const [toggleDirection, setToggleDirection] = React.useState(20);
   const toggleOn = () => {
-    setToggleDirection(toggleDirection === 0 ? 20 : 0);
+    setToggleDirection(toggleDirection === 20 ? 0 : 20);
     let theme = localStorage.getItem("data-theme");
     if (theme === "dark") {
       setTheme("light");
@@ -36,9 +35,15 @@ function App() {
   return (
     <div className="App" data-theme={localStorage.getItem("data-theme")}>
       <header className="App-header">
-        <Toggle onTap={toggleOn} toggleDirection={toggleDirection} />
-        {localStorage.getItem("data-theme")}
-
+        Donnie's Site
+        <div className="toggle-container">
+          <span className="label">
+            {localStorage.getItem("data-theme") === "light" ? "Day" : "Night"}
+          </span>
+          <Toggle onTap={toggleOn} toggleDirection={toggleDirection} />
+        </div>
+      </header>
+      <main>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -50,7 +55,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </main>
     </div>
   );
 }
