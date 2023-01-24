@@ -181,10 +181,6 @@
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": [
-      "global",
-      "light",
-      "dark"
-    ]
+    "tokenSetOrder": ["global", "light", "dark"]
   }
 }

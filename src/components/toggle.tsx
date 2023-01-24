@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ToggleBackground = styled(motion.div)`
   width: 40px;
   height: 20px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: var(--bg-dip);
   display: flex;
   justify-content: flex-start;
   border-radius: 50px;

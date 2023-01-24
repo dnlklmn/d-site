@@ -88,5 +88,15 @@
       "value": "{textDecoration.none}",
       "type": "textDecoration"
     }
+  },
+  "bg": {
+    "default": {
+      "value": "#151515",
+      "type": "color"
+    },
+    "dip": {
+      "value": "#424242",
+      "type": "color"
+    }
   }
 }
