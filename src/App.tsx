@@ -1,33 +1,44 @@
 import "./App.css";
 import "./theme/light.css";
 import "./theme/dark.css";
+import React from "react";
+import { Toggle } from "./components/toggle";
 
-let theme: any;
-theme = localStorage.getItem("data-theme");
-console.log("theme 1st: ", theme);
+function setTheme(themeName: string) {
+  localStorage.setItem("data-theme", themeName);
+  document.documentElement.setAttribute("data-theme", themeName);
+}
+
+(function () {
+  if (localStorage.getItem("data-theme") === "dark") {
+    setTheme("dark");
+  } else {
+    setTheme("light");
+  }
+})();
 
 function App() {
-  return (
-    <div className="App" data-theme="dark">
-      <header className="App-header">
-        <input
-          type="checkbox"
-          id="switch"
-          onChange={() => {
-            console.log("theme 2nd: ", theme);
+  const [, rerenderSwitch] = React.useState("");
+  const [checked, setChecked] = React.useState(true);
 
-            theme = localStorage.getItem("data-theme");
-            if (theme === "dark") {
-              document.documentElement.setAttribute("data-theme", "light"); //set theme to light
-              localStorage.setItem("data-theme", "light"); // save theme to local storage
-              theme = "light";
-            } else {
-              document.documentElement.setAttribute("data-theme", "dark"); //set theme to light
-              localStorage.setItem("data-theme", "dark"); // save theme to local storage
-              theme = "dark";
-            }
-          }}
-        />
+  const [toggleDirection, setToggleDirection] = React.useState(0);
+  const toggleOn = () => {
+    setToggleDirection(toggleDirection === 0 ? 20 : 0);
+    let theme = localStorage.getItem("data-theme");
+    if (theme === "dark") {
+      setTheme("light");
+      rerenderSwitch("light");
+    } else {
+      setTheme("dark");
+      rerenderSwitch("dark");
+    }
+  };
+  return (
+    <div className="App" data-theme={localStorage.getItem("data-theme")}>
+      <header className="App-header">
+        <Toggle onTap={toggleOn} toggleDirection={toggleDirection} />
+        {localStorage.getItem("data-theme")}
+
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

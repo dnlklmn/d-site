@@ -13,6 +13,21 @@
   }
 }
 
+.toggle {
+  width: 100px;
+  height: 48px;
+  background: var(--primary);
+  border-radius: 100px;
+}
+
+.toggle-handle {
+  height: 44px;
+  width: 44px;
+  margin: 2px;
+  background: white;
+  border-radius: 100px;
+}
+
 .App-header {
   background-color: var(--secondary);
   min-height: 100vh;
