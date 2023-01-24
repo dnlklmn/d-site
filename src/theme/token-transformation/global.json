@@ -31,10 +31,14 @@
   },
   "fontSize": {
     "0": {
-      "value": 24,
+      "value": 12,
       "type": "fontSizes"
     },
     "1": {
+      "value": 24,
+      "type": "fontSizes"
+    },
+    "2": {
       "value": 70,
       "type": "fontSizes"
     }

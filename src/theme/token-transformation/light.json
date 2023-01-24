@@ -13,44 +13,6 @@
       "type": "color"
     }
   },
-  "hero": {
-    "fontFamily": {
-      "value": "{fontFamilies.abril-fatface}",
-      "type": "fontFamily"
-    },
-    "fontWeight": {
-      "value": "{fontWeights.abril-fatface-0}",
-      "type": "fontWeight"
-    },
-    "lineHeight": {
-      "value": "{lineHeights.0}",
-      "type": "lineHeight"
-    },
-    "fontSize": {
-      "value": "{fontSize.1}",
-      "type": "fontSize"
-    },
-    "letterSpacing": {
-      "value": "{letterSpacing.0}",
-      "type": "letterSpacing"
-    },
-    "paragraphSpacing": {
-      "value": "{paragraphSpacing.0}",
-      "type": "paragraphSpacing"
-    },
-    "paragraphIndent": {
-      "value": "{paragraphIndent.0}",
-      "type": "paragraphIndent"
-    },
-    "textCase": {
-      "value": "{textCase.none}",
-      "type": "textCase"
-    },
-    "textDecoration": {
-      "value": "{textDecoration.none}",
-      "type": "textDecoration"
-    }
-  },
   "subtitle": {
     "fontFamily": {
       "value": "{fontFamilies.inter}",
@@ -114,6 +76,44 @@
     },
     "fontSize": {
       "value": "{fontSize.0}",
+      "type": "fontSize"
+    },
+    "letterSpacing": {
+      "value": "{letterSpacing.0}",
+      "type": "letterSpacing"
+    },
+    "paragraphSpacing": {
+      "value": "{paragraphSpacing.0}",
+      "type": "paragraphSpacing"
+    },
+    "paragraphIndent": {
+      "value": "{paragraphIndent.0}",
+      "type": "paragraphIndent"
+    },
+    "textCase": {
+      "value": "{textCase.none}",
+      "type": "textCase"
+    },
+    "textDecoration": {
+      "value": "{textDecoration.none}",
+      "type": "textDecoration"
+    }
+  },
+  "hero": {
+    "fontFamily": {
+      "value": "{fontFamilies.abril-fatface}",
+      "type": "fontFamily"
+    },
+    "fontWeight": {
+      "value": "{fontWeights.abril-fatface-0}",
+      "type": "fontWeight"
+    },
+    "lineHeight": {
+      "value": "{lineHeights.0}",
+      "type": "lineHeight"
+    },
+    "fontSize": {
+      "value": "{fontSize.2}",
       "type": "fontSize"
     },
     "letterSpacing": {

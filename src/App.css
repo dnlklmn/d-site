@@ -1,17 +1,10 @@
-.App {
-  text-align: center;
+:root {
   background: var(--bg-default);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  text-align: start;
+  height: 100%;
 }
 
 .toggle {
@@ -34,7 +27,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  gap: 16px;
+  gap: 8px;
 }
 
 .label {
@@ -42,6 +35,19 @@
   font-weight: var(--label-font-weight);
   line-height: var(--label-line-height);
   font-size: var(--label-font-size);
+}
+
+.hero {
+  font-family: var(--hero-font-family);
+  font-weight: var(--hero-font-weight);
+  line-height: var(--hero-line-height);
+  font-size: var(--hero-font-size);
+  text-align: start;
+}
+
+main {
+  padding: 0 248px;
+  color: var(--text-contrast);
 }
 
 .App-header {
@@ -56,14 +62,20 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--primary);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: start;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-8 {
+  gap: 8px;
 }
