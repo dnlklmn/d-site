@@ -1,0 +1,170 @@
+{
+  "global": {
+    "fontFamilies": {
+      "abril-fatface": {
+        "value": "Abril Fatface",
+        "type": "fontFamilies"
+      },
+      "inter": {
+        "value": "Inter",
+        "type": "fontFamilies"
+      }
+    },
+    "lineHeights": {
+      "0": {
+        "value": "115.4%",
+        "type": "lineHeights"
+      },
+      "1": {
+        "value": "AUTO",
+        "type": "lineHeights"
+      }
+    },
+    "fontWeights": {
+      "abril-fatface-0": {
+        "value": "Regular",
+        "type": "fontWeights"
+      },
+      "inter-1": {
+        "value": "Semi Bold",
+        "type": "fontWeights"
+      }
+    },
+    "fontSize": {
+      "0": {
+        "value": "24",
+        "type": "fontSizes"
+      },
+      "1": {
+        "value": "70",
+        "type": "fontSizes"
+      }
+    },
+    "letterSpacing": {
+      "0": {
+        "value": "0%",
+        "type": "letterSpacing"
+      }
+    },
+    "paragraphSpacing": {
+      "0": {
+        "value": "0",
+        "type": "paragraphSpacing"
+      }
+    },
+    "textCase": {
+      "none": {
+        "value": "none",
+        "type": "textCase"
+      }
+    },
+    "textDecoration": {
+      "none": {
+        "value": "none",
+        "type": "textDecoration"
+      }
+    },
+    "paragraphIndent": {
+      "0": {
+        "value": "0px",
+        "type": "dimension"
+      }
+    }
+  },
+  "light": {
+    "primary": {
+      "value": "#DD0CFF",
+      "type": "color"
+    },
+    "secondary": {
+      "value": "#aabaAA",
+      "type": "color"
+    },
+    "text": {
+      "contrast": {
+        "value": "#252525",
+        "type": "color"
+      }
+    },
+    "hero": {
+      "value": {
+        "fontFamily": "{fontFamilies.abril-fatface}",
+        "fontWeight": "{fontWeights.abril-fatface-0}",
+        "lineHeight": "{lineHeights.0}",
+        "fontSize": "{fontSize.1}",
+        "letterSpacing": "{letterSpacing.0}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "subtitle": {
+      "value": {
+        "fontFamily": "{fontFamilies.inter}",
+        "fontWeight": "{fontWeights.inter-1}",
+        "lineHeight": "{lineHeights.1}",
+        "fontSize": "{fontSize.0}",
+        "letterSpacing": "{letterSpacing.0}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    }
+  },
+  "dark": {
+    "primary": {
+      "value": "#DD0CFF",
+      "type": "color"
+    },
+    "secondary": {
+      "value": "#2f2f2f",
+      "type": "color"
+    },
+    "text": {
+      "contrast": {
+        "value": "#f3f3f3",
+        "type": "color"
+      }
+    },
+    "hero": {
+      "value": {
+        "fontFamily": "{fontFamilies.abril-fatface}",
+        "fontWeight": "{fontWeights.abril-fatface-0}",
+        "lineHeight": "{lineHeights.0}",
+        "fontSize": "{fontSize.1}",
+        "letterSpacing": "{letterSpacing.0}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "subtitle": {
+      "value": {
+        "fontFamily": "{fontFamilies.inter}",
+        "fontWeight": "{fontWeights.inter-1}",
+        "lineHeight": "{lineHeights.1}",
+        "fontSize": "{fontSize.0}",
+        "letterSpacing": "{letterSpacing.0}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global",
+      "light",
+      "dark"
+    ]
+  }
+}
