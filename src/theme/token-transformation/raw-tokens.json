@@ -82,7 +82,7 @@
     },
     "text": {
       "contrast": {
-        "value": "#252525",
+        "value": "#151515",
         "type": "color"
       }
     },
@@ -113,6 +113,16 @@
         "textDecoration": "{textDecoration.none}"
       },
       "type": "typography"
+    },
+    "bg": {
+      "default": {
+        "value": "#F8F8F8",
+        "type": "color"
+      },
+      "dip": {
+        "value": "#CFCECE",
+        "type": "color"
+      }
     }
   },
   "dark": {
@@ -157,6 +167,16 @@
         "textDecoration": "{textDecoration.none}"
       },
       "type": "typography"
+    },
+    "bg": {
+      "default": {
+        "value": "#151515",
+        "type": "color"
+      },
+      "dip": {
+        "value": "#424242",
+        "type": "color"
+      }
     }
   },
   "$themes": [],
