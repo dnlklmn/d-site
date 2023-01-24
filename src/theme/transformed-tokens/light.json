@@ -1,0 +1,92 @@
+{
+  "primary": {
+    "value": "#DD0CFF",
+    "type": "color"
+  },
+  "secondary": {
+    "value": "#aabaAA",
+    "type": "color"
+  },
+  "text": {
+    "contrast": {
+      "value": "#252525",
+      "type": "color"
+    }
+  },
+  "hero": {
+    "fontFamily": {
+      "value": "{fontFamilies.abril-fatface}",
+      "type": "fontFamily"
+    },
+    "fontWeight": {
+      "value": "{fontWeights.abril-fatface-0}",
+      "type": "fontWeight"
+    },
+    "lineHeight": {
+      "value": "{lineHeights.0}",
+      "type": "lineHeight"
+    },
+    "fontSize": {
+      "value": "{fontSize.1}",
+      "type": "fontSize"
+    },
+    "letterSpacing": {
+      "value": "{letterSpacing.0}",
+      "type": "letterSpacing"
+    },
+    "paragraphSpacing": {
+      "value": "{paragraphSpacing.0}",
+      "type": "paragraphSpacing"
+    },
+    "paragraphIndent": {
+      "value": "{paragraphIndent.0}",
+      "type": "paragraphIndent"
+    },
+    "textCase": {
+      "value": "{textCase.none}",
+      "type": "textCase"
+    },
+    "textDecoration": {
+      "value": "{textDecoration.none}",
+      "type": "textDecoration"
+    }
+  },
+  "subtitle": {
+    "fontFamily": {
+      "value": "{fontFamilies.inter}",
+      "type": "fontFamily"
+    },
+    "fontWeight": {
+      "value": "{fontWeights.inter-1}",
+      "type": "fontWeight"
+    },
+    "lineHeight": {
+      "value": "{lineHeights.1}",
+      "type": "lineHeight"
+    },
+    "fontSize": {
+      "value": "{fontSize.0}",
+      "type": "fontSize"
+    },
+    "letterSpacing": {
+      "value": "{letterSpacing.0}",
+      "type": "letterSpacing"
+    },
+    "paragraphSpacing": {
+      "value": "{paragraphSpacing.0}",
+      "type": "paragraphSpacing"
+    },
+    "paragraphIndent": {
+      "value": "{paragraphIndent.0}",
+      "type": "paragraphIndent"
+    },
+    "textCase": {
+      "value": "{textCase.none}",
+      "type": "textCase"
+    },
+    "textDecoration": {
+      "value": "{textDecoration.none}",
+      "type": "textDecoration"
+    }
+  }
+}

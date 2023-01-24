@@ -28,8 +28,8 @@ StyleDictionaryPackage.registerTransform({
 function getStyleDictionaryConfig(theme, sourcePath) {
   return {
     source: [sourcePath],
-    source: [`tokens/${theme}.json`],
-    include: [`tokens/global.json`],
+    source: [`src/theme/token-transformation/${theme}.json`],
+    include: [`src/theme/token-transformation/global.json`],
     format: {
       createArray,
     },
@@ -37,13 +37,13 @@ function getStyleDictionaryConfig(theme, sourcePath) {
       web: {
         transformGroup: "css",
         transforms: ["attribute/cti", "name/cti/kebab", "size/px"],
-        buildPath: "styles/",
+        buildPath: "src/theme/",
         files: [
           {
             destination: `${theme}.css`,
             format: "css/variables",
             // selector: `.${theme}-theme`,
-            selector: `:root`,
+            selector: `:root[data-theme="${theme}"]`,
             filter: ({ isSource }) => {
               return isSource;
             },

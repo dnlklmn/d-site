@@ -1,12 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./theme/light.css";
+import "./theme/dark.css";
+
+let theme: any;
+theme = localStorage.getItem("data-theme");
+console.log("theme 1st: ", theme);
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-theme="dark">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <input
+          type="checkbox"
+          id="switch"
+          onChange={() => {
+            console.log("theme 2nd: ", theme);
+
+            theme = localStorage.getItem("data-theme");
+            if (theme === "dark") {
+              document.documentElement.setAttribute("data-theme", "light"); //set theme to light
+              localStorage.setItem("data-theme", "light"); // save theme to local storage
+              theme = "light";
+            } else {
+              document.documentElement.setAttribute("data-theme", "dark"); //set theme to light
+              localStorage.setItem("data-theme", "dark"); // save theme to local storage
+              theme = "dark";
+            }
+          }}
+        />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
