@@ -58,7 +58,7 @@ function App() {
       </header>
       <main>
         <div className="flex-vertical gap-8">
-          <span className="hero" style={{ width: 540 }}>
+          <span className="hero">
             I'm a designer <br /> not afraid to code.
           </span>
           <div className="flex-vertical gap-8">
