@@ -37,8 +37,7 @@ jobs:
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
 
       - name: Commit files
-        run: |
-          git config --local user.email "pelicansinberlin@gmail.com"
+        run: git config --local user.email "pelicansinberlin@gmail.com"
           git config --local user.name "daniel kalman"
           git commit -a -m "Add changes"
       - name: Push changes
