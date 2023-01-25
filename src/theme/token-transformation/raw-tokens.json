@@ -407,7 +407,7 @@
   },
   "light": {
     "primary": {
-      "value": "#DD0CFF",
+      "value": "#dd0cff",
       "type": "color"
     },
     "secondary": {
