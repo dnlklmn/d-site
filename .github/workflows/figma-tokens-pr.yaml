@@ -3,7 +3,7 @@ name: Process Figma Tokens PR
 on: pull_request
 
 jobs:
-  run_if: 
+  run_if: # only if base branch is "figma-tokens"
     if: ${{ github.head_ref == 'figma-tokens' }}
     name: Process Figma Tokens
     runs-on: ubuntu-latest
@@ -31,14 +31,10 @@ jobs:
       - name: Build css using Style Dictionary
         run: node src/theme/scripts/build-style-dictionary.js
 
-
-    - name: Commit files
-      run: |
-        git config --local user.email "pelicansinberlin@gmail.com"
-        git config --local user.name "Daniel Kalman"
-        git commit -a -m "Add changes"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: "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"
-        branch: "master"
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: daniel kalman
+          author_email: pelicansinberlin@gmail.com
+          message: "chore: style-dictionary output"
+          add: "."
