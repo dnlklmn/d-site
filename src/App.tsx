@@ -1,5 +1,5 @@
 import "./App.css";
-import "./typography-semantic.css";
+import "./theme/semantic/typography-semantic.css";
 import "./theme/light.css";
 import "./theme/dark.css";
 import "./theme/typography.css";
