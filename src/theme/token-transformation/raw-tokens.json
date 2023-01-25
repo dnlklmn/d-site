@@ -60,23 +60,23 @@
         "type": "fontSizes"
       },
       "4": {
-        "value": "23",
-        "type": "fontSizes"
-      },
-      "5": {
         "value": "24",
         "type": "fontSizes"
       },
-      "6": {
+      "5": {
         "value": "32",
         "type": "fontSizes"
       },
-      "7": {
+      "6": {
         "value": "40",
         "type": "fontSizes"
       },
-      "8": {
+      "7": {
         "value": "48",
+        "type": "fontSizes"
+      },
+      "8": {
+        "value": "70",
         "type": "fontSizes"
       },
       "9": {
@@ -127,7 +127,7 @@
         "fontFamily": "{fontFamilies.epilogue}",
         "fontWeight": "{fontWeights.epilogue-0}",
         "lineHeight": "{lineHeights.0}",
-        "fontSize": "{fontSize.4}",
+        "fontSize": "{fontSize.8}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -211,7 +211,7 @@
         "fontFamily": "{fontFamilies.inter}",
         "fontWeight": "{fontWeights.inter-2}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.5}",
+        "fontSize": "{fontSize.4}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -225,7 +225,7 @@
         "fontFamily": "{fontFamilies.inter}",
         "fontWeight": "{fontWeights.inter-2}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.6}",
+        "fontSize": "{fontSize.5}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -239,7 +239,7 @@
         "fontFamily": "{fontFamilies.inter}",
         "fontWeight": "{fontWeights.inter-2}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.7}",
+        "fontSize": "{fontSize.6}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -253,7 +253,7 @@
         "fontFamily": "{fontFamilies.inter}",
         "fontWeight": "{fontWeights.inter-2}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.8}",
+        "fontSize": "{fontSize.7}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
