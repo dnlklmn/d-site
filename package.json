@@ -24,7 +24,7 @@
     "tokens-light": "npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/light.json light  --resolveReferences ",
     "tokens-dark": "npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/dark.json dark  --resolveReferences ",
     "tokens-typography": "npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/typography.json typography  --resolveReferences --expandTypography=true",
-    "build-sd": "npx style-dictionary build --config src/theme/scripts/build-style-dictionary.js",
+    "build-sd": "node src/theme/scripts/build-style-dictionary.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

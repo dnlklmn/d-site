@@ -25,7 +25,7 @@ StyleDictionaryPackage.registerTransform({
   transformer: (token) => parseFloat(token.value) + "px",
 });
 
-function getStyleDictionaryConfig(theme) {
+function getStyleDictionaryConfig(theme, brand, sourcePath) {
   return {
     source: [`src/theme/token-transformation/${theme}.json`],
     include: [`src/theme/token-transformation/global.json`],
@@ -34,7 +34,7 @@ function getStyleDictionaryConfig(theme) {
     },
     platforms: {
       web: {
-        transformGroup: "css",
+        // transformGroup: "css",
         transforms: ["attribute/cti", "name/cti/kebab", "size/px"],
         buildPath: "src/theme/",
         files: [
@@ -58,12 +58,16 @@ console.log("Build started...");
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFERENT BRANDS
 
+const args = process.argv.slice(2);
+const brand = args[0];
+const sourcePath = args[1];
+
 ["dark", "light", "typography"].map(function(theme) {
   console.log("\n==============================================");
   console.log(`\nProcessing: [${theme}]`);
 
   const StyleDictionary = StyleDictionaryPackage.extend(
-    getStyleDictionaryConfig(theme)
+    getStyleDictionaryConfig(theme, brand, sourcePath)
   );
 
   StyleDictionary.buildPlatform("web");
