@@ -23,8 +23,10 @@ jobs:
 
       - name: Transform tokens
         run: npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/global.json global  --resolveReferences --expandTypography=true
+
       - name: Transform tokens
         run: npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/light.json light  --resolveReferences
+
       - name: Transform tokens
         run: npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/typography.json typography  --resolveReferences --expandTypography=true
 
