@@ -43,9 +43,7 @@ function App() {
     <div className="App" data-theme={localStorage.getItem("data-theme")}>
       <style>
         @import
-        url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        @import
-        url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400;500;700&display=swap');
+        url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;700&display=swap');
       </style>
       <header className="App-header">
         <span className="h5">Donnie's Awesome Website</span>
@@ -59,7 +57,7 @@ function App() {
         </div>
       </header>
       <main>
-        <div className="flex-vertical gap-16">
+        <div className="flex-vertical gap-8">
           <span className="hero" style={{ width: 540 }}>
             I'm a designer who codes.
           </span>
@@ -71,16 +69,8 @@ function App() {
               build prototypes, figma plugins and snow dragons.
             </p>
           </div>
+          <Button />
         </div>
-        <Button />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </main>
     </div>
   );

@@ -2,16 +2,16 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const ButtonBase = styled(motion.button)`
-  width: auto;
+  width: fit-content;
   height: auto;
-  background-color: var(--primary);
+  background-color: var(--text-contrast);
   display: flex;
   justify-content: flex-start;
-  border-radius: 50px;
+  border-radius: 1px;
   border: none;
   padding: 8px 16px;
   cursor: pointer;
-  color: var(--contrast);
+  color: var(--text-match-bg);
 `;
 
 export const Button = ({ onTap, toggleDirection }: any) => {

@@ -11,6 +11,10 @@
     "contrast": {
       "value": "#151515",
       "type": "color"
+    },
+    "match-bg": {
+      "value": "#F8F8F8",
+      "type": "color"
     }
   },
   "bg": {
