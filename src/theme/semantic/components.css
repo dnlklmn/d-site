@@ -13,4 +13,5 @@
 
 .link {
   text-decoration: none;
+  color: var(--text-contrast);
 }

@@ -43,6 +43,17 @@ function App() {
     }
   };
 
+  const toggle = (
+    <div className="toggle-container">
+      <span className="label">
+        {localStorage.getItem("data-theme") === "light"
+          ? "Lights On"
+          : "Lights Off"}
+      </span>
+      <Toggle onTap={toggleOn} toggleDirection={toggleDirection} />
+    </div>
+  );
+
   return (
     <div className="App" data-theme={localStorage.getItem("data-theme")}>
       <style>
@@ -57,18 +68,7 @@ function App() {
               <>
                 <header className="App-header">
                   <span className="h5">Donnie's Awesome Website</span>
-
-                  <div className="toggle-container">
-                    <span className="label">
-                      {localStorage.getItem("data-theme") === "light"
-                        ? "Lights On"
-                        : "Lights Off"}
-                    </span>
-                    <Toggle
-                      onTap={toggleOn}
-                      toggleDirection={toggleDirection}
-                    />
-                  </div>
+                  {toggle}
                 </header>
                 <Home />
               </>
@@ -82,17 +82,7 @@ function App() {
                   <Link className="h5 link" to="/">
                     <span>{`\u2190`} Back</span>
                   </Link>
-                  <div className="toggle-container">
-                    <span className="label">
-                      {localStorage.getItem("data-theme") === "light"
-                        ? "Lights On"
-                        : "Lights Off"}
-                    </span>
-                    <Toggle
-                      onTap={toggleOn}
-                      toggleDirection={toggleDirection}
-                    />
-                  </div>
+                  {toggle}
                 </header>
                 <GetInTouch />
               </>
