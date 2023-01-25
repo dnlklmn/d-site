@@ -411,7 +411,7 @@
       "type": "color"
     },
     "secondary": {
-      "value": "#aabafe",
+      "value": "#aaba0f",
       "type": "color"
     },
     "text": {
@@ -467,6 +467,11 @@
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": ["global", "typography", "light", "dark"]
+    "tokenSetOrder": [
+      "global",
+      "typography",
+      "light",
+      "dark"
+    ]
   }
 }
