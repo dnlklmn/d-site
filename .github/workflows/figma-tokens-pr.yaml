@@ -31,11 +31,20 @@ jobs:
       - name: Build css using Style Dictionary
         run: node src/theme/scripts/build-style-dictionary.js
 
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
+      - uses: actions/checkout@v2
         with:
-          author_name: daniel kalman
-          author_email: pelicansinberlin@gmail.com
-          message: "chore: style-dictionary output"
-          github_token: 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
-          add: "."
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+        fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
+      - name: Create local changes
+       run: |
+        ...
+    - name: Commit files
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git commit -a -m "Add changes"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
