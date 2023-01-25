@@ -8,6 +8,10 @@
       "inter": {
         "value": "Inter",
         "type": "fontFamilies"
+      },
+      "epilogue": {
+        "value": "Epilogue",
+        "type": "fontFamilies"
       }
     },
     "lineHeights": {
@@ -30,6 +34,10 @@
         "type": "fontWeights"
       },
       "inter-2": {
+        "value": "Bold",
+        "type": "fontWeights"
+      },
+      "epilogue-0": {
         "value": "Bold",
         "type": "fontWeights"
       }
@@ -72,7 +80,7 @@
         "type": "fontSizes"
       },
       "9": {
-        "value": "64",
+        "value": "70",
         "type": "fontSizes"
       },
       "10": {
@@ -116,10 +124,10 @@
     },
     "hero": {
       "value": {
-        "fontFamily": "{fontFamilies.abril-fatface}",
-        "fontWeight": "{fontWeights.abril-fatface-0}",
+        "fontFamily": "{fontFamilies.epilogue}",
+        "fontWeight": "{fontWeights.epilogue-0}",
         "lineHeight": "{lineHeights.0}",
-        "fontSize": "{fontSize.10}",
+        "fontSize": "{fontSize.9}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -133,11 +141,11 @@
         "fontFamily": "{fontFamilies.inter}",
         "fontWeight": "{fontWeights.inter-1}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.0}",
+        "fontSize": "{fontSize.1}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
-        "textCase": "{textCase.none}",
+        "textCase": "{textCase.uppercase}",
         "textDecoration": "{textDecoration.none}"
       },
       "type": "typography"
@@ -258,10 +266,10 @@
   "typography": {
     "hero": {
       "value": {
-        "fontFamily": "{fontFamilies.abril-fatface}",
-        "fontWeight": "{fontWeights.abril-fatface-0}",
+        "fontFamily": "{fontFamilies.epilogue}",
+        "fontWeight": "{fontWeights.epilogue-0}",
         "lineHeight": "{lineHeights.0}",
-        "fontSize": "{fontSize.10}",
+        "fontSize": "{fontSize.9}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -275,11 +283,11 @@
         "fontFamily": "{fontFamilies.inter}",
         "fontWeight": "{fontWeights.inter-1}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.1}",
+        "fontSize": "{fontSize.0}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
-        "textCase": "{textCase.uppercase}",
+        "textCase": "{textCase.none}",
         "textDecoration": "{textDecoration.none}"
       },
       "type": "typography"
