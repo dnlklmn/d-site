@@ -3,7 +3,6 @@ import "./theme/light.css";
 import "./theme/dark.css";
 import React from "react";
 import { Toggle } from "./components/toggle";
-import { FloatingThumbnail } from "./components/floating-thumbnail";
 import { FloaterArea } from "./components/floater-area";
 
 function setTheme(themeName: string) {
@@ -37,23 +36,6 @@ function App() {
     }
   };
 
-  const [mouseX, setMouseX] = React.useState({});
-  const [mouseY, setMouseY] = React.useState({});
-  React.useEffect(() => {
-    const handleMouseMove = (event: any) => {
-      setMouseX(String(event.clientX));
-      setMouseY(String(event.clientY));
-    };
-
-    console.log(mouseX, mouseY);
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
   return (
     <div className="App" data-theme={localStorage.getItem("data-theme")}>
       <style>
@@ -66,7 +48,9 @@ function App() {
         <span className="h5">Donnie's Site</span>
         <div className="toggle-container">
           <span className="label">
-            {localStorage.getItem("data-theme") === "light" ? "Day" : "Night"}
+            {localStorage.getItem("data-theme") === "light"
+              ? "Lights On"
+              : "Lights Off"}
           </span>
           <Toggle onTap={toggleOn} toggleDirection={toggleDirection} />
         </div>
@@ -77,14 +61,13 @@ function App() {
           <div className="flex-vertical gap-8">
             <p className="body">
               <span>I specialize in</span>
-              <FloaterArea label="hey" />
+              <FloaterArea label=" UX/UI Design" />
               <span>
                 , Design Systems, and Design Tooling. I also build prototypes,
                 figma plugins and snow dragons.
               </span>
             </p>
           </div>
-          <FloatingThumbnail left={`${mouseX}px`} top={`${mouseY}px`} />
         </div>
         <a
           className="App-link"
