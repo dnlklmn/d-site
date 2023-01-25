@@ -16,7 +16,7 @@
     },
     "lineHeights": {
       "0": {
-        "value": "104.4%",
+        "value": "108%",
         "type": "lineHeights"
       },
       "1": {
@@ -411,7 +411,7 @@
       "type": "color"
     },
     "secondary": {
-      "value": "#aabaAA",
+      "value": "#aabacc",
       "type": "color"
     },
     "text": {
