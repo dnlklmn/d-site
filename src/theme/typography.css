@@ -1,6 +1,6 @@
 :root {
-  --hero-font-family: Abril Fatface;
-  --hero-font-weight: Regular;
+  --hero-font-family: Epilogue;
+  --hero-font-weight: Bold;
   --hero-line-height: 115.4%;
   --hero-font-size: 70px;
   --hero-letter-spacing: 0%;
@@ -11,11 +11,11 @@
   --subtitle-font-family: Inter;
   --subtitle-font-weight: Semi Bold;
   --subtitle-line-height: AUTO;
-  --subtitle-font-size: 14px;
+  --subtitle-font-size: 12px;
   --subtitle-letter-spacing: 0%;
   --subtitle-paragraph-spacing: 0;
   --subtitle-paragraph-indent: 0px;
-  --subtitle-text-case: uppercase;
+  --subtitle-text-case: none;
   --subtitle-text-decoration: none;
   --label-font-family: Inter;
   --label-font-weight: Semi Bold;

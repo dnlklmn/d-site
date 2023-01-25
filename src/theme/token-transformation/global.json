@@ -7,6 +7,10 @@
     "inter": {
       "value": "Inter",
       "type": "fontFamilies"
+    },
+    "epilogue": {
+      "value": "Epilogue",
+      "type": "fontFamilies"
     }
   },
   "lineHeights": {
@@ -29,6 +33,10 @@
       "type": "fontWeights"
     },
     "inter-2": {
+      "value": "Bold",
+      "type": "fontWeights"
+    },
+    "epilogue-0": {
       "value": "Bold",
       "type": "fontWeights"
     }
@@ -71,7 +79,7 @@
       "type": "fontSizes"
     },
     "9": {
-      "value": 64,
+      "value": 70,
       "type": "fontSizes"
     },
     "10": {
@@ -115,11 +123,11 @@
   },
   "hero": {
     "fontFamily": {
-      "value": "Abril Fatface",
+      "value": "Epilogue",
       "type": "fontFamily"
     },
     "fontWeight": {
-      "value": "Regular",
+      "value": "Bold",
       "type": "fontWeight"
     },
     "lineHeight": {
@@ -165,7 +173,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": 12,
+      "value": 14,
       "type": "fontSize"
     },
     "letterSpacing": {
@@ -181,7 +189,7 @@
       "type": "paragraphIndent"
     },
     "textCase": {
-      "value": "none",
+      "value": "uppercase",
       "type": "textCase"
     },
     "textDecoration": {

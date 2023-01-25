@@ -9,7 +9,7 @@ const ButtonBase = styled(motion.button)`
   justify-content: flex-start;
   border-radius: 1px;
   border: none;
-  padding: 8px 16px;
+  padding: 16px 16px;
   cursor: pointer;
   color: var(--text-match-bg);
 `;

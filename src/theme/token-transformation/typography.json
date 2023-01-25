@@ -1,11 +1,11 @@
 {
   "hero": {
     "fontFamily": {
-      "value": "{fontFamilies.abril-fatface}",
+      "value": "{fontFamilies.epilogue}",
       "type": "fontFamily"
     },
     "fontWeight": {
-      "value": "{fontWeights.abril-fatface-0}",
+      "value": "{fontWeights.epilogue-0}",
       "type": "fontWeight"
     },
     "lineHeight": {
@@ -13,7 +13,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": "{fontSize.10}",
+      "value": "{fontSize.9}",
       "type": "fontSize"
     },
     "letterSpacing": {
@@ -51,7 +51,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": "{fontSize.1}",
+      "value": "{fontSize.0}",
       "type": "fontSize"
     },
     "letterSpacing": {
@@ -67,7 +67,7 @@
       "type": "paragraphIndent"
     },
     "textCase": {
-      "value": "{textCase.uppercase}",
+      "value": "{textCase.none}",
       "type": "textCase"
     },
     "textDecoration": {
