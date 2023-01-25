@@ -410,6 +410,10 @@
       "contrast": {
         "value": "#151515",
         "type": "color"
+      },
+      "match-bg": {
+        "value": "{bg.default}",
+        "type": "color"
       }
     },
     "bg": {
@@ -435,6 +439,10 @@
     "text": {
       "contrast": {
         "value": "#f3f3f3",
+        "type": "color"
+      },
+      "match-bg": {
+        "value": "{bg.default}",
         "type": "color"
       }
     },
