@@ -420,17 +420,17 @@
         "type": "color"
       },
       "match-bg": {
-        "value": "{bg.default}",
+        "value": "#f8f8f8",
         "type": "color"
       }
     },
     "bg": {
       "default": {
-        "value": "#F8F8F8",
+        "value": "#f8f8f8",
         "type": "color"
       },
       "dip": {
-        "value": "#CFCECE",
+        "value": "#cfcece",
         "type": "color"
       }
     }
