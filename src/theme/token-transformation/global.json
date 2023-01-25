@@ -59,23 +59,23 @@
       "type": "fontSizes"
     },
     "4": {
-      "value": 23,
-      "type": "fontSizes"
-    },
-    "5": {
       "value": 24,
       "type": "fontSizes"
     },
-    "6": {
+    "5": {
       "value": 32,
       "type": "fontSizes"
     },
-    "7": {
+    "6": {
       "value": 40,
       "type": "fontSizes"
     },
-    "8": {
+    "7": {
       "value": 48,
+      "type": "fontSizes"
+    },
+    "8": {
+      "value": 70,
       "type": "fontSizes"
     },
     "9": {
@@ -135,7 +135,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": 23,
+      "value": 70,
       "type": "fontSizes"
     },
     "letterSpacing": {
