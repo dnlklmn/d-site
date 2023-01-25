@@ -6,6 +6,7 @@ import "./theme/typography.css";
 import React from "react";
 import { Toggle } from "./components/toggle";
 import { FloaterArea } from "./components/floater-area";
+import { Button } from "./components/button";
 
 function setTheme(themeName: string) {
   localStorage.setItem("data-theme", themeName);
@@ -71,6 +72,7 @@ function App() {
             </p>
           </div>
         </div>
+        <Button />
         <a
           className="App-link"
           href="https://reactjs.org"
