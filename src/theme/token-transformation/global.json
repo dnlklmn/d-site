@@ -47,19 +47,19 @@
       "type": "fontSizes"
     },
     "1": {
-      "value": 14,
-      "type": "fontSizes"
-    },
-    "2": {
       "value": 16,
       "type": "fontSizes"
     },
-    "3": {
+    "2": {
       "value": 18,
       "type": "fontSizes"
     },
-    "4": {
+    "3": {
       "value": 20,
+      "type": "fontSizes"
+    },
+    "4": {
+      "value": 23,
       "type": "fontSizes"
     },
     "5": {
@@ -135,7 +135,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": 70,
+      "value": 23,
       "type": "fontSizes"
     },
     "letterSpacing": {
@@ -173,7 +173,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": 14,
+      "value": 12,
       "type": "fontSizes"
     },
     "letterSpacing": {
@@ -189,7 +189,7 @@
       "type": "paragraphIndent"
     },
     "textCase": {
-      "value": "uppercase",
+      "value": "none",
       "type": "textCase"
     },
     "textDecoration": {
