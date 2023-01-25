@@ -6,6 +6,8 @@ on:
     branches:
       - figma-tokens
 
+permissions: read-all|write-all
+
 jobs:
   pull-request:
     runs-on: ubuntu-latest
