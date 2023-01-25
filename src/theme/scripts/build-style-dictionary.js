@@ -25,9 +25,8 @@ StyleDictionaryPackage.registerTransform({
   transformer: (token) => parseFloat(token.value) + "px",
 });
 
-function getStyleDictionaryConfig(theme, sourcePath) {
+function getStyleDictionaryConfig(theme) {
   return {
-    source: [sourcePath],
     source: [`src/theme/token-transformation/${theme}.json`],
     include: [`src/theme/token-transformation/global.json`],
     format: {
@@ -59,11 +58,7 @@ console.log("Build started...");
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFERENT BRANDS
 
-const args = process.argv.slice(2);
-const brand = args[0];
-const sourcePath = args[1];
-
-["dark", "light"].map(function(theme) {
+["dark", "light", "typography"].map(function(theme) {
   console.log("\n==============================================");
   console.log(`\nProcessing: [${theme}]`);
 

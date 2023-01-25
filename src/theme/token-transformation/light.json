@@ -13,44 +13,6 @@
       "type": "color"
     }
   },
-  "subtitle": {
-    "fontFamily": {
-      "value": "{fontFamilies.inter}",
-      "type": "fontFamily"
-    },
-    "fontWeight": {
-      "value": "{fontWeights.inter-1}",
-      "type": "fontWeight"
-    },
-    "lineHeight": {
-      "value": "{lineHeights.1}",
-      "type": "lineHeight"
-    },
-    "fontSize": {
-      "value": "{fontSize.0}",
-      "type": "fontSize"
-    },
-    "letterSpacing": {
-      "value": "{letterSpacing.0}",
-      "type": "letterSpacing"
-    },
-    "paragraphSpacing": {
-      "value": "{paragraphSpacing.0}",
-      "type": "paragraphSpacing"
-    },
-    "paragraphIndent": {
-      "value": "{paragraphIndent.0}",
-      "type": "paragraphIndent"
-    },
-    "textCase": {
-      "value": "{textCase.none}",
-      "type": "textCase"
-    },
-    "textDecoration": {
-      "value": "{textDecoration.none}",
-      "type": "textDecoration"
-    }
-  },
   "bg": {
     "default": {
       "value": "#F8F8F8",
@@ -59,82 +21,6 @@
     "dip": {
       "value": "#CFCECE",
       "type": "color"
-    }
-  },
-  "label": {
-    "fontFamily": {
-      "value": "{fontFamilies.inter}",
-      "type": "fontFamily"
-    },
-    "fontWeight": {
-      "value": "{fontWeights.inter-1}",
-      "type": "fontWeight"
-    },
-    "lineHeight": {
-      "value": "{lineHeights.1}",
-      "type": "lineHeight"
-    },
-    "fontSize": {
-      "value": "{fontSize.0}",
-      "type": "fontSize"
-    },
-    "letterSpacing": {
-      "value": "{letterSpacing.0}",
-      "type": "letterSpacing"
-    },
-    "paragraphSpacing": {
-      "value": "{paragraphSpacing.0}",
-      "type": "paragraphSpacing"
-    },
-    "paragraphIndent": {
-      "value": "{paragraphIndent.0}",
-      "type": "paragraphIndent"
-    },
-    "textCase": {
-      "value": "{textCase.none}",
-      "type": "textCase"
-    },
-    "textDecoration": {
-      "value": "{textDecoration.none}",
-      "type": "textDecoration"
-    }
-  },
-  "hero": {
-    "fontFamily": {
-      "value": "{fontFamilies.abril-fatface}",
-      "type": "fontFamily"
-    },
-    "fontWeight": {
-      "value": "{fontWeights.abril-fatface-0}",
-      "type": "fontWeight"
-    },
-    "lineHeight": {
-      "value": "{lineHeights.0}",
-      "type": "lineHeight"
-    },
-    "fontSize": {
-      "value": "{fontSize.2}",
-      "type": "fontSize"
-    },
-    "letterSpacing": {
-      "value": "{letterSpacing.0}",
-      "type": "letterSpacing"
-    },
-    "paragraphSpacing": {
-      "value": "{paragraphSpacing.0}",
-      "type": "paragraphSpacing"
-    },
-    "paragraphIndent": {
-      "value": "{paragraphIndent.0}",
-      "type": "paragraphIndent"
-    },
-    "textCase": {
-      "value": "{textCase.none}",
-      "type": "textCase"
-    },
-    "textDecoration": {
-      "value": "{textDecoration.none}",
-      "type": "textDecoration"
     }
   }
 }

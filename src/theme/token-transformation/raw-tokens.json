@@ -451,11 +451,6 @@
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": [
-      "global",
-      "typography",
-      "light",
-      "dark"
-    ]
+    "tokenSetOrder": ["global", "typography", "light", "dark"]
   }
 }

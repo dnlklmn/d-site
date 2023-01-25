@@ -1,6 +1,7 @@
 import "./App.css";
 import "./theme/light.css";
 import "./theme/dark.css";
+import "./theme/typography.css";
 import React from "react";
 import { Toggle } from "./components/toggle";
 import { FloaterArea } from "./components/floater-area";
