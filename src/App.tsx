@@ -1,4 +1,5 @@
 import "./App.css";
+import "./typography-semantic.css";
 import "./theme/light.css";
 import "./theme/dark.css";
 import "./theme/typography.css";
@@ -57,10 +58,12 @@ function App() {
         </div>
       </header>
       <main>
-        <div className="flex-vertical gap-24">
-          <span className="hero">I'm a designer who codes.</span>
+        <div className="flex-vertical gap-16">
+          <span className="hero" style={{ width: 540 }}>
+            I'm a designer who codes.
+          </span>
           <div className="flex-vertical gap-8">
-            <p className="body line-height-1">
+            <p className="body-2 line-height-1">
               I specialize in
               <FloaterArea id="dpd" label=" UX/UI Design " />
               and <FloaterArea id="ds" label=" Design Systems" />. <br />I also

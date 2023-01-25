@@ -1,0 +1,71 @@
+.hero {
+  font-family: var(--hero-font-family);
+  font-weight: var(--hero-font-weight);
+  line-height: var(--hero-line-height);
+  font-size: var(--hero-font-size);
+  text-align: start;
+}
+
+.h1 {
+  font-family: var(--h1-font-family);
+  font-weight: var(--h1-font-weight);
+  line-height: var(--h1-line-height);
+  font-size: var(--h1-font-size);
+}
+
+.h2 {
+  font-family: var(--h2-font-family);
+  font-weight: var(--h2-font-weight);
+  line-height: var(--h2-line-height);
+  font-size: var(--h2-font-size);
+}
+
+.h3 {
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  line-height: var(--h3-line-height);
+  font-size: var(--h3-font-size);
+}
+
+.h4 {
+  font-family: var(--h4-font-family);
+  font-weight: var(--h4-font-weight);
+  line-height: var(--h4-line-height);
+  font-size: var(--h4-font-size);
+}
+
+.h5 {
+  font-family: var(--h5-font-family);
+  font-weight: var(--h5-font-weight);
+  line-height: var(--h5-line-height);
+  font-size: var(--h5-font-size);
+}
+
+.body-1 {
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  line-height: var(--body-1-line-height);
+  font-size: var(--body-1-font-size);
+}
+
+.body-2 {
+  font-family: var(--body-2-font-family);
+  font-weight: var(--body-2-font-weight);
+  line-height: var(--body-2-line-height);
+  font-size: var(--body-2-font-size);
+}
+
+.label {
+  font-family: var(--label-font-family);
+  font-weight: var(--label-font-weight);
+  line-height: var(--label-line-height);
+  font-size: var(--label-font-size);
+}
+
+.line-height-auto {
+  line-height: "auto";
+}
+
+.line-height-1 {
+  line-height: 1.5;
+}
