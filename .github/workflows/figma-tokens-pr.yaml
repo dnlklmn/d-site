@@ -2,8 +2,6 @@ name: Process Figma Tokens PR
 
 on: pull_request
 
-permissions: read-all|write-all
-
 jobs:
   run_if: # only if base branch is "figma-tokens"
     if: ${{ github.head_ref == 'figma-tokens' }}
@@ -36,7 +34,7 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: daniel kalman
+          author_name: Donnie
           author_email: pelicansinberlin@gmail.com
           message: "chore: style-dictionary output"
           add: "."
