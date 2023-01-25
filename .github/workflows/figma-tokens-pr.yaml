@@ -39,4 +39,5 @@ jobs:
           author_name: Donnie
           author_email: pelicansinberlin@gmail.com
           message: "chore: style-dictionary output"
+          github_token: ${{ secrets.GH_PAT }}
           add: "."
