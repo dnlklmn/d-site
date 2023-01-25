@@ -59,7 +59,7 @@ function App() {
       <main>
         <div className="flex-vertical gap-8">
           <span className="hero" style={{ width: 540 }}>
-            I'm a designer who codes.
+            I'm a designer <br /> not afraid to code.
           </span>
           <div className="flex-vertical gap-8">
             <p className="body-2 line-height-1">
