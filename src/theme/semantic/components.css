@@ -10,3 +10,7 @@
   color: var(--text-match-bg);
   padding: 16px 16px;
 }
+
+.link {
+  text-decoration: none;
+}
