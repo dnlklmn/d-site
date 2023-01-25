@@ -37,6 +37,21 @@
   font-size: var(--label-font-size);
 }
 
+.body {
+  font-family: var(--label-font-family);
+  font-weight: var(--label-font-weight);
+  line-height: var(--label-line-height);
+  font-size: 18;
+}
+
+.line-height-auto {
+  line-height: "auto";
+}
+
+.line-height-1 {
+  line-height: 1.5;
+}
+
 .hero {
   font-family: var(--hero-font-family);
   font-weight: var(--hero-font-weight);

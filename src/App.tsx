@@ -45,7 +45,7 @@ function App() {
         url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400;500;700&display=swap');
       </style>
       <header className="App-header">
-        <span className="h5">Donnie's Site</span>
+        <span className="h5">Donnie's Awesome Website</span>
         <div className="toggle-container">
           <span className="label">
             {localStorage.getItem("data-theme") === "light"
@@ -59,13 +59,11 @@ function App() {
         <div className="flex-vertical gap-24">
           <span className="hero">I'm a designer who codes.</span>
           <div className="flex-vertical gap-8">
-            <p className="body">
-              <span>I specialize in</span>
-              <FloaterArea label=" UX/UI Design" />
-              <span>
-                , Design Systems, and Design Tooling. I also build prototypes,
-                figma plugins and snow dragons.
-              </span>
+            <p className="body line-height-1">
+              I specialize in
+              <FloaterArea id="dpd" label=" UX/UI Design " />
+              and <FloaterArea id="ds" label=" Design Systems" />. <br />I also
+              build prototypes, figma plugins and snow dragons.
             </p>
           </div>
         </div>

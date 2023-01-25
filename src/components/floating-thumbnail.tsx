@@ -11,8 +11,9 @@ const FloatingBackground = styled(motion.div)`
   padding: 8px;
   cursor: pointer;
   position: absolute;
+  pointer-events: none;
 `;
-export const FloatingThumbnail = ({ left, top }: any) => {
+export const FloatingThumbnail = ({ left, top, scale }: any) => {
   return (
     <div
       style={{
@@ -21,7 +22,14 @@ export const FloatingThumbnail = ({ left, top }: any) => {
         top: top,
       }}
     >
-      <FloatingBackground />
+      <FloatingBackground
+        animate={{ scale: scale }}
+        transition={{
+          type: "spring",
+          stiffness: 2000,
+          damping: 80,
+        }}
+      />
     </div>
   );
 };
