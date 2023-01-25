@@ -1,0 +1,35 @@
+name: Process Figma Tokens PR
+
+on: pull_request
+
+jobs:
+  run_if: # only if base branch is "figma-tokens"
+    if: ${{ github.head_ref == 'figma-tokens' }}
+    name: Process Figma Tokens
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # checkout to the head of this PR
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Run token-transformer
+        run: npx token-transformer tokens/donnie.json tokens/figma-tokens-output.json  --resolveReferences false
+
+      - name: Transform tokens
+        run: npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/global.json global  --resolveReferences --expandTypography=true
+        run: npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/light.json light  --resolveReferences 
+        run: npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/typography.json typography  --resolveReferences --expandTypography=true
+
+      - name: Build css using Style Dictionary
+        run: npx style-dictionary build --config src/theme/scripts/build-style-dictionary.js
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: daniel kalman
+          author_email: pelicansinberlin@gmail.com
+          message: "chore: style-dictionary output"
+          add: "."
