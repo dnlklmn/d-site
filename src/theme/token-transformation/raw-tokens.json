@@ -411,9 +411,8 @@
       "type": "color"
     },
     "secondary": {
-      "value": "#aaba34",
-      "type": "color",
-      "description": "32"
+      "value": "#aaba44",
+      "type": "color"
     },
     "text": {
       "contrast": {
