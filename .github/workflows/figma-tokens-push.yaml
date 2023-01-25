@@ -20,4 +20,4 @@ jobs:
           destination_branch: "master" # match your default branch
           pr_title: "Figma Tokens Update"
           pr_body: "🍥 Design Tokens were updated in Figma! This PR was created to update the code."
-          github_token: "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"
+          github_token: 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

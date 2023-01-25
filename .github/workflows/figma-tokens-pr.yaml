@@ -37,4 +37,5 @@ jobs:
           author_name: daniel kalman
           author_email: pelicansinberlin@gmail.com
           message: "chore: style-dictionary output"
+          github_token: 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
           add: "."
