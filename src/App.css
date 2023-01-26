@@ -35,7 +35,7 @@
 
 main {
   padding: 0 248px;
-  color: var(--text-contrast);
+  color: var(--fg-contrast);
 }
 
 .App-header {
@@ -46,7 +46,7 @@ main {
   align-items: center;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
-  color: var(--text-contrast);
+  color: var(--fg-contrast);
 }
 
 .App-link {
