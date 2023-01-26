@@ -16,6 +16,7 @@
 .link {
   text-decoration: none;
   color: var(--fg-contrast);
+  width: fit-content;
 }
 
 .glow-on-hover {
