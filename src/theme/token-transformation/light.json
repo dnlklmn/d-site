@@ -19,11 +19,11 @@
   },
   "bg": {
     "default": {
-      "value": "#151515",
+      "value": "#f8f8f8",
       "type": "color"
     },
     "dip": {
-      "value": "#424242",
+      "value": "#CFCECE",
       "type": "color"
     }
   }
