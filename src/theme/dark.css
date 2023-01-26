@@ -1,8 +1,8 @@
 :root[data-theme="dark"] {
-  --primary: #DD0CFF;
-  --secondary: #2f2f2f;
-  --text-contrast: #f3f3f3;
-  --text-match-bg: #151515;
+  --primary: #51ff4e;
+  --secondary: #db00ff;
+  --fg-contrast: #f3f3f3;
+  --fg-match-bg: #151515;
   --bg-default: #151515;
   --bg-dip: #424242;
 }

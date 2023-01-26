@@ -1,12 +1,9 @@
-import "./App.css";
-import "./theme/semantic/typography-semantic.css";
-import "./theme/light.css";
-import "./theme/dark.css";
-import "./theme/typography.css";
 import React from "react";
 import { Toggle } from "./components/toggle";
-import { FloaterArea } from "./components/floater-area";
-import { Button } from "./components/button";
+
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { GetInTouch } from "./pages/GetInTouch";
 
 function setTheme(themeName: string) {
   localStorage.setItem("data-theme", themeName);
@@ -39,39 +36,53 @@ function App() {
     }
   };
 
+  const toggle = (
+    <div className="toggle-container">
+      <span className="label">
+        {localStorage.getItem("data-theme") === "light"
+          ? "Lights On"
+          : "Lights Off"}
+      </span>
+      <Toggle onTap={toggleOn} toggleDirection={toggleDirection} />
+    </div>
+  );
+
   return (
     <div className="App" data-theme={localStorage.getItem("data-theme")}>
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;700&display=swap');
       </style>
-      <header className="App-header">
-        <span className="h5">Donnie's Awesome Website</span>
-        <div className="toggle-container">
-          <span className="label">
-            {localStorage.getItem("data-theme") === "light"
-              ? "Lights On"
-              : "Lights Off"}
-          </span>
-          <Toggle onTap={toggleOn} toggleDirection={toggleDirection} />
-        </div>
-      </header>
-      <main>
-        <div className="flex-vertical gap-8">
-          <span className="hero" style={{ width: 540 }}>
-            I'm a designer who codes.
-          </span>
-          <div className="flex-vertical gap-8">
-            <p className="body-2 line-height-1">
-              I specialize in
-              <FloaterArea id="dpd" label=" UX/UI Design " />
-              and <FloaterArea id="ds" label=" Design Systems" />. <br />I also
-              build prototypes, figma plugins and snow dragons.
-            </p>
-          </div>
-          <Button />
-        </div>
-      </main>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <header className="App-header">
+                  <span className="h5">Donnie's Awesome Website</span>
+                  {toggle}
+                </header>
+                <Home />
+              </>
+            }
+          />
+          <Route
+            path="/getintouch"
+            element={
+              <>
+                <header className="App-header">
+                  <Link className="h5 link" to="/">
+                    <span>{`\u2190`} Back</span>
+                  </Link>
+                  {toggle}
+                </header>
+                <GetInTouch />
+              </>
+            }
+          />
+        </Routes>
+      </Router>
     </div>
   );
 }
