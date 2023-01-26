@@ -17,6 +17,13 @@ export const Button = ({ onTap, label, to, size }: any) => {
           setRight(Math.random() * 20);
           setBottom(Math.random() * 20);
         }}
+        onMouseDown={() => {
+          let unify = Math.random() * 25;
+          setLeft(unify);
+          setTop(unify);
+          setRight(unify);
+          setBottom(unify);
+        }}
         onMouseOut={() => {
           setLeft(0);
           setTop(0);
