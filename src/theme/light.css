@@ -1,8 +1,8 @@
 :root {
-  --primary: #51ff4e;
+  --primary: #05f300;
   --secondary: #db00ff;
   --fg-contrast: #151515;
   --fg-match-bg: #f8f8f8;
-  --bg-default: #f8f8f8;
-  --bg-dip: #cfcece;
+  --bg-default: #151515;
+  --bg-dip: #424242;
 }

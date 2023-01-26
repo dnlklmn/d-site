@@ -1,6 +1,6 @@
 {
   "primary": {
-    "value": "#51ff4e",
+    "value": "#05f300",
     "type": "color"
   },
   "secondary": {
@@ -19,11 +19,11 @@
   },
   "bg": {
     "default": {
-      "value": "#f8f8f8",
+      "value": "#151515",
       "type": "color"
     },
     "dip": {
-      "value": "#cfcece",
+      "value": "#424242",
       "type": "color"
     }
   }
