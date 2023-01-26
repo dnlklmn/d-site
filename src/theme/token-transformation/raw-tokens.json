@@ -407,14 +407,14 @@
   },
   "light": {
     "primary": {
-      "value": "#0cff8a",
+      "value": "#51ff4e",
       "type": "color"
     },
     "secondary": {
-      "value": "#16bfdf",
+      "value": "#db00ff",
       "type": "color"
     },
-    "text": {
+    "fg": {
       "contrast": {
         "value": "#151515",
         "type": "color"
@@ -437,14 +437,14 @@
   },
   "dark": {
     "primary": {
-      "value": "#DD0CFF",
+      "value": "#51ff4e",
       "type": "color"
     },
     "secondary": {
-      "value": "#16bfdf",
+      "value": "#db00ff",
       "type": "color"
     },
-    "text": {
+    "fg": {
       "contrast": {
         "value": "#f3f3f3",
         "type": "color"
