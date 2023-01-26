@@ -407,11 +407,11 @@
   },
   "light": {
     "primary": {
-      "value": "#05f300",
+      "value": "#DB00FF",
       "type": "color"
     },
     "secondary": {
-      "value": "#db00ff",
+      "value": "#05F300",
       "type": "color"
     },
     "fg": {
@@ -437,11 +437,11 @@
   },
   "dark": {
     "primary": {
-      "value": "#05f300",
+      "value": "#DB00FF",
       "type": "color"
     },
     "secondary": {
-      "value": "#db00ff",
+      "value": "#05F300",
       "type": "color"
     },
     "fg": {
