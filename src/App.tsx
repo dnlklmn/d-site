@@ -1,9 +1,15 @@
+import "./App.css";
+
 import React from "react";
 import { Toggle } from "./components/toggle";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { GetInTouch } from "./pages/GetInTouch";
+import { DSite } from "./pages/DSite";
+import { Navbar } from "./components/navbar";
+
+// icons: https://react-icons.github.io/react-icons/icons?name=io5
 
 function setTheme(themeName: string) {
   localStorage.setItem("data-theme", themeName);
@@ -21,11 +27,11 @@ function setTheme(themeName: string) {
 function App() {
   const [, rerenderSwitch] = React.useState("");
   const [toggleDirection, setToggleDirection] = React.useState(
-    localStorage.getItem("data-theme") === "light" ? 20 : 0
+    localStorage.getItem("data-theme") === "light" ? 16 : 0
   );
 
   const toggleOn = () => {
-    setToggleDirection(toggleDirection === 20 ? 0 : 20);
+    setToggleDirection(toggleDirection === 16 ? 0 : 16);
     let theme = localStorage.getItem("data-theme");
     if (theme === "dark") {
       setTheme("light");
@@ -48,7 +54,10 @@ function App() {
   );
 
   return (
-    <div className="App" data-theme={localStorage.getItem("data-theme")}>
+    <div
+      className="App flex flex-col gap-28"
+      data-theme={localStorage.getItem("data-theme")}
+    >
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;700&display=swap');
@@ -61,7 +70,10 @@ function App() {
               <>
                 <header className="App-header">
                   <span className="h5">Donnie's Awesome Website</span>
-                  {toggle}
+                  <div className="flex flex-row gap-10">
+                    <Navbar />
+                    {toggle}
+                  </div>
                 </header>
                 <Home />
               </>
@@ -78,6 +90,20 @@ function App() {
                   {toggle}
                 </header>
                 <GetInTouch />
+              </>
+            }
+          />
+          <Route
+            path="/work/this-site"
+            element={
+              <>
+                <header className="App-header">
+                  <Link className="h5 link" to="/">
+                    <span>{`\u2190`} Back</span>
+                  </Link>
+                  {toggle}
+                </header>
+                <DSite />
               </>
             }
           />
