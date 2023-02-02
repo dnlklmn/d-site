@@ -1,11 +1,13 @@
 {
-  "primary": {
-    "value": "#DB00FF",
-    "type": "color"
-  },
-  "secondary": {
-    "value": "#05F300",
-    "type": "color"
+  "brand": {
+    "primary": {
+      "value": "#DB00FF",
+      "type": "color"
+    },
+    "secondary": {
+      "value": "#05F300",
+      "type": "color"
+    }
   },
   "fg": {
     "contrast": {
