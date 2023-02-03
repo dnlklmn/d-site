@@ -55,14 +55,14 @@ export const Button = ({
         onTap={onTap}
         className={
           textButton
-            ? "button w-fit h-fit cursor-pointer flex justify-start bg-red items-center border-none body-2 font-bold text-[color:var(--fg-contrast)] gap-2 rounded-md hover:text-[color:var(--primary)]"
+            ? "button w-fit h-fit cursor-pointer flex justify-start bg-red items-center border-none body-2 font-bold text-[color:var(--fg-contrast)] gap-2 rounded-md hover:text-[color:var(--brand-primary)]"
             : "button w-fit h-fit bg-[color:var(--fg-contrast)] cursor-pointer flex justify-start rounded-sm items-center border-none body-2 font-semibold text-[color:var(--fg-match-bg)] p-4"
         }
         animate={{
-          borderLeft: `${left}px solid var(--primary)`,
-          borderTop: `${top}px solid var(--primary)`,
-          borderRight: `${right}px solid var(--primary)`,
-          borderBottom: `${bottom}px solid var(--primary)`,
+          borderLeft: `${left}px solid var(--brand-primary)`,
+          borderTop: `${top}px solid var(--brand-primary)`,
+          borderRight: `${right}px solid var(--brand-primary)`,
+          borderBottom: `${bottom}px solid var(--brand-primary)`,
           marginLeft: -left,
           marginTop: -top,
         }}
