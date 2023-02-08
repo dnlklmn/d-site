@@ -1,20 +1,7 @@
-.button {
-  width: fit-content;
-  height: fit-content;
-  background-color: var(--fg-contrast);
-  display: flex;
-  justify-content: flex-start;
-  border-radius: 1px;
-  border: none;
-  cursor: pointer;
-  color: var(--fg-match-bg);
-  padding: 16px 16px;
-  box-sizing: border-box;
-}
-
 .link {
   text-decoration: none;
   color: var(--fg-contrast);
+  width: fit-content;
 }
 
 .glow-on-hover {

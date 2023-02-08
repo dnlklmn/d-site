@@ -4,7 +4,7 @@ import styled from "styled-components";
 const FloatingBackground = styled(motion.div)`
   width: 100px;
   height: 100px;
-  background-color: var(--primary);
+  background-color: var(--brand-primary);
   display: flex;
   justify-content: flex-start;
   border-radius: 4px;
