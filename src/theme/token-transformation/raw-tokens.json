@@ -21,10 +21,6 @@
       }
     },
     "fontWeights": {
-      "abril-fatface-0": {
-        "value": "Regular",
-        "type": "fontWeights"
-      },
       "inter-1": {
         "value": "Semi Bold",
         "type": "fontWeights"
