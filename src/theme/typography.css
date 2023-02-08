@@ -11,7 +11,7 @@
   --subtitle-font-family: Inter;
   --subtitle-font-weight: Semi Bold;
   --subtitle-line-height: AUTO;
-  --subtitle-font-size: 12px;
+  --subtitle-font-size: 20px;
   --subtitle-letter-spacing: 0%;
   --subtitle-paragraph-spacing: 0;
   --subtitle-paragraph-indent: 0px;
@@ -27,18 +27,18 @@
   --label-text-case: none;
   --label-text-decoration: none;
   --body-1-font-family: Inter;
-  --body-1-font-weight: Semi Bold;
+  --body-1-font-weight: Regular;
   --body-1-line-height: AUTO;
-  --body-1-font-size: 20px;
+  --body-1-font-size: 16px;
   --body-1-letter-spacing: 0%;
   --body-1-paragraph-spacing: 0;
   --body-1-paragraph-indent: 0px;
   --body-1-text-case: none;
   --body-1-text-decoration: none;
   --body-2-font-family: Inter;
-  --body-2-font-weight: Semi Bold;
+  --body-2-font-weight: Regular;
   --body-2-line-height: AUTO;
-  --body-2-font-size: 18px;
+  --body-2-font-size: 14px;
   --body-2-letter-spacing: 0%;
   --body-2-paragraph-spacing: 0;
   --body-2-paragraph-indent: 0px;
@@ -89,4 +89,13 @@
   --h1-paragraph-indent: 0px;
   --h1-text-case: none;
   --h1-text-decoration: none;
+  --button-label-font-family: Inter;
+  --button-label-font-weight: Bold;
+  --button-label-line-height: AUTO;
+  --button-label-font-size: 18px;
+  --button-label-letter-spacing: 0%;
+  --button-label-paragraph-spacing: 0;
+  --button-label-paragraph-indent: 0px;
+  --button-label-text-case: none;
+  --button-label-text-decoration: none;
 }

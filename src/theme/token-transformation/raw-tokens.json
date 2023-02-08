@@ -1,10 +1,6 @@
 {
   "global": {
     "fontFamilies": {
-      "abril-fatface": {
-        "value": "Abril Fatface",
-        "type": "fontFamilies"
-      },
       "inter": {
         "value": "Inter",
         "type": "fontFamilies"
@@ -34,10 +30,14 @@
         "type": "fontWeights"
       },
       "inter-2": {
-        "value": "Bold",
+        "value": "Regular",
         "type": "fontWeights"
       },
       "epilogue-0": {
+        "value": "Bold",
+        "type": "fontWeights"
+      },
+      "inter-3": {
         "value": "Bold",
         "type": "fontWeights"
       }
@@ -48,35 +48,35 @@
         "type": "fontSizes"
       },
       "1": {
-        "value": "16",
+        "value": "14",
         "type": "fontSizes"
       },
       "2": {
-        "value": "18",
+        "value": "16",
         "type": "fontSizes"
       },
       "3": {
-        "value": "20",
+        "value": "18",
         "type": "fontSizes"
       },
       "4": {
-        "value": "24",
+        "value": "20",
         "type": "fontSizes"
       },
       "5": {
-        "value": "32",
+        "value": "24",
         "type": "fontSizes"
       },
       "6": {
-        "value": "40",
+        "value": "32",
         "type": "fontSizes"
       },
       "7": {
-        "value": "48",
+        "value": "40",
         "type": "fontSizes"
       },
       "8": {
-        "value": "70",
+        "value": "48",
         "type": "fontSizes"
       },
       "9": {
@@ -127,7 +127,7 @@
         "fontFamily": "{fontFamilies.epilogue}",
         "fontWeight": "{fontWeights.epilogue-0}",
         "lineHeight": "{lineHeights.0}",
-        "fontSize": "{fontSize.8}",
+        "fontSize": "{fontSize.9}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -141,7 +141,7 @@
         "fontFamily": "{fontFamilies.inter}",
         "fontWeight": "{fontWeights.inter-1}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.0}",
+        "fontSize": "{fontSize.4}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -167,7 +167,7 @@
     "body 1": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-1}",
+        "fontWeight": "{fontWeights.inter-2}",
         "lineHeight": "{lineHeights.1}",
         "fontSize": "{fontSize.2}",
         "letterSpacing": "{letterSpacing.0}",
@@ -181,7 +181,7 @@
     "body 2": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-1}",
+        "fontWeight": "{fontWeights.inter-2}",
         "lineHeight": "{lineHeights.1}",
         "fontSize": "{fontSize.1}",
         "letterSpacing": "{letterSpacing.0}",
@@ -195,9 +195,9 @@
     "h5": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-2}",
+        "fontWeight": "{fontWeights.inter-3}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.3}",
+        "fontSize": "{fontSize.5}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -209,9 +209,9 @@
     "h4": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-2}",
+        "fontWeight": "{fontWeights.inter-3}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.4}",
+        "fontSize": "{fontSize.6}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -223,9 +223,9 @@
     "h3": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-2}",
+        "fontWeight": "{fontWeights.inter-3}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.5}",
+        "fontSize": "{fontSize.7}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -237,9 +237,9 @@
     "h2": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-2}",
+        "fontWeight": "{fontWeights.inter-3}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.6}",
+        "fontSize": "{fontSize.8}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -251,9 +251,9 @@
     "h1": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-2}",
+        "fontWeight": "{fontWeights.inter-3}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.7}",
+        "fontSize": "{fontSize.9}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -261,6 +261,26 @@
         "textDecoration": "{textDecoration.none}"
       },
       "type": "typography"
+    },
+    "button-label": {
+      "value": {
+        "fontFamily": "{fontFamilies.inter}",
+        "fontWeight": "{fontWeights.inter-3}",
+        "lineHeight": "{lineHeights.1}",
+        "fontSize": "{fontSize.3}",
+        "letterSpacing": "{letterSpacing.0}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "black": {
+      "950": {
+        "value": "#151515",
+        "type": "color"
+      }
     }
   },
   "typography": {
@@ -283,7 +303,7 @@
         "fontFamily": "{fontFamilies.inter}",
         "fontWeight": "{fontWeights.inter-1}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.0}",
+        "fontSize": "{fontSize.4}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -309,9 +329,9 @@
     "body 1": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-1}",
+        "fontWeight": "{fontWeights.inter-2}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.3}",
+        "fontSize": "{fontSize.2}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -323,9 +343,9 @@
     "body 2": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-1}",
+        "fontWeight": "{fontWeights.inter-2}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.2}",
+        "fontSize": "{fontSize.1}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -337,9 +357,9 @@
     "h5": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-2}",
+        "fontWeight": "{fontWeights.inter-3}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.4}",
+        "fontSize": "{fontSize.5}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -351,9 +371,9 @@
     "h4": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-2}",
+        "fontWeight": "{fontWeights.inter-3}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.5}",
+        "fontSize": "{fontSize.6}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -365,9 +385,9 @@
     "h3": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-2}",
+        "fontWeight": "{fontWeights.inter-3}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.6}",
+        "fontSize": "{fontSize.7}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -379,9 +399,9 @@
     "h2": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-2}",
+        "fontWeight": "{fontWeights.inter-3}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.7}",
+        "fontSize": "{fontSize.8}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -393,9 +413,23 @@
     "h1": {
       "value": {
         "fontFamily": "{fontFamilies.inter}",
-        "fontWeight": "{fontWeights.inter-2}",
+        "fontWeight": "{fontWeights.inter-3}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.8}",
+        "fontSize": "{fontSize.9}",
+        "letterSpacing": "{letterSpacing.0}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "button-label": {
+      "value": {
+        "fontFamily": "{fontFamilies.inter}",
+        "fontWeight": "{fontWeights.inter-3}",
+        "lineHeight": "{lineHeights.1}",
+        "fontSize": "{fontSize.3}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -418,7 +452,7 @@
     },
     "fg": {
       "contrast": {
-        "value": "#151515",
+        "value": "{black.950}",
         "type": "color"
       },
       "match-bg": {
