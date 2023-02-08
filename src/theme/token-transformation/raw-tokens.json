@@ -1,10 +1,6 @@
 {
   "global": {
     "fontFamilies": {
-      "abril-fatface": {
-        "value": "Abril Fatface",
-        "type": "fontFamilies"
-      },
       "inter": {
         "value": "Inter",
         "type": "fontFamilies"
