@@ -11,8 +11,9 @@
   },
   "fg": {
     "contrast": {
-      "value": "#151515",
-      "type": "color"
+      "value": "{black.950}",
+      "type": "color",
+      "failedToResolve": true
     },
     "match-bg": {
       "value": "#f8f8f8",
