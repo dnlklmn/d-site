@@ -279,6 +279,12 @@
         "textDecoration": "{textDecoration.none}"
       },
       "type": "typography"
+    },
+    "black": {
+      "950": {
+        "value": "#151515",
+        "type": "color"
+      }
     }
   },
   "typography": {
@@ -450,7 +456,7 @@
     },
     "fg": {
       "contrast": {
-        "value": "#151515",
+        "value": "{black.950}",
         "type": "color"
       },
       "match-bg": {
