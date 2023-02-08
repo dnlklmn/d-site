@@ -2,11 +2,11 @@ import { Button } from "../components/button";
 import { IoArrowForward } from "react-icons/io5";
 import light from "../theme/token-transformation/light.json";
 
-import ReactIcon from "../components/react-icon";
-import FigmaIcon from "../components/figma-icon";
-import TokensStudioIcon from "../components/tokens-studio-icon";
-import GithubIcon from "../components/github-icon";
-import TailwindIcon from "../components/tailwind-icon";
+import ReactIcon from "../components/logos/react-icon";
+import FigmaIcon from "../components/logos/figma-icon";
+import TokensStudioIcon from "../components/logos/tokens-studio-icon";
+import GithubIcon from "../components/logos/github-icon";
+import TailwindIcon from "../components/logos/tailwind-icon";
 
 const lightArray = Object.entries(light);
 lightArray.map((category) => {
@@ -39,6 +39,10 @@ export function DSite() {
           <div className="h-[64px] w-fit">
             <GithubIcon />
           </div>
+          <img
+            className="h-[64px] w-fit"
+            src={require("../components/logos/logo.png")}
+          />
           <div className="h-[64px] w-fit">
             <TailwindIcon />
           </div>
@@ -51,8 +55,8 @@ export function DSite() {
         <div className="w-full flex flex-col gap-4">
           <span className="h5">Components in Figma</span>
           <p className="body-2">
-            Using properties and variants align the components and make them
-            flexible and easily reusable.
+            Using properties and variants align components, make them flexible,
+            and easily reusable.
           </p>
           <Button
             textButton={true}
@@ -65,23 +69,22 @@ export function DSite() {
       </div>
       <div className="flex flex-row  px-48 gap-12 items-center ">
         <div className="w-full h-[240px] rounded-sm bg-[color:var(--bg-dip)]" />
-        <div className="w-full">
+        <div className="w-full flex flex-col gap-4">
           <span className="h5">Design Tokens</span>
           <p className="body-2 leading-snug ">
-            The unified way to store and share style variables. <br />
-            Sync styles from figma with your tokens on GitHub using the Tokens
-            Studio plugin: import styles defined in Figma - or create them from
-            your tokens.
+            Keep your style variables in sync with the Tokens Studio for Figma
+            plugin: import styles defined in Figma - or create them directly
+            from your tokens stored on Github.
           </p>
         </div>
       </div>
       <div className="flex flex-row  px-48 gap-12 items-center ">
-        <div className="w-full">
+        <div className="w-full flex flex-col gap-4">
           <span className="h5">Tokens to Tailwind</span>
           <p className="body-2 leading-snug ">
-            A Github workflow transforms our tokens to whatever styling method
-            we use. In this case I export them as CSS variables and use them
-            with Tailwind in my React app.
+            Once new tokens get pushed to the repo, a Github workflow transforms
+            them to the styling method you use. In this case I export them as
+            CSS variables and use them with Tailwind in my React app.
           </p>
         </div>
         <div className="w-full h-[240px] rounded-sm bg-[color:var(--bg-dip)]" />
