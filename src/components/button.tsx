@@ -3,11 +3,6 @@ import { motion } from "framer-motion";
 import "../theme/semantic/components.css";
 import { Link } from "react-router-dom";
 
-import "../theme/light.css";
-import "../theme/dark.css";
-import "../theme/typography.css";
-import "../theme/semantic/typography-semantic.css";
-
 interface ButtonProps {
   onTap?: () => void;
   label: string;
