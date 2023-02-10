@@ -62,6 +62,13 @@
   font-size: var(--label-font-size);
 }
 
+.subtitle {
+  font-family: var(--subtitle-font-family);
+  font-weight: 600;
+  line-height: var(--subtitle-line-height);
+  font-size: var(--subtitle-font-size);
+}
+
 .line-height-auto {
   line-height: "auto";
 }
