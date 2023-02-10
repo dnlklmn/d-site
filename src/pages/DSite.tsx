@@ -20,7 +20,7 @@ lightArray.map((category) => {
 
 export function DSite() {
   return (
-    <div className="flex flex-col gap-20 overflow-visible">
+    <div className="flex flex-col gap-28 overflow-visible ">
       <div className="px-36">
         <span className="hero text-[color:var(--fg-contrast)]">
           An interconnected <br /> system demo
@@ -53,39 +53,89 @@ export function DSite() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-20 items-center content-start overflow-visible">
-        <div className="w-1/2 flex flex-col gap-4 pl-48 py-2 h-fit">
-          <div className="flex flex-row items-center gap-4">
+      <div className="flex flex-row gap-20 text-[color:var(--fg-contrast)]">
+        <div className="flex flex-col gap-12 h-fit w-1/2 pl-48 my-auto">
+          <div className="flex flex-row items-center gap-3 ">
             <span className="h5">INTRO</span>
-            <div className="w-[10000px] h-[1px] bg-black" />
+            <div className="w-[10000px] h-[2px] bg-black" />
           </div>
-          <TextBlock
-            title="Problem"
-            body="Keeping design and development in sync during the production
-              process is an extensive effort. <br />
-              Production is an iterative process, where designs evolve from
-              initial ideas to wireframes, mockups, and final designs, while a
-              range of setbacks present themselves as development advances,
-              requiring designers to go back to the drawing board and rethink
-              their solutions."
-          />
-          <TextBlock
-            title="Solution"
-            body="Extract shared decisions to facilitate collaboration: build a
-            common ground all parties can access and manipulate, to allow
-            working together on the product, rather than giving instructions
-            to one another."
-          />
-          <TextBlock
-            title="Goal"
-            body="Build a bridge between design and development enabling everyone to participate in the building process."
+          <div className="flex flex-col items-center gap-5">
+            <div className="w-full flex flex-col gap-1">
+              <span className="subtitle">Problem</span>
+              <p className="body-1">
+                Keeping design and development in sync during the production
+                process is an extensive effort. <br />
+                <br />
+                Production is an iterative process, where designs evolve from
+                initial ideas to wireframes, mockups, and final designs, while a
+                range of setbacks present themselves as development advances,
+                requiring designers to go back to the drawing board and rethink
+                their solutions.
+              </p>
+            </div>
+            <div className="w-full flex flex-col gap-1">
+              <span className="subtitle">Solution</span>
+              <p className="body-1">
+                Extract shared decisions to facilitate collaboration: build a
+                common ground all parties can access and manipulate, to allow
+                working together on the product, rather than giving instructions
+                to one another.
+              </p>
+            </div>
+            <div className="w-full flex flex-col gap-1">
+              <span className="subtitle">Goal</span>
+              <p className="body-1">
+                Build a bridge between design and development enabling everyone
+                to participate in the building process.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-red-100 overflow-visible float-left">
+          <img
+            className="object-cover h-full object-left w-auto shadow-md rounded-l-md"
+            src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/intro.png?alt=media&token=3db30764-44e3-41a6-bdb1-3c3026ab22c8"
           />
         </div>
-        <img
-          className="h-fill w-1/2"
-          src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/intro.png?alt=media&token=a8aa05c6-1059-4f38-8d13-566e5db50f40"
-        />
       </div>
+      <div className="flex flex-col gap-12 lg:gap-20">
+        <div className="flex flex-row items-center gap-3 pl-6 md:pl-6 lg:pl-24 xl:pl-48 h-0">
+          <span className="h5 whitespace-nowrap">BUILDING BLOCKS</span>
+          <div className="w-full h-[2px] bg-black" />
+        </div>
+        <TextBlock
+          textLeft={false}
+          title="Documenting decisions in Figma"
+          img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/componentsInFigma.png?alt=media&token=060d3324-3dda-4951-bcea-87b523dca842"
+        >
+          <p className="body-2">
+            The components use variants and properties to make them flexible
+            enough to use, but rigid enough to stay consistent. Its a delicate
+            balance that requires experimenting and adjusting components to your
+            exact needs. <div className="mb-2" /> Once you manage to set them up
+            in such a modular way, however, you’ve basically also ‘wrote’ most
+            of the documentation.
+          </p>
+        </TextBlock>
+        <TextBlock
+          title="Structuring styles flexibly"
+          img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/tokensStructure.png?alt=media&token=3d008146-2008-49ca-ba46-fd58e348ed4e"
+        >
+          <p className="body-2">
+            To make sure color definitions stay in sync i use a multi-level
+            setup. <div className="mb-2" />
+            The global set contains all the possible options one is allowed to
+            use, eg. a range of blacks: black.50 - 950.
+            <div className="mb-2" /> Semantic sets then attach a use case to
+            global colors, eg. text.default = global.black.{" "}
+            <div className="mb-2" />
+            Note: As an additional layer you can add component-based sets, but
+            they can overcomplicate things, so I’d recommend only doing it if
+            you absolutely have to.
+          </p>
+        </TextBlock>
+      </div>
+      //
       <div className="flex flex-row px-48 gap-12 items-center">
         <div className="w-full flex flex-col gap-4">
           <span className="h5">Components in Figma</span>
