@@ -62,6 +62,14 @@
   font-size: var(--label-font-size);
 }
 
+.link-2 {
+  font-family: var(--body-2-font-family);
+  font-weight: 600;
+  line-height: var(--body-2-line-height);
+  font-size: var(--body-2-font-size);
+  color: var(--brand-primary);
+}
+
 .subtitle {
   font-family: var(--subtitle-font-family);
   font-weight: 600;

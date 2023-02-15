@@ -10,7 +10,7 @@ export default function ContentBlock({
   height,
 }: any) {
   return textLeft ? (
-    <div className="flex flex-col-reverse lg:flex-row justify-start gap-2 lg:gap-12  px-0  ">
+    <div className="flex flex-col-reverse lg:flex-row justify-start gap-2 lg:gap-12  px-0  text-[color:var(--fg-contrast)]">
       {children}
       <div
         className={
@@ -31,7 +31,7 @@ export default function ContentBlock({
       </div>
     </div>
   ) : (
-    <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0  ">
+    <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0 text-[color:var(--fg-contrast)] ">
       <div
         className={
           "overflow-visible w-full p-6 lg:p-0 lg:w-3/4 float-right self-center h-[" +

@@ -10,6 +10,10 @@ import TailwindIcon from "../components/logos/tailwind-icon";
 
 import ContentBlock from "../components/content-block";
 
+import TokenFormats from "../components/imgs/token-formats.png";
+import { url } from "inspector";
+import Video from "../components/video";
+
 const lightArray = Object.entries(light);
 lightArray.map((category) => {
   console.log(category[0]);
@@ -99,7 +103,7 @@ export function DSite() {
         <div className="flex flex-col gap-12 h-fit w-1/2 pl-48 my-auto">
           <div className="flex flex-row items-center gap-3 ">
             <span className="h5">INTRO</span>
-            <div className="w-[10000px] h-[2px] bg-black" />
+            <div className="w-[10000px] h-[2px] bg-[color:var(--fg-contrast)]" />
           </div>
           <div className="flex flex-col items-center gap-5">
             <div className="w-full flex flex-col gap-1">
@@ -140,10 +144,10 @@ export function DSite() {
           />
         </div>
       </div>
-      <div className="flex flex-col gap-12 lg:gap-20">
+      <div className="flex flex-col gap-12 lg:gap-20 text-[color:var(--fg-contrast)] ">
         <div className="flex flex-row items-center gap-3 pl-6 md:pl-6 lg:pl-24 xl:pl-48 h-0">
           <span className="h5 whitespace-nowrap">BUILDING BLOCKS</span>
-          <div className="w-full h-[2px] bg-black" />
+          <div className="w-full h-[2px] bg-[color:var(--fg-contrast)]" />
         </div>
         <ContentBlock
           textLeft={false}
@@ -178,6 +182,75 @@ export function DSite() {
             </p>
           </div>
         </ContentBlock>
+        <div className="flex flex-col lg:flex-row justify-start gap-2 lg:gap-12  px-0  text-[color:var(--fg-contrast)] ">
+          <div
+            className={
+              "flex flex-col gap-6 overflow-visible w-full p-6 lg:p-0 lg:w-3/4 float-left self-center h-[180 px] md:h-[120 px] xl:h-[80 px] px-6 md:pl-6 lg:pl-24 xl:pl-48 bg-transparent"
+            }
+          >
+            <img
+              style={{ filter: `drop-shadow(0px 2px 4px rgba(0,0,0,0.15))` }}
+              className="h-full rounded-none lg:rounded-md bg-transparent hidden lg:block"
+              src={TokenFormats}
+              alt="Token Formats"
+            />
+            <Video showLg />
+          </div>
+          <div className="flex flex-col gap-2 h-fit w-full sm:w-3/4 lg:w-2/3 xl:w-1/2  my-auto py-0 lg:py-4 px-6 md:pr-6 lg:pr-24 xl:pr-48">
+            <span className="subtitle">Extracting and storing styles</span>
+            <img
+              style={{ filter: `drop-shadow(0px 2px 4px rgba(0,0,0,0.15))` }}
+              className="h-full rounded-none lg:rounded-md bg-transparent block lg:hidden my-1"
+              src={TokenFormats}
+              alt="Token Formats"
+            />
+            <p className="body-2">
+              Once the artefacts are created, and the mechanics documented, you
+              can extract style variables to create an independent ‘style
+              control center’ accessible both for designers and developers.
+              <div className="mb-2" />
+              The{" "}
+              <a className="link-2" href="https://tokens.studio/">
+                Tokens Studio for Figma
+              </a>{" "}
+              plugin allows you to sync styles created in Figma to a JSON file
+              stored on Github seamlessly. This is a game changer, as the
+              standardized format the variables are stored in allows for a wide
+              variety of use cases.
+            </p>
+            <div className="mb-2" />
+
+            <span className="body1">
+              <strong>Transforming style variables</strong>
+            </span>
+            <video
+              controls
+              autoPlay
+              loop
+              muted
+              className="rounded-none shadow-md lg:rounded-md block lg:hidden my-1"
+            >
+              <source
+                src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/commit%20tokens.mp4?alt=media&token=354899e9-71ff-4b12-8e03-2217d0656316"
+                type="video/mp4"
+              ></source>
+            </video>
+            <p className="body-2">
+              The standardized tokens can't be used without some transformation.
+              <div className="mb-2" />
+              Once you push your tokens to Github using the Tokens Studio
+              plugin, the{" "}
+              <a className="link-2" href="../../public/bassengweb/logout">
+                {" "}
+                Token Transformer
+              </a>{" "}
+              transforms them to a format understandable by Style Dictionary,
+              which in turn will spit out CSS variables. All configured in one
+              workflow.
+            </p>
+          </div>
+        </div>
+        ;
       </div>
       //
       <div className="flex flex-row px-48 gap-12 items-center">
