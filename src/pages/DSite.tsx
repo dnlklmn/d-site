@@ -13,6 +13,7 @@ import ContentBlock from "../components/content-block";
 import TokenFormats from "../components/imgs/token-formats.png";
 import { url } from "inspector";
 import Video from "../components/video";
+import Image from "../components/image";
 
 const lightArray = Object.entries(light);
 lightArray.map((category) => {
@@ -30,8 +31,9 @@ export function DSite() {
           An interconnected <br /> system demo
         </span>
         <p className="body-1">
-          Automated design hand-off to bridge design and development. <br /> A
-          systemic approach easy to manage and to scale.
+          Automated design hand-off to bridge design and development.
+          <div className="mb-2" /> A systemic approach easy to manage and to
+          scale.
         </p>
       </div>
       <div className="flex flex-col items-center py-4 h-fit gap-4 w-full bg-white">
@@ -57,50 +59,8 @@ export function DSite() {
           </div>
         </div>
       </div>
-      <ContentBlock
-        height={900}
-        img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/intro.png?alt=media&token=3db30764-44e3-41a6-bdb1-3c3026ab22c8"
-      >
-        <div className="flex flex-col gap-12 h-fit w-1/2 pl-48 my-auto">
-          <div className="flex flex-row items-center gap-3 ">
-            <span className="h5">INTRO</span>
-            <div className="w-[10000px] h-[2px] bg-black" />
-          </div>
-          <div className="flex flex-col items-center gap-5">
-            <div className="w-full flex flex-col gap-1">
-              <span className="subtitle">Problem</span>
-              <p className="body-1">
-                Keeping design and development in sync during the production
-                process is an extensive effort. <br />
-                <br />
-                Production is an iterative process, where designs evolve from
-                initial ideas to wireframes, mockups, and final designs, while a
-                range of setbacks present themselves as development advances,
-                requiring designers to go back to the drawing board and rethink
-                their solutions.
-              </p>
-            </div>
-            <div className="w-full flex flex-col gap-1">
-              <span className="subtitle">Solution</span>
-              <p className="body-1">
-                Extract shared decisions to facilitate collaboration: build a
-                common ground all parties can access and manipulate, to allow
-                working together on the product, rather than giving instructions
-                to one another.
-              </p>
-            </div>
-            <div className="w-full flex flex-col gap-1">
-              <span className="subtitle">Goal</span>
-              <p className="body-1">
-                Build a bridge between design and development enabling everyone
-                to participate in the building process.
-              </p>
-            </div>
-          </div>
-        </div>
-      </ContentBlock>
       <div className="flex flex-row gap-20 text-[color:var(--fg-contrast)]">
-        <div className="flex flex-col gap-12 h-fit w-1/2 pl-48 my-auto">
+        <div className="flex flex-col gap-2 h-fit w-3/4 lg:w-1/2 my-auto py-0 lg:py-4 px-6 md:pl-6 lg:pl-24 xl:pl-48">
           <div className="flex flex-row items-center gap-3 ">
             <span className="h5">INTRO</span>
             <div className="w-[10000px] h-[2px] bg-[color:var(--fg-contrast)]" />
@@ -108,10 +68,9 @@ export function DSite() {
           <div className="flex flex-col items-center gap-5">
             <div className="w-full flex flex-col gap-1">
               <span className="subtitle">Problem</span>
-              <p className="body-1">
+              <p className="body-2">
                 Keeping design and development in sync during the production
-                process is an extensive effort. <br />
-                <br />
+                process is an extensive effort. <div className="mb-2" />
                 Production is an iterative process, where designs evolve from
                 initial ideas to wireframes, mockups, and final designs, while a
                 range of setbacks present themselves as development advances,
@@ -119,9 +78,10 @@ export function DSite() {
                 their solutions.
               </p>
             </div>
+            <Image src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/intro.png?alt=media&token=3db30764-44e3-41a6-bdb1-3c3026ab22c8" />
             <div className="w-full flex flex-col gap-1">
               <span className="subtitle">Solution</span>
-              <p className="body-1">
+              <p className="body-2">
                 Extract shared decisions to facilitate collaboration: build a
                 common ground all parties can access and manipulate, to allow
                 working together on the product, rather than giving instructions
@@ -130,31 +90,29 @@ export function DSite() {
             </div>
             <div className="w-full flex flex-col gap-1">
               <span className="subtitle">Goal</span>
-              <p className="body-1">
+              <p className="body-2">
                 Build a bridge between design and development enabling everyone
                 to participate in the building process.
               </p>
             </div>
           </div>
         </div>
-        <div className="bg-red-100 overflow-visible float-left">
-          <img
-            className="object-cover h-full object-left w-auto shadow-md rounded-l-md"
-            src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/intro.png?alt=media&token=3db30764-44e3-41a6-bdb1-3c3026ab22c8"
-          />
-        </div>
+        <Image
+          big
+          right
+          src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/intro.png?alt=media&token=3db30764-44e3-41a6-bdb1-3c3026ab22c8"
+        />
       </div>
       <div className="flex flex-col gap-12 lg:gap-20 text-[color:var(--fg-contrast)] ">
         <div className="flex flex-row items-center gap-3 pl-6 md:pl-6 lg:pl-24 xl:pl-48 h-0">
           <span className="h5 whitespace-nowrap">BUILDING BLOCKS</span>
           <div className="w-full h-[2px] bg-[color:var(--fg-contrast)]" />
         </div>
-        <ContentBlock
-          textLeft={false}
-          img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/componentsInFigma.png?alt=media&token=060d3324-3dda-4951-bcea-87b523dca842"
-        >
-          <div className="flex flex-col gap-2 h-fit w-full sm:w-3/4 lg:w-2/3 xl:w-1/2  my-auto py-0 lg:py-4 px-6 md:pr-6 lg:pr-24 xl:pr-48">
+        <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0 text-[color:var(--fg-contrast)] ">
+          <Image big height={240} />
+          <div className="flex flex-col gap-2 h-fit w-3/4 lg:w-2/3 xl:w-1/2  my-auto py-0 lg:py-4 px-6 md:pr-6 lg:pr-24 xl:pr-48">
             <span className="subtitle">Documenting Decisions in Figma</span>
+            <Image />
             <p className="body-2">
               The components use variants and properties to make them flexible
               enough to use, but rigid enough to stay consistent. Its a delicate
@@ -164,9 +122,9 @@ export function DSite() {
               ‘wrote’ most of the documentation.
             </p>
           </div>
-        </ContentBlock>
-        <ContentBlock img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/tokensStructure.png?alt=media&token=3d008146-2008-49ca-ba46-fd58e348ed4e">
-          <div className="flex flex-col gap-2 h-fit w-full sm:w-3/4 lg:w-2/3 xl:w-1/2  my-auto py-0 lg:py-4 px-6 md:pl-6 lg:pl-24 xl:pl-48">
+        </div>
+        <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0 text-[color:var(--fg-contrast)] ">
+          <div className="flex flex-col gap-2 h-fit w-3/4 lg:w-2/3 xl:w-1/2  my-auto py-0 lg:py-4 px-6 md:pl-6 lg:pl-24 xl:pl-48">
             <span className="subtitle">Structuring Styles</span>
             <p className="body-2">
               To make sure color definitions stay in sync i use a multi-level
@@ -181,22 +139,28 @@ export function DSite() {
               you absolutely have to.
             </p>
           </div>
-        </ContentBlock>
+          <Image
+            big
+            right
+            height={240}
+            src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/tokensStructure.png?alt=media&token=3d008146-2008-49ca-ba46-fd58e348ed4e"
+          />
+        </div>
         <div className="flex flex-col lg:flex-row justify-start gap-2 lg:gap-12  px-0  text-[color:var(--fg-contrast)] ">
           <div
             className={
-              "flex flex-col gap-6 overflow-visible w-full p-6 lg:p-0 lg:w-3/4 float-left self-center h-[180 px] md:h-[120 px] xl:h-[80 px] px-6 md:pl-6 lg:pl-24 xl:pl-48 bg-transparent"
+              "flex flex-col gap-6 w-full p-6 lg:p-0 lg:w-3/4 float-left self-center h-[180 px] md:h-[120 px] xl:h-[80 px] px-6 md:pl-6 lg:pl-24 xl:pl-48 bg-transparent"
             }
           >
             <img
               style={{ filter: `drop-shadow(0px 2px 4px rgba(0,0,0,0.15))` }}
               className="h-full rounded-none lg:rounded-md bg-transparent hidden lg:block"
-              src={TokenFormats}
+              src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/token-formats.png?alt=media&token=8172833c-ae4a-4b52-9d98-14084d0af4b3"
               alt="Token Formats"
             />
             <Video showLg />
           </div>
-          <div className="flex flex-col gap-2 h-fit w-full sm:w-3/4 lg:w-2/3 xl:w-1/2  my-auto py-0 lg:py-4 px-6 md:pr-6 lg:pr-24 xl:pr-48">
+          <div className="flex flex-col gap-2 h-fit w-3/4 lg:w-2/3 xl:w-1/2  my-auto py-0 lg:py-4 px-6 md:pr-6 lg:pr-24 xl:pr-48">
             <span className="subtitle">Extracting and storing styles</span>
             <img
               style={{ filter: `drop-shadow(0px 2px 4px rgba(0,0,0,0.15))` }}
@@ -219,22 +183,10 @@ export function DSite() {
               variety of use cases.
             </p>
             <div className="mb-2" />
-
             <span className="body1">
               <strong>Transforming style variables</strong>
             </span>
-            <video
-              controls
-              autoPlay
-              loop
-              muted
-              className="rounded-none shadow-md lg:rounded-md block lg:hidden my-1"
-            >
-              <source
-                src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/commit%20tokens.mp4?alt=media&token=354899e9-71ff-4b12-8e03-2217d0656316"
-                type="video/mp4"
-              ></source>
-            </video>
+            <Video />
             <p className="body-2">
               The standardized tokens can't be used without some transformation.
               <div className="mb-2" />
