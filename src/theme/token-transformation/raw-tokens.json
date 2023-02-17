@@ -92,7 +92,7 @@
         "type": "fontSizes"
       },
       "9": {
-        "value": "84",
+        "value": "90",
         "type": "fontSizes"
       },
       "10": {
@@ -153,7 +153,7 @@
         "fontFamily": "{fontFamilies.inter}",
         "fontWeight": "{fontWeights.inter-1}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.0}",
+        "fontSize": "{fontSize.4}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
@@ -357,7 +357,7 @@
         "fontFamily": "{fontFamilies.inter}",
         "fontWeight": "{fontWeights.inter-1}",
         "lineHeight": "{lineHeights.1}",
-        "fontSize": "{fontSize.0}",
+        "fontSize": "{fontSize.4}",
         "letterSpacing": "{letterSpacing.0}",
         "paragraphSpacing": "{paragraphSpacing.0}",
         "paragraphIndent": "{paragraphIndent.0}",
