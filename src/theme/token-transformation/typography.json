@@ -51,7 +51,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": "{fontSize.0}",
+      "value": "{fontSize.4}",
       "type": "fontSizes"
     },
     "letterSpacing": {

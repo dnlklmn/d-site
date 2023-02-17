@@ -91,7 +91,7 @@
       "type": "fontSizes"
     },
     "9": {
-      "value": 84,
+      "value": 90,
       "type": "fontSizes"
     },
     "10": {
@@ -185,7 +185,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": 12,
+      "value": 20,
       "type": "fontSizes"
     },
     "letterSpacing": {
@@ -489,7 +489,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": 84,
+      "value": 90,
       "type": "fontSizes"
     },
     "letterSpacing": {

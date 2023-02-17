@@ -11,7 +11,7 @@
   --subtitle-font-family: Inter;
   --subtitle-font-weight: Semi Bold;
   --subtitle-line-height: AUTO;
-  --subtitle-font-size: 12px;
+  --subtitle-font-size: 20px;
   --subtitle-letter-spacing: 0%;
   --subtitle-paragraph-spacing: 0;
   --subtitle-paragraph-indent: 0px;
@@ -83,7 +83,7 @@
   --h1-font-family: DM Serif Text;
   --h1-font-weight: Regular;
   --h1-line-height: 100%;
-  --h1-font-size: 84px;
+  --h1-font-size: 90px;
   --h1-letter-spacing: 0%;
   --h1-paragraph-spacing: 0;
   --h1-paragraph-indent: 0px;
