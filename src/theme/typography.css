@@ -11,7 +11,7 @@
   --subtitle-font-family: Inter;
   --subtitle-font-weight: Semi Bold;
   --subtitle-line-height: AUTO;
-  --subtitle-font-size: 24px;
+  --subtitle-font-size: 12px;
   --subtitle-letter-spacing: 0%;
   --subtitle-paragraph-spacing: 0;
   --subtitle-paragraph-indent: 0px;
@@ -65,7 +65,7 @@
   --h3-font-family: DM Serif Text;
   --h3-font-weight: Italic;
   --h3-line-height: AUTO;
-  --h3-font-size: 64px;
+  --h3-font-size: 48px;
   --h3-letter-spacing: 0%;
   --h3-paragraph-spacing: 0;
   --h3-paragraph-indent: 0px;
@@ -83,7 +83,7 @@
   --h1-font-family: DM Serif Text;
   --h1-font-weight: Regular;
   --h1-line-height: 100%;
-  --h1-font-size: 106px;
+  --h1-font-size: 84px;
   --h1-letter-spacing: 0%;
   --h1-paragraph-spacing: 0;
   --h1-paragraph-indent: 0px;
