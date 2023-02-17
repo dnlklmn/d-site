@@ -1,32 +1,13 @@
-import { Button } from "../components/button";
-import { IoArrowForward } from "react-icons/io5";
-import light from "../theme/token-transformation/light.json";
-
-import ReactIcon from "../components/logos/react-icon";
-import FigmaIcon from "../components/logos/figma-icon";
-import TokensStudioIcon from "../components/logos/tokens-studio-icon";
-import GithubIcon from "../components/logos/github-icon";
-import TailwindIcon from "../components/logos/tailwind-icon";
-
-import ContentBlock from "../components/content-block";
-
 import TokenFormats from "../components/imgs/token-formats.png";
-import { url } from "inspector";
 import Video from "../components/video";
 import Image from "../components/image";
 import Logos from "../components/logos";
-
-const lightArray = Object.entries(light);
-lightArray.map((category) => {
-  console.log(category[0]);
-  Object.entries(category[1]).map((entry) => {
-    console.log(entry);
-  });
-});
+import CardSmall from "../components/card-small";
+import Bg from "../components/bg-svg";
 
 export function DSite() {
   return (
-    <div className="flex flex-col gap-28 overflow-visible ">
+    <div className="flex flex-col gap-28 overflow-visible pb-16">
       <div className="flex flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
         <span className="h1 text-[color:var(--fg-contrast)]">
           An interconnected <br /> system demo
@@ -44,7 +25,7 @@ export function DSite() {
       </div>
 
       <div className="flex flex-row gap-20 text-[color:var(--fg-contrast)]">
-        <div className="flex flex-col gap-10 h-fit w-full md:w-3/4 lg:w-1/2 mx-auto my-auto py-0 lg:py-4 px-6 md:pl-6 lg:pl-24 xl:pl-48">
+        <div className="flex flex-col gap-4 lg:gap-10 h-fit w-full md:w-3/4 lg:w-1/2 mx-auto my-auto py-0 lg:py-4 px-6 md:pl-6 lg:pl-24 xl:pl-48">
           <div className="flex flex-row items-center gap-6 ">
             <span className="h3">
               <i>Intro</i>
@@ -200,10 +181,9 @@ export function DSite() {
             </p>
           </div>
         </div>
-        ;
       </div>
-      <div className="flex flex-col gap-12 lg:gap-20 text-[color:var(--fg-contrast)] ">
-        <div className="flex flex-row  items-center w-full md:w-3/4 lg:w-full mx-auto gap-6 px-6 lg:px-24 xl:px-48 h-0">
+      <div className="flex flex-col gap-6 text-[color:var(--fg-contrast)] w-full md:w-3/4 lg:w-full mx-auto lg:mx-0 py-0 lg:py-4 px-6 lg:px-24 xl:px-48">
+        <div className="flex flex-row gap-6 items-center w-full ">
           <span className="h3 whitespace-nowrap">
             <i>Open Source</i>
           </span>
@@ -211,20 +191,28 @@ export function DSite() {
             <div className="w-full h-[2px] bg-[color:var(--fg-contrast)]" />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0 text-[color:var(--fg-contrast)] ">
-          <Image big height={240} />
-          <div className="flex flex-col gap-2 h-fit w-full md:w-3/4 lg:w-1/2 mx-auto  my-auto py-0 lg:py-4 px-6 md:pr-6 lg:pr-24 xl:pr-48">
-            <span className="subtitle">Documenting Decisions in Figma</span>
-            <Image />
+        <div className="flex flex-col gap-2 h-fit">
+          <span className="subtitle">My Site is Your Site</span>
+          <p className="body-2">
+            I built this demo not only to show off my amazing design system
+            skills, but also for you to have a playground to try out new ideas,
+            and show up to your teams with a working prototype.
+          </p>
+        </div>
+        <div className="flex flex-row gap-6 h-auto">
+          <CardSmall
+            img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/repo.png?alt=media&token=0bf6721e-a755-4117-83f6-70a132d320e1"
+            linkText="Clone this repo ->"
+            link="https://github.com/dnlklmn/d-site"
+          >
             <p className="body-2">
-              The components use variants and properties to make them flexible
-              enough to use, but rigid enough to stay consistent. Its a delicate
-              balance that requires experimenting and adjusting components to
-              your exact needs. <div className="mb-2" /> Once you manage to set
-              them up in such a modular way, however, you’ve basically also
-              ‘wrote’ most of the documentation.
+              The code of this website is open source and ready for you to be
+              used.
             </p>
-          </div>
+          </CardSmall>
+          <CardSmall />
+          <CardSmall />
+          <CardSmall />
         </div>
       </div>
     </div>

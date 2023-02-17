@@ -54,15 +54,15 @@ function App() {
   );
 
   return (
-    <div
-      className="App flex flex-col gap-28"
-      data-theme={localStorage.getItem("data-theme")}
-    >
+    <Router>
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;700&display=swap');
       </style>
-      <Router>
+      <div
+        className="App flex flex-col gap-28"
+        data-theme={localStorage.getItem("data-theme")}
+      >
         <Routes>
           <Route
             path="/"
@@ -108,8 +108,8 @@ function App() {
             }
           />
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
