@@ -202,6 +202,31 @@ export function DSite() {
         </div>
         ;
       </div>
+      <div className="flex flex-col gap-12 lg:gap-20 text-[color:var(--fg-contrast)] ">
+        <div className="flex flex-row  items-center w-full md:w-3/4 lg:w-full mx-auto gap-6 px-6 lg:px-24 xl:px-48 h-0">
+          <span className="h3 whitespace-nowrap">
+            <i>Open Source</i>
+          </span>
+          <div className="mt-3 w-[10000px]">
+            <div className="w-full h-[2px] bg-[color:var(--fg-contrast)]" />
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0 text-[color:var(--fg-contrast)] ">
+          <Image big height={240} />
+          <div className="flex flex-col gap-2 h-fit w-full md:w-3/4 lg:w-1/2 mx-auto  my-auto py-0 lg:py-4 px-6 md:pr-6 lg:pr-24 xl:pr-48">
+            <span className="subtitle">Documenting Decisions in Figma</span>
+            <Image />
+            <p className="body-2">
+              The components use variants and properties to make them flexible
+              enough to use, but rigid enough to stay consistent. Its a delicate
+              balance that requires experimenting and adjusting components to
+              your exact needs. <div className="mb-2" /> Once you manage to set
+              them up in such a modular way, however, you’ve basically also
+              ‘wrote’ most of the documentation.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
