@@ -523,6 +523,24 @@
         "value": "#CFCECE",
         "type": "color"
       }
+    },
+    "bg-gradient": {
+      "1": {
+        "value": "#F6E6F9",
+        "type": "color"
+      },
+      "2": {
+        "value": "#F9F0E6",
+        "type": "color"
+      },
+      "3": {
+        "value": "#E9ECD9",
+        "type": "color"
+      },
+      "4": {
+        "value": "#E6F0F9",
+        "type": "color"
+      }
     }
   },
   "dark": {
@@ -553,6 +571,24 @@
       },
       "dip": {
         "value": "#424242",
+        "type": "color"
+      }
+    },
+    "bg-gradient": {
+      "1": {
+        "value": "#3F1D45",
+        "type": "color"
+      },
+      "2": {
+        "value": "#482F12",
+        "type": "color"
+      },
+      "4": {
+        "value": "#212A33",
+        "type": "color"
+      },
+      "": {
+        "value": "#474B31",
         "type": "color"
       }
     }
