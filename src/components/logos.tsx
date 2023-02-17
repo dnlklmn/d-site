@@ -6,11 +6,16 @@ import TokensStudioIcon from "./logos/tokens-studio-icon";
 
 interface LogosProps {
   height: number;
+  big: boolean;
 }
 
-export default function Logos({ height }: LogosProps) {
+export default function Logos({ height, big }: LogosProps) {
   return (
-    <div className={`flex flex-row gap-6 justify-start items-center`}>
+    <div
+      className={`flex flex-row gap-6 justify-start items-center ${
+        big ? `invisible lg:visible` : `visible lg:invisible`
+      }`}
+    >
       <FigmaIcon height={height} />
       <TokensStudioIcon height={height} />
       <GithubIcon height={height} />
@@ -26,4 +31,5 @@ export default function Logos({ height }: LogosProps) {
 
 Logos.defaultProps = {
   height: 32,
+  big: false,
 };

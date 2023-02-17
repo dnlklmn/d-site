@@ -27,7 +27,7 @@ lightArray.map((category) => {
 export function DSite() {
   return (
     <div className="flex flex-col gap-28 overflow-visible ">
-      <div className="flex flex-col gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:pl-6 lg:pl-24 xl:pl-48">
+      <div className="flex flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
         <span className="hero text-[color:var(--fg-contrast)]">
           An interconnected <br /> system demo
         </span>
@@ -36,6 +36,9 @@ export function DSite() {
             Automated design hand-off to bridge design and development.
             <br /> A systemic approach easy to manage and to scale.
           </p>
+          <Logos big />
+        </div>
+        <div className="visible lg:invisible">
           <Logos />
         </div>
       </div>
