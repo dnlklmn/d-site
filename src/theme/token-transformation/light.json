@@ -29,5 +29,23 @@
       "value": "#CFCECE",
       "type": "color"
     }
+  },
+  "bg-gradient": {
+    "1": {
+      "value": "#F6E6F9",
+      "type": "color"
+    },
+    "2": {
+      "value": "#F9F0E6",
+      "type": "color"
+    },
+    "3": {
+      "value": "#E9ECD9",
+      "type": "color"
+    },
+    "4": {
+      "value": "#E6F0F9",
+      "type": "color"
+    }
   }
 }
