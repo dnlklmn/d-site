@@ -29,7 +29,7 @@
 
 .h4 {
   font-family: var(--h4-font-family);
-  font-weight: var(--h4-font-weight);
+  font-weight: 400;
   line-height: var(--h4-line-height);
   font-size: var(--h4-font-size);
 }

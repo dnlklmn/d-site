@@ -28,7 +28,7 @@ export function DSite() {
   return (
     <div className="flex flex-col gap-28 overflow-visible ">
       <div className="flex flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
-        <span className="hero text-[color:var(--fg-contrast)]">
+        <span className="h1 text-[color:var(--fg-contrast)]">
           An interconnected <br /> system demo
         </span>
         <div className="flex flex-row justify-between">
@@ -45,9 +45,13 @@ export function DSite() {
 
       <div className="flex flex-row gap-20 text-[color:var(--fg-contrast)]">
         <div className="flex flex-col gap-10 h-fit w-full md:w-3/4 lg:w-1/2 mx-auto my-auto py-0 lg:py-4 px-6 md:pl-6 lg:pl-24 xl:pl-48">
-          <div className="flex flex-row items-center gap-3 ">
-            <span className="h5">INTRO</span>
-            <div className="w-[10000px] h-[2px] bg-[color:var(--fg-contrast)]" />
+          <div className="flex flex-row items-center gap-6 ">
+            <span className="h3">
+              <i>Intro</i>
+            </span>
+            <div className="mt-3 w-[10000px]">
+              <div className=" h-[2px] bg-[color:var(--fg-contrast)]" />
+            </div>
           </div>
           <div className="flex flex-col items-center gap-5">
             <div className="w-full flex flex-col gap-1">
@@ -88,9 +92,13 @@ export function DSite() {
         />
       </div>
       <div className="flex flex-col gap-12 lg:gap-20 text-[color:var(--fg-contrast)] ">
-        <div className="flex flex-row items-center w-full md:w-3/4 lg:w-full mx-auto gap-3 px-6 lg:px-24 xl:px-48 h-0">
-          <span className="h5 whitespace-nowrap">BUILDING BLOCKS</span>
-          <div className="w-full h-[2px] bg-[color:var(--fg-contrast)]" />
+        <div className="flex flex-row  items-center w-full md:w-3/4 lg:w-full mx-auto gap-6 px-6 lg:px-24 xl:px-48 h-0">
+          <span className="h3 whitespace-nowrap">
+            <i>Building Blocks</i>
+          </span>
+          <div className="mt-3 w-[10000px]">
+            <div className="w-full h-[2px] bg-[color:var(--fg-contrast)]" />
+          </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0 text-[color:var(--fg-contrast)] ">
           <Image big height={240} />
