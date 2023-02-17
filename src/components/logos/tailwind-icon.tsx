@@ -1,9 +1,12 @@
-export default function TailwindIcon() {
+interface IconProps {
+  height: number;
+}
+
+export default function TailwindIcon({ height }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="64"
-      height="64"
+      height={height}
       fill="none"
       viewBox="0 0 1000 1000"
     >
@@ -14,3 +17,7 @@ export default function TailwindIcon() {
     </svg>
   );
 }
+
+TailwindIcon.defaultProps = {
+  height: 24,
+};

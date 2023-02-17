@@ -1,9 +1,12 @@
-export default function FigmaIcon() {
+interface IconProps {
+  height: number;
+}
+
+export default function FigmaIcon({ height }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="38"
-      height="58"
+      height={height}
       fill="none"
       viewBox="0 0 38 58"
     >
@@ -38,3 +41,7 @@ export default function FigmaIcon() {
     </svg>
   );
 }
+
+FigmaIcon.defaultProps = {
+  height: 24,
+};
