@@ -1,11 +1,13 @@
 {
-  "primary": {
-    "value": "#DB00FF",
-    "type": "color"
-  },
-  "secondary": {
-    "value": "#05F300",
-    "type": "color"
+  "brand": {
+    "primary": {
+      "value": "#DB00FF",
+      "type": "color"
+    },
+    "secondary": {
+      "value": "#05F300",
+      "type": "color"
+    }
   },
   "fg": {
     "contrast": {
@@ -24,6 +26,24 @@
     },
     "dip": {
       "value": "#424242",
+      "type": "color"
+    }
+  },
+  "bg-gradient": {
+    "1": {
+      "value": "#3F1D45",
+      "type": "color"
+    },
+    "2": {
+      "value": "#482F12",
+      "type": "color"
+    },
+    "3": {
+      "value": "#474B31",
+      "type": "color"
+    },
+    "4": {
+      "value": "#212A33",
       "type": "color"
     }
   }
