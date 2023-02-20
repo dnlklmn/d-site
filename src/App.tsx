@@ -55,60 +55,62 @@ function App() {
 
   return (
     <div
-      className="App flex flex-col gap-28"
+      className="App flex flex-col gap-28 "
       data-theme={localStorage.getItem("data-theme")}
     >
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;700&display=swap');
       </style>
-      <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <header className="App-header">
-                  <span className="h5">Donnie's Awesome Website</span>
-                  <div className="flex flex-row gap-10">
-                    <Navbar />
+      <div className="h-screen w-screen overflow-scroll bg-gradient-to-tr from-[color:var(--bg-gradient-1)] to-[color:var(--bg-gradient-2)]">
+        <Router>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <header className="App-header">
+                    <span className="h5">Donnie's Awesome Website</span>
+                    <div className="flex flex-row gap-10">
+                      <Navbar />
+                      {toggle}
+                    </div>
+                  </header>
+                  <Home />
+                </>
+              }
+            />
+            <Route
+              path="/getintouch"
+              element={
+                <>
+                  <header className="App-header">
+                    <Link className="h5 link" to="/">
+                      <span>{`\u2190`} Back</span>
+                    </Link>
                     {toggle}
-                  </div>
-                </header>
-                <Home />
-              </>
-            }
-          />
-          <Route
-            path="/getintouch"
-            element={
-              <>
-                <header className="App-header">
-                  <Link className="h5 link" to="/">
-                    <span>{`\u2190`} Back</span>
-                  </Link>
-                  {toggle}
-                </header>
-                <GetInTouch />
-              </>
-            }
-          />
-          <Route
-            path="/work/this-site"
-            element={
-              <>
-                <header className="App-header">
-                  <Link className="h5 link" to="/">
-                    <span>{`\u2190`} Back</span>
-                  </Link>
-                  {toggle}
-                </header>
-                <DSite />
-              </>
-            }
-          />
-        </Routes>
-      </Router>
+                  </header>
+                  <GetInTouch />
+                </>
+              }
+            />
+            <Route
+              path="/work/this-site"
+              element={
+                <>
+                  <header className="App-header">
+                    <Link className="h5 link" to="/">
+                      <span>{`\u2190`} Back</span>
+                    </Link>
+                    {toggle}
+                  </header>
+                  <DSite />
+                </>
+              }
+            />
+          </Routes>
+        </Router>
+      </div>
     </div>
   );
 }

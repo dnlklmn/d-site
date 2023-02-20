@@ -12,8 +12,8 @@ export function DSite() {
         <span className="h1 text-[color:var(--fg-contrast)]">
           An interconnected <br /> system demo
         </span>
-        <div className="flex flex-row justify-between">
-          <p className="body-1">
+        <div className="flex flex-row justify-between items-center">
+          <p className="body-1 my-auto">
             Automated design hand-off to bridge design and development.
             <br /> A systemic approach easy to manage and to scale.
           </p>
@@ -183,7 +183,7 @@ export function DSite() {
         </div>
       </div>
       <div className="flex flex-col gap-6 text-[color:var(--fg-contrast)] w-full md:w-3/4 lg:w-full mx-auto lg:mx-0 py-0 lg:py-4 px-6 lg:px-24 xl:px-48">
-        <div className="flex flex-row gap-6 items-center w-full ">
+        <div className="flex flex-row items-center w-full ">
           <span className="h3 whitespace-nowrap">
             <i>Open Source</i>
           </span>
@@ -199,7 +199,7 @@ export function DSite() {
             and show up to your teams with a working prototype.
           </p>
         </div>
-        <div className="flex flex-row gap-6 h-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 flex-wrap">
           <CardSmall
             img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/repo.png?alt=media&token=0bf6721e-a755-4117-83f6-70a132d320e1"
             linkText="Clone this repo ->"
@@ -210,9 +210,34 @@ export function DSite() {
               used.
             </p>
           </CardSmall>
-          <CardSmall />
-          <CardSmall />
-          <CardSmall />
+          <CardSmall
+            img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/repo.png?alt=media&token=0bf6721e-a755-4117-83f6-70a132d320e1"
+            linkText="Clone this repo ->"
+            link="https://github.com/dnlklmn/d-site"
+          >
+            <p className="body-2">
+              The code of this website is open source and ready for you to be
+              used.
+            </p>
+          </CardSmall>
+          <CardSmall
+            img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/ft.png?alt=media&token=4ac88dec-06dc-4141-b6cd-4403ae48bf3e"
+            linkText="Get Tokens Studio ->"
+            link="https://tokens.studio/"
+          >
+            <div className="body-2 h-full">
+              The most advanced token plugin is free to try.
+            </div>
+          </CardSmall>
+          <CardSmall
+            img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/workflow.png?alt=media&token=4ce55231-3876-49d4-840e-4443c96d939f"
+            linkText="Check the worfklow guide ->"
+            link="https://backlight.dev/docs/figma-tokens"
+          >
+            <p className="body-2">
+              Now all you need to do is stitch the parts together.
+            </p>
+          </CardSmall>
         </div>
       </div>
     </div>
