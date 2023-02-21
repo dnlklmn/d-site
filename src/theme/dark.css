@@ -1,8 +1,13 @@
 :root[data-theme="dark"] {
-  --primary: #DB00FF;
-  --secondary: #05F300;
+  --brand-primary: #db00ff;
+  --brand-secondary: #05f300;
   --fg-contrast: #f3f3f3;
-  --fg-match-bg: #151515;
+  --fg-match-bg: #290049;
+  --fg-always-dark: #290049;
+  --fg-always-light: #f8f8f8;
   --bg-default: #151515;
-  --bg-dip: #424242;
+  --bg-dip: #C5B7B7;
+  --bg-gradient-1: #5F4696;
+  --bg-gradient-2: #773B73;
+  --bg-gradient-3: #AE92AC;
 }

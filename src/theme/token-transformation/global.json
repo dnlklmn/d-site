@@ -51,6 +51,14 @@
     "dm-serif-text-5": {
       "value": "Regular",
       "type": "fontWeights"
+    },
+    "dm-serif-text-3": {
+      "value": "Italic",
+      "type": "fontWeights"
+    },
+    "inter-4": {
+      "value": "Bold",
+      "type": "fontWeights"
     }
   },
   "fontSize": {
@@ -325,11 +333,11 @@
   },
   "h5": {
     "fontFamily": {
-      "value": "Inter",
+      "value": "DM Serif Text",
       "type": "fontFamilies"
     },
     "fontWeight": {
-      "value": "Bold",
+      "value": "Italic",
       "type": "fontWeights"
     },
     "lineHeight": {

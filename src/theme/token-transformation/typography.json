@@ -191,11 +191,11 @@
   },
   "h5": {
     "fontFamily": {
-      "value": "{fontFamilies.inter}",
+      "value": "{fontFamilies.dm-serif-text}",
       "type": "fontFamilies"
     },
     "fontWeight": {
-      "value": "{fontWeights.inter-3}",
+      "value": "{fontWeights.dm-serif-text-3}",
       "type": "fontWeights"
     },
     "lineHeight": {
@@ -233,7 +233,7 @@
       "type": "fontFamilies"
     },
     "fontWeight": {
-      "value": "{fontWeights.inter-3}",
+      "value": "{fontWeights.inter-4}",
       "type": "fontWeights"
     },
     "lineHeight": {
@@ -271,7 +271,7 @@
       "type": "fontFamilies"
     },
     "fontWeight": {
-      "value": "{fontWeights.dm-serif-text-4}",
+      "value": "{fontWeights.dm-serif-text-3}",
       "type": "fontWeights"
     },
     "lineHeight": {
@@ -309,7 +309,7 @@
       "type": "fontFamilies"
     },
     "fontWeight": {
-      "value": "{fontWeights.inter-3}",
+      "value": "{fontWeights.inter-4}",
       "type": "fontWeights"
     },
     "lineHeight": {
