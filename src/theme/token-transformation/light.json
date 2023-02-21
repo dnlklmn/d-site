@@ -17,6 +17,10 @@
     "match-bg": {
       "value": "#f8f8f8",
       "type": "color"
+    },
+    "always-dark": {
+      "value": "#290049",
+      "type": "color"
     }
   },
   "bg": {
@@ -25,7 +29,7 @@
       "type": "color"
     },
     "dip": {
-      "value": "#CFCECE",
+      "value": "#ffefee",
       "type": "color"
     }
   },
