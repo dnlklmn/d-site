@@ -1,3 +1,3 @@
 export function GetInTouch() {
-  return <div>Get In Touch</div>;
+  return <div className=" mt-36">Get In Touch</div>;
 }

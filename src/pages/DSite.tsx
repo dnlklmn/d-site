@@ -3,11 +3,10 @@ import Video from "../components/video";
 import Image from "../components/image";
 import Logos from "../components/logos";
 import CardSmall from "../components/card-small";
-import Bg from "../components/bg-svg";
 
 export function DSite() {
   return (
-    <div className="flex flex-col gap-28 overflow-visible pb-16">
+    <div className="flex flex-col gap-28 overflow-visible pb-16 mt-36">
       <div className="flex flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
         <span className="h1 text-[color:var(--fg-contrast)]">
           An interconnected <br /> system demo

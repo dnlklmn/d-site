@@ -9,7 +9,7 @@ import { Button } from "../components/button";
 export function Home() {
   return (
     <div
-      className="flex flex-col text-start"
+      className="flex flex-col text-start mt-36"
       data-theme={localStorage.getItem("data-theme")}
     >
       <style>

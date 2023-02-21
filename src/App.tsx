@@ -7,7 +7,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { GetInTouch } from "./pages/GetInTouch";
 import { DSite } from "./pages/DSite";
-import { Navbar } from "./components/navbar";
+
+import { IoMoon } from "react-icons/io5";
+import { IoSunny } from "react-icons/io5";
 
 // icons: https://react-icons.github.io/react-icons/icons?name=io5
 
@@ -44,11 +46,13 @@ function App() {
 
   const toggle = (
     <div className="toggle-container">
-      <span className="label">
-        {localStorage.getItem("data-theme") === "light"
-          ? "Lights On"
-          : "Lights Off"}
-      </span>
+      <div className="body-1">
+        {localStorage.getItem("data-theme") === "light" ? (
+          <IoSunny />
+        ) : (
+          <IoMoon />
+        )}
+      </div>
       <Toggle onTap={toggleOn} toggleDirection={toggleDirection} />
     </div>
   );
@@ -62,52 +66,32 @@ function App() {
         @import
         url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;700&display=swap');
       </style>
+
       <div className="h-screen w-screen overflow-scroll bg-gradient-to-tr from-[color:var(--bg-gradient-1)] to-[color:var(--bg-gradient-2)]">
         <Router>
+          <div className="flex justify-between px-16 py-4 absolute w-full">
+            <Link className="subtitle link" to="/">
+              • Donnie's Awesome Website
+            </Link>
+            <div className="flex gap-10">
+              <div className="flex flex-row gap-4 body-2 font-semibold bg-transparent items-center">
+                <Link className="body-1" to="/">
+                  Home
+                </Link>
+                <Link className="body-1" to="/getintouch">
+                  Get in touch
+                </Link>
+                <Link className="body-1" to="/work/this-site">
+                  This Site
+                </Link>
+              </div>
+              {toggle}
+            </div>
+          </div>
           <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <header className="App-header">
-                    <span className="h5">Donnie's Awesome Website</span>
-                    <div className="flex flex-row gap-10">
-                      <Navbar />
-                      {toggle}
-                    </div>
-                  </header>
-                  <Home />
-                </>
-              }
-            />
-            <Route
-              path="/getintouch"
-              element={
-                <>
-                  <header className="App-header">
-                    <Link className="h5 link" to="/">
-                      <span>{`\u2190`} Back</span>
-                    </Link>
-                    {toggle}
-                  </header>
-                  <GetInTouch />
-                </>
-              }
-            />
-            <Route
-              path="/work/this-site"
-              element={
-                <>
-                  <header className="App-header">
-                    <Link className="h5 link" to="/">
-                      <span>{`\u2190`} Back</span>
-                    </Link>
-                    {toggle}
-                  </header>
-                  <DSite />
-                </>
-              }
-            />
+            <Route path="/" element={<Home />} />
+            <Route path="/getintouch" element={<GetInTouch />} />
+            <Route path="/work/this-site" element={<DSite />} />
           </Routes>
         </Router>
       </div>
