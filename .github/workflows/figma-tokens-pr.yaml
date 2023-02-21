@@ -21,13 +21,13 @@ jobs:
       - name: Run token-transformer
         run: npx token-transformer tokens/donnie.json tokens/figma-tokens-output.json  --resolveReferences false
 
-      - name: Transform tokens
+      - name: Transform global tokens
         run: npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/global.json global  --resolveReferences --expandTypography=true
-
-      - name: Transform tokens
+      - name: Transform light theme tokens
         run: npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/light.json light  --resolveReferences
-
-      - name: Transform tokens
+      - name: Transform dark theme tokens
+        run: npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/dark.json dark  --resolveReferences
+      - name: Transform typography tokens
         run: npx token-transformer src/theme/token-transformation/raw-tokens.json src/theme/token-transformation/typography.json typography  --resolveReferences --expandTypography=true
 
       - name: Build css using Style Dictionary

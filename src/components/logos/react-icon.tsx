@@ -1,9 +1,12 @@
-export default function ReactIcon() {
+interface IconProps {
+  height: number;
+}
+
+export default function ReactIcon({ height }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="62"
-      height="62"
+      height={height}
       fill="none"
       viewBox="0 0 62 62"
     >
@@ -29,3 +32,7 @@ export default function ReactIcon() {
     </svg>
   );
 }
+
+ReactIcon.defaultProps = {
+  height: 24,
+};

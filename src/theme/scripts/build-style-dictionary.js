@@ -8,7 +8,7 @@ function createArray({ dictionary }) {
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 StyleDictionaryPackage.registerFormat({
   name: "css/variables",
-  formatter: function(dictionary) {
+  formatter: function (dictionary) {
     return `${this.selector} {\n${dictionary.allProperties
       .map((prop) => `  --${prop.name}: ${prop.value};`)
       .join("\n")}\n}`;
@@ -23,6 +23,11 @@ StyleDictionaryPackage.registerTransform({
   matcher: (token) =>
     ["fontSizes", "dimension", "borderRadius", "spacing"].includes(token.type),
   transformer: (token) => parseFloat(token.value) + "px",
+
+  // matcher: (token) => ["fontWeights"].includes(token.type),
+  // transformer: function (token) {
+  //   return token.value === "Regular" ? 400 : 600;
+  // },
 });
 
 function getStyleDictionaryConfig(theme, brand, sourcePath) {
@@ -41,7 +46,6 @@ function getStyleDictionaryConfig(theme, brand, sourcePath) {
           {
             destination: `${theme}.css`,
             format: "css/variables",
-            // selector: `.${theme}-theme`,
             selector:
               theme === "dark" ? `:root[data-theme="${theme}"]` : `:root`,
             filter: ({ isSource }) => {
@@ -62,7 +66,7 @@ const args = process.argv.slice(2);
 const brand = args[0];
 const sourcePath = args[1];
 
-["dark", "light", "typography"].map(function(theme) {
+["dark", "light", "typography"].map(function (theme) {
   console.log("\n==============================================");
   console.log(`\nProcessing: [${theme}]`);
 

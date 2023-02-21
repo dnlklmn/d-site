@@ -36,7 +36,6 @@ main {
 }
 
 .App-header {
-  background: var(--bg-default);
   padding: 24px 64px;
   display: flex;
   flex-direction: row;

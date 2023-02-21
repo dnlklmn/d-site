@@ -29,7 +29,7 @@
 
 .h4 {
   font-family: var(--h4-font-family);
-  font-weight: var(--h4-font-weight);
+  font-weight: 400;
   line-height: var(--h4-line-height);
   font-size: var(--h4-font-size);
 }
@@ -60,6 +60,21 @@
   font-weight: var(--label-font-weight);
   line-height: var(--label-line-height);
   font-size: var(--label-font-size);
+}
+
+.link-2 {
+  font-family: var(--body-2-font-family);
+  font-weight: 600;
+  line-height: var(--body-2-line-height);
+  font-size: var(--body-2-font-size);
+  color: var(--brand-primary);
+}
+
+.subtitle {
+  font-family: var(--subtitle-font-family);
+  font-weight: 600;
+  line-height: var(--subtitle-line-height);
+  font-size: var(--subtitle-font-size);
 }
 
 .line-height-auto {

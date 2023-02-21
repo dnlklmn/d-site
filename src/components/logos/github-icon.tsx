@@ -1,8 +1,12 @@
-export default function GithubIcon() {
+interface IconProps {
+  height: number;
+}
+
+export default function GithubIcon({ height }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="62"
+      height={height}
       fill="none"
       viewBox="0 0 98 96"
     >
@@ -15,3 +19,7 @@ export default function GithubIcon() {
     </svg>
   );
 }
+
+GithubIcon.defaultProps = {
+  height: 24,
+};
