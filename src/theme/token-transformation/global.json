@@ -144,11 +144,11 @@
   "hero": {
     "fontFamily": {
       "value": "Epilogue",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Bold",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "108%",
@@ -156,7 +156,7 @@
     },
     "fontSize": {
       "value": 70,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -182,11 +182,11 @@
   "subtitle": {
     "fontFamily": {
       "value": "Inter",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Semi Bold",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -194,7 +194,7 @@
     },
     "fontSize": {
       "value": 20,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -220,11 +220,11 @@
   "label": {
     "fontFamily": {
       "value": "Inter",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Semi Bold",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -232,7 +232,7 @@
     },
     "fontSize": {
       "value": 12,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -258,11 +258,11 @@
   "body 1": {
     "fontFamily": {
       "value": "Inter",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Regular",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -270,7 +270,7 @@
     },
     "fontSize": {
       "value": 16,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -296,11 +296,11 @@
   "body 2": {
     "fontFamily": {
       "value": "Inter",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Regular",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -308,7 +308,7 @@
     },
     "fontSize": {
       "value": 14,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -339,7 +339,6 @@
     "fontWeight": {
       "value": "Italic",
       "type": "fontWeights"
-
     },
     "lineHeight": {
       "value": "AUTO",
@@ -347,7 +346,7 @@
     },
     "fontSize": {
       "value": 24,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -373,11 +372,11 @@
   "h4": {
     "fontFamily": {
       "value": "Inter",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Bold",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -385,7 +384,7 @@
     },
     "fontSize": {
       "value": 32,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -411,11 +410,11 @@
   "h3": {
     "fontFamily": {
       "value": "DM Serif Text",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Italic",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -423,7 +422,7 @@
     },
     "fontSize": {
       "value": 48,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -449,11 +448,11 @@
   "h2": {
     "fontFamily": {
       "value": "Inter",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Bold",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -461,7 +460,7 @@
     },
     "fontSize": {
       "value": 48,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -487,11 +486,11 @@
   "h1": {
     "fontFamily": {
       "value": "DM Serif Text",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Regular",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "100%",
@@ -499,7 +498,7 @@
     },
     "fontSize": {
       "value": 90,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -525,11 +524,11 @@
   "button-label": {
     "fontFamily": {
       "value": "Inter",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Bold",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -537,7 +536,7 @@
     },
     "fontSize": {
       "value": 18,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -569,11 +568,11 @@
   "button-label-small": {
     "fontFamily": {
       "value": "Inter",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Semi Bold",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -581,7 +580,7 @@
     },
     "fontSize": {
       "value": 14,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -607,11 +606,11 @@
   "link-1": {
     "fontFamily": {
       "value": "Inter",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Semi Bold",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -619,7 +618,7 @@
     },
     "fontSize": {
       "value": 16,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
@@ -645,11 +644,11 @@
   "link-2": {
     "fontFamily": {
       "value": "Inter",
-      "type": "fontFamily"
+      "type": "fontFamilies"
     },
     "fontWeight": {
       "value": "Semi Bold",
-      "type": "fontWeight"
+      "type": "fontWeights"
     },
     "lineHeight": {
       "value": "AUTO",
@@ -657,7 +656,7 @@
     },
     "fontSize": {
       "value": 14,
-      "type": "fontSize"
+      "type": "fontSizes"
     },
     "letterSpacing": {
       "value": "0%",
