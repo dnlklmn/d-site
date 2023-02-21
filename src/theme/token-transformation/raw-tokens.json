@@ -512,6 +512,10 @@
       "match-bg": {
         "value": "#f8f8f8",
         "type": "color"
+      },
+      "always-dark": {
+        "value": "#290049",
+        "type": "color"
       }
     },
     "bg": {
@@ -520,7 +524,7 @@
         "type": "color"
       },
       "dip": {
-        "value": "#CFCECE",
+        "value": "#ffefee",
         "type": "color"
       }
     },
@@ -556,7 +560,11 @@
         "type": "color"
       },
       "match-bg": {
-        "value": "#151515",
+        "value": "#290049",
+        "type": "color"
+      },
+      "always-dark": {
+        "value": "#290049",
         "type": "color"
       }
     },
@@ -566,7 +574,7 @@
         "type": "color"
       },
       "dip": {
-        "value": "#424242",
+        "value": "#C5B7B7",
         "type": "color"
       }
     },
