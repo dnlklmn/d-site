@@ -7,12 +7,12 @@ import CardSmall from "../components/card-small";
 export function DSite() {
   return (
     <div className="flex flex-col gap-28 overflow-visible pb-16 mt-36">
-      <div className="flex flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
-        <span className="h1 text-[color:var(--fg-contrast)]">
+      <div className="flex text-[color:var(--fg-contrast)] flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
+        <span className="h1 ">
           An interconnected <br /> system demo
         </span>
         <div className="flex flex-row justify-between items-center">
-          <p className="body-1 my-auto">
+          <p className="body-1 my-auto ">
             Automated design hand-off to bridge design and development.
             <br /> A systemic approach easy to manage and to scale.
           </p>
@@ -164,9 +164,10 @@ export function DSite() {
             <span className="body1">
               <strong>Transforming style variables</strong>
             </span>
-            <Video />
             <p className="body-2">
               The standardized tokens can't be used without some transformation.
+              <div className="mb-2" />
+              <Video />
               <div className="mb-2" />
               Once you push your tokens to Github using the Tokens Studio
               plugin, the{" "}
