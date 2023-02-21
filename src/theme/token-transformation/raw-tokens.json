@@ -506,7 +506,7 @@
     },
     "fg": {
       "contrast": {
-        "value": "{black.950}",
+        "value": "#290049",
         "type": "color"
       },
       "match-bg": {
