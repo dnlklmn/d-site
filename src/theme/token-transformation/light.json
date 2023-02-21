@@ -32,11 +32,11 @@
   },
   "bg-gradient": {
     "1": {
-      "value": "#FFE2D7",
+      "value": "#F6DAF6",
       "type": "color"
     },
     "2": {
-      "value": "#DAF1FF",
+      "value": "#F6DDC6",
       "type": "color"
     },
     "3": {
