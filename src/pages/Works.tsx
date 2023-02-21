@@ -50,36 +50,38 @@ export function Works() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 flex-wrap">
           <Link className="w-full h-[240px]" to="/works/this-site">
-            <div className="flex flex-col w-full shadow-md rounded-md overflow-clip h-full bg-white p-4 justify-end">
-              <p className="h5 text-[color:var(--fg-contrast)]">
-                <i>This Site</i>
-              </p>
+            <div className="group h-full bg-cover rounded-md overflow-clip shadow-md hover:shadow-lg bg-[url('https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/this-site.png?alt=media&token=1245c8cd-601c-4069-a042-2807633524ab')]">
+              <div className="flex flex-col w-full   h-full p-4 justify-end backdrop-blur-sm group-hover:backdrop-blur-none transition-all">
+                <p className="h5 text-[color:var(--fg-always-dark)] opacity-100 group-hover:opacity-0 transition-opacity">
+                  <i>This Site</i>
+                </p>
+              </div>
             </div>
           </Link>
           <Link className="w-full h-[240px]" to="/works/this-site">
-            <div className="flex flex-col w-full shadow-md rounded-md overflow-clip h-full bg-white p-4 justify-end">
-              <p className="h5 text-[color:var(--fg-contrast)]">
+            <div className="flex flex-col w-full shadow-md rounded-md overflow-clip h-full bg-white p-4 justify-end ">
+              <p className="h5 text-[color:var(--fg-always-dark)]">
                 <i>Web3 Address Generator</i>
               </p>
             </div>
           </Link>
           <Link className="w-full h-[240px]" to="/works/this-site">
             <div className="flex flex-col w-full shadow-md rounded-md overflow-clip h-full bg-white p-4 justify-end">
-              <p className="h5 text-[color:var(--fg-contrast)]">
+              <p className="h5 text-[color:var(--fg-always-dark)]">
                 <i>UI3</i>
               </p>
             </div>
           </Link>
           <Link className="w-full h-[240px]" to="/works/this-site">
             <div className="flex flex-col w-full shadow-md rounded-md overflow-clip h-full bg-white p-4 justify-end">
-              <p className="h5 text-[color:var(--fg-contrast)]">
+              <p className="h5 text-[color:var(--fg-always-dark)]">
                 <i>On Canvas UI</i>
               </p>
             </div>
           </Link>
           <Link className="w-full h-[240px]" to="/works/this-site">
             <div className="flex flex-col w-full shadow-md rounded-md overflow-clip h-full bg-white p-4 justify-end">
-              <p className="h5 text-[color:var(--fg-contrast)]">
+              <p className="h5 text-[color:var(--fg-always-dark)]">
                 <i>One Fam</i>
               </p>
             </div>
