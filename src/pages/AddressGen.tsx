@@ -6,22 +6,16 @@ import CardSmall from "../components/card-small";
 
 const bigDiv = document.getElementById("big-div");
 
-export function DSite() {
+export function AddressGen() {
   return (
     <div className="flex flex-col gap-28 overflow-visible pb-16 mt-36">
       <div className="flex text-[color:var(--fg-contrast)] flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
-        <span className="h1 ">
-          An interconnected <br /> system demo
-        </span>
+        <span className="h1 ">Web3 Address Generator</span>
         <div className="flex flex-row justify-between items-center">
           <p className="body-1 my-auto ">
-            Automated design hand-off to bridge design and development.
-            <br /> A systemic approach easy to manage and to scale.
+            Typing random characters over and over can be annoying, <br /> so I
+            decided to make a plugin to do it for me.
           </p>
-          <Logos big />
-        </div>
-        <div className="visible lg:invisible">
-          <Logos />
         </div>
       </div>
 
@@ -39,30 +33,26 @@ export function DSite() {
             <div className="w-full flex flex-col gap-1">
               <span className="subtitle">Problem</span>
               <p className="body-2">
-                Keeping design and development in sync during the production
-                process is an extensive effort. <div className="mb-2" />
-                Production is an iterative process, where designs evolve from
-                initial ideas to wireframes, mockups, and final designs, while a
-                range of setbacks present themselves as development advances,
-                requiring designers to go back to the drawing board and rethink
-                their solutions.
+                Web3 mockups often display a lot of addresses, which for a
+                realistic mockup means you want a mix of all sorts of available
+                characters, typing which can be lot of unnecessary work.
               </p>
             </div>
-            <Image src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/intro.png?alt=media&token=3db30764-44e3-41a6-bdb1-3c3026ab22c8" />
+            <Image src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/address-generator%2Fmain.png?alt=media&token=380309e0-57d8-4b76-af24-57140534120c" />
             <div className="w-full flex flex-col gap-1">
               <span className="subtitle">Solution</span>
               <p className="body-2">
-                Extract shared decisions to facilitate collaboration: build a
-                common ground all parties can access and manipulate, to allow
-                working together on the product, rather than giving instructions
-                to one another.
+                A figma plugin that can generate addresses for a particular
+                chain, eg. Ethereum addresses always start with{" "}
+                <strong>0x</strong>.
               </p>
             </div>
             <div className="w-full flex flex-col gap-1">
               <span className="subtitle">Goal</span>
               <p className="body-2">
-                Build a bridge between design and development enabling everyone
-                to participate in the building process.
+                You should be able to select a bunch of text instances and
+                replace their content with addresses that look like they were
+                real addresses for the blockchain you are working with.
               </p>
             </div>
           </div>
@@ -70,13 +60,13 @@ export function DSite() {
         <Image
           big
           right
-          src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/intro.png?alt=media&token=3db30764-44e3-41a6-bdb1-3c3026ab22c8"
+          src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/address-generator%2Fmain.png?alt=media&token=a9362e28-c5a3-41d6-97ef-ba25c847fd74"
         />
       </div>
       <div className="flex flex-col gap-12 lg:gap-20 text-[color:var(--fg-contrast)] ">
         <div className="flex flex-row  items-center w-full md:w-3/4 lg:w-full mx-auto gap-6 px-6 lg:px-24 xl:px-48 h-0">
           <span className="h3 whitespace-nowrap">
-            <i>Building Blocks</i>
+            <i>Features</i>
           </span>
           <div className="mt-3 w-[10000px]">
             <div className="w-full h-[2px] bg-[color:var(--fg-contrast)]" />
@@ -85,36 +75,28 @@ export function DSite() {
         <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0 text-[color:var(--fg-contrast)] ">
           <Image big height={240} />
           <div className="flex flex-col gap-2 h-fit w-full md:w-3/4 lg:w-1/2 mx-auto  my-auto py-0 lg:py-4 px-6 md:pr-6 lg:pr-24 xl:pr-48">
-            <span className="subtitle">Documenting Decisions in Figma</span>
+            <span className="subtitle">Adjusts to your workspace</span>
             <Image />
             <p className="body-2">
-              The components use variants and properties to make them flexible
-              enough to use, but rigid enough to stay consistent. Its a delicate
-              balance that requires experimenting and adjusting components to
-              your exact needs. <div className="mb-2" /> Once you manage to set
-              them up in such a modular way, however, you’ve basically also
-              ‘wrote’ most of the documentation.
+              Automatic switching between dark and a light themes makes sure the
+              plugin presents as little distraction from the standard Figma UI
+              as possible.
             </p>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0 text-[color:var(--fg-contrast)] ">
           <div className="flex flex-col gap-2 h-fit w-full md:w-3/4 lg:w-1/2 mx-auto  my-auto py-0 lg:py-4 px-6 md:pl-6 lg:pl-24 xl:pl-48">
-            <span className="subtitle">Structuring Styles</span>
+            <span className="subtitle">Flexible and open source</span>
             <Image
               height={280}
               src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/tokensStructure.png?alt=media&token=3d008146-2008-49ca-ba46-fd58e348ed4e"
             />
             <p className="body-2">
-              To make sure color definitions stay in sync i use a multi-level
-              setup. <div className="mb-2" />
-              The global set contains all the possible options one is allowed to
-              use, eg. a range of blacks: black.50 - 950.
-              <div className="mb-2" /> Semantic sets then attach a use case to
-              global colors, eg. text.default = global.black.{" "}
-              <div className="mb-2" />
-              Note: As an additional layer you can add component-based sets, but
-              they can overcomplicate things, so I’d recommend only doing it if
-              you absolutely have to.
+              The plugin code is well documented, allowing to quickly add
+              additional features, eg. other chains to generate addresses for.{" "}
+              <div className="mb-4" />
+              Add the character set your blockchain addresses use, make a PR and
+              the new feature will be live in the plugin soon.
             </p>
           </div>
           <Image

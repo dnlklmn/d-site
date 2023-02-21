@@ -10,24 +10,26 @@ export default function Image({ big, right, src, alt, height }: ImageProps) {
   return big ? (
     right ? (
       <div
-        className={`overflow-visible ${
+        className={`overflow-visible bg-transparent ${
           height ? `w-full lg:w-3/4 my-auto` : ``
-        } p-6 lg:p-0 float-left h-[${height}px] hidden lg:block`}
+        } p-6 lg:p-0 float-left h-[${
+          height ? height : "320"
+        }px] hidden lg:block`}
       >
         <img
-          className="object-cover h-full object-left w-auto shadow-md rounded-md lg:rounded-none lg:rounded-l-md"
+          className="object-cover h-full object-left w-auto shadow-md rounded-md lg:rounded-none lg:rounded-l-md bg-transparent"
           src={src}
           alt={alt}
         />
       </div>
     ) : (
       <div
-        className={`overflow-visible ${
+        className={`overflow-visible bg-transparent ${
           height ? `w-full lg:w-3/4 my-auto` : ``
         } p-6 lg:p-0 float-right self-center h-[${height}px] hidden lg:block`}
       >
         <img
-          className="object-cover h-full object-right w-auto shadow-md rounded-md lg:rounded-none lg:rounded-r-md"
+          className="object-cover h-full object-right w-auto shadow-md rounded-md lg:rounded-none lg:rounded-r-md bg-transparent"
           src={src}
           alt={alt}
         />
@@ -35,7 +37,7 @@ export default function Image({ big, right, src, alt, height }: ImageProps) {
     )
   ) : (
     <div
-      className={`overflow-visible ${
+      className={`overflow-visible bg-transparent ${
         height ? `w-full lg:w-3/4` : ``
       } h-[${height}px] my-1 block lg:hidden`}
     >

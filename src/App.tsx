@@ -1,6 +1,6 @@
 import "./App.css";
 
-import React from "react";
+import React, { Fragment } from "react";
 import { Toggle } from "./components/toggle";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -11,6 +11,10 @@ import { DSite } from "./pages/DSite";
 import { IoMoon } from "react-icons/io5";
 import { IoSunny } from "react-icons/io5";
 import { Works } from "./pages/Works";
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { AddressGen } from "./pages/AddressGen";
 
 // icons: https://react-icons.github.io/react-icons/icons?name=io5
 
@@ -28,11 +32,9 @@ function setTheme(themeName: string) {
 })();
 
 function App() {
-  // const [, rerenderSwitch] = React.useState("");
   const [toggleDirection, setToggleDirection] = React.useState(
     localStorage.getItem("data-theme") === "light" ? 16 : 0
   );
-
   const [selectedNav, setSelectedNav] = React.useState("");
 
   const toggleOn = () => {
@@ -40,10 +42,8 @@ function App() {
     let theme = localStorage.getItem("data-theme");
     if (theme === "dark") {
       setTheme("light");
-      // rerenderSwitch("light");
     } else {
       setTheme("dark");
-      // rerenderSwitch("dark");
     }
   };
 
@@ -60,9 +60,21 @@ function App() {
     </div>
   );
 
+  const bigDiv = document.getElementById("big-div");
+
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      if (bigDiv) bigDiv.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  }
+
   return (
     <div
-      className="App flex flex-col gap-28 "
+      className="App flex flex-col gap-28"
       data-theme={localStorage.getItem("data-theme")}
     >
       <style>
@@ -70,13 +82,19 @@ function App() {
         url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;700&display=swap');
       </style>
 
-      <div className="h-screen w-screen overflow-scroll bg-gradient-to-tr from-[color:var(--bg-gradient-1)] to-[color:var(--bg-gradient-2)]">
-        <Router>
+      <Router>
+        <ScrollToTop />
+        <div
+          id="big-div"
+          className="h-screen w-screen overflow-scroll bg-gradient-to-tr from-[color:var(--bg-gradient-1)] to-[color:var(--bg-gradient-2)] scroll-smooth"
+        >
           <div className="flex justify-between px-16 py-4 absolute w-full items-center">
             <Link
               className="subtitle link"
               to="/"
-              onClick={() => setSelectedNav("home")}
+              onClick={() => {
+                setSelectedNav("home");
+              }}
             >
               • Donnie's Awesome Website
             </Link>
@@ -89,7 +107,9 @@ function App() {
                       : null
                   }`}
                   to="/works"
-                  onClick={() => setSelectedNav("works")}
+                  onClick={() => {
+                    setSelectedNav("works");
+                  }}
                 >
                   Works
                 </Link>
@@ -100,7 +120,9 @@ function App() {
                       : null
                   }`}
                   to="/works/this-site"
-                  onClick={() => setSelectedNav("thisSite")}
+                  onClick={() => {
+                    setSelectedNav("thisSite");
+                  }}
                 >
                   This Site
                 </Link>
@@ -111,7 +133,9 @@ function App() {
                       : null
                   }`}
                   to="/getintouch"
-                  onClick={() => setSelectedNav("getInTouch")}
+                  onClick={() => {
+                    setSelectedNav("getInTouch");
+                  }}
                 >
                   Get in touch
                 </Link>
@@ -124,9 +148,10 @@ function App() {
             <Route path="/getintouch" element={<GetInTouch />} />
             <Route path="/works/this-site" element={<DSite />} />
             <Route path="/works" element={<Works />} />
+            <Route path="/works/address-generator" element={<AddressGen />} />
           </Routes>
-        </Router>
-      </div>
+        </div>
+      </Router>
     </div>
   );
 }
