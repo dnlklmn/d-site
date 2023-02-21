@@ -3,6 +3,7 @@ import Video from "../components/video";
 import Image from "../components/image";
 import Logos from "../components/logos";
 import CardSmall from "../components/card-small";
+import { Link } from "react-router-dom";
 
 const bigDiv = document.getElementById("big-div");
 
@@ -38,7 +39,7 @@ export function AddressGen() {
                 characters, typing which can be lot of unnecessary work.
               </p>
             </div>
-            <Image src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/address-generator%2Fmain.png?alt=media&token=380309e0-57d8-4b76-af24-57140534120c" />
+            <Image src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/address-generator%2Fmain.png?alt=media&token=87466f86-ad1e-4eaf-ad5a-16e23d460262" />
             <div className="w-full flex flex-col gap-1">
               <span className="subtitle">Solution</span>
               <p className="body-2">
@@ -60,7 +61,7 @@ export function AddressGen() {
         <Image
           big
           right
-          src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/address-generator%2Fmain.png?alt=media&token=a9362e28-c5a3-41d6-97ef-ba25c847fd74"
+          src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/address-generator%2Fmain-2.png?alt=media&token=f37eeec4-0022-401d-a9e7-2d399ee4de62"
         />
       </div>
       <div className="flex flex-col gap-12 lg:gap-20 text-[color:var(--fg-contrast)] ">
@@ -106,122 +107,35 @@ export function AddressGen() {
             src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/tokensStructure.png?alt=media&token=3d008146-2008-49ca-ba46-fd58e348ed4e"
           />
         </div>
-        <div className="flex flex-col lg:flex-row justify-start gap-2 lg:gap-12  px-0  text-[color:var(--fg-contrast)] ">
-          <div
-            className={
-              "flex flex-col gap-6 w-full p-6 lg:p-0 lg:w-3/4 float-left self-center h-[180 px] md:h-[120 px] xl:h-[80 px] px-6 md:pl-6 lg:pl-24 xl:pl-48 bg-transparent"
-            }
-          >
-            <img
-              style={{ filter: `drop-shadow(0px 2px 4px rgba(0,0,0,0.15))` }}
-              className="h-full rounded-none lg:rounded-md bg-transparent hidden lg:block"
-              src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/token-formats.png?alt=media&token=8172833c-ae4a-4b52-9d98-14084d0af4b3"
-              alt="Token Formats"
-            />
-            <Video showLg />
-          </div>
-          <div className="flex flex-col gap-2 h-fit w-full md:w-3/4 lg:w-1/2 mx-auto  my-auto py-0 lg:py-4 px-6 md:pr-6 lg:pr-24 xl:pr-48">
-            <span className="subtitle">Extracting and storing styles</span>
-
-            <p className="body-2">
-              Once the artefacts are created, and the mechanics documented, you
-              can extract style variables to create an independent ‘style
-              control center’ accessible both for designers and developers.
-              <div className="mb-4" />
-              <img
-                style={{ filter: `drop-shadow(0px 2px 4px rgba(0,0,0,0.15))` }}
-                className="h-full rounded-none lg:rounded-md bg-transparent block lg:hidden my-1"
-                src={TokenFormats}
-                alt="Token Formats"
-              />
-              <div className="mb-4" />
-              The{" "}
-              <a className="link-2" href="https://tokens.studio/">
-                Tokens Studio for Figma
-              </a>{" "}
-              plugin allows you to sync styles created in Figma to a JSON file
-              stored on Github seamlessly. This is a game changer, as the
-              standardized format the variables are stored in allows for a wide
-              variety of use cases.
-            </p>
-            <div className="mb-2" />
-            <span className="body1">
-              <strong>Transforming style variables</strong>
-            </span>
-            <p className="body-2">
-              The standardized tokens can't be used without some transformation.
-              <div className="mb-2" />
-              <Video />
-              <div className="mb-2" />
-              Once you push your tokens to Github using the Tokens Studio
-              plugin, the{" "}
-              <a className="link-2" href="../../public/bassengweb/logout">
-                {" "}
-                Token Transformer
-              </a>{" "}
-              transforms them to a format understandable by Style Dictionary,
-              which in turn will spit out CSS variables. All configured in one
-              workflow.
-            </p>
-          </div>
-        </div>
       </div>
       <div className="flex flex-col gap-6 text-[color:var(--fg-contrast)] w-full md:w-3/4 lg:w-full mx-auto lg:mx-0 py-0 lg:py-4 px-6 lg:px-24 xl:px-48">
-        <div className="flex flex-row items-center w-full ">
+        <div className="flex gap-6 items-center w-full ">
           <span className="h3 whitespace-nowrap">
-            <i>Open Source</i>
+            <i>Similar Projects</i>
           </span>
           <div className="mt-3 w-[10000px]">
             <div className="w-full h-[2px] bg-[color:var(--fg-contrast)]" />
           </div>
         </div>
         <div className="flex flex-col gap-2 h-fit">
-          <span className="subtitle">My Site is Your Site</span>
+          <span className="subtitle">Design Tooling</span>
           <p className="body-2">
-            I built this demo not only to show off my amazing design system
-            skills, but also for you to have a playground to try out new ideas,
-            and show up to your teams with a working prototype.
+            Automation isn't only a way to gain speed, it also guarantees
+            consistency <br /> by the very nature of being imperative instead of
+            declarative.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 flex-wrap">
-          <CardSmall
-            img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/repo.png?alt=media&token=0bf6721e-a755-4117-83f6-70a132d320e1"
-            linkText="Clone this repo ->"
-            link="https://github.com/dnlklmn/d-site"
-          >
-            <p className="body-2">
-              The code of this website is open source and ready for you to be
-              used.
-            </p>
-          </CardSmall>
-          <CardSmall
-            img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/repo.png?alt=media&token=0bf6721e-a755-4117-83f6-70a132d320e1"
-            linkText="Clone this repo ->"
-            link="https://github.com/dnlklmn/d-site"
-          >
-            <p className="body-2">
-              The code of this website is open source and ready for you to be
-              used.
-            </p>
-          </CardSmall>
-          <CardSmall
-            img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/ft.png?alt=media&token=4ac88dec-06dc-4141-b6cd-4403ae48bf3e"
-            linkText="Get Tokens Studio ->"
-            link="https://tokens.studio/"
-          >
-            <div className="body-2 h-full">
-              The most advanced token plugin is free to try.
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 flex-wrap">
+          <Link className="w-full h-[240px]" to="/works/this-site">
+            <div className="group h-full bg-cover rounded-md overflow-clip shadow-md hover:shadow-lg bg-[url('https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/on-canvas.png?alt=media&token=395d2748-d11f-4633-ac46-8fecc67a60a8')]">
+              <div className="flex flex-col w-full h-full text-[color:var(--fg-always-light)] p-4 justify-end backdrop-blur-sm opacity-100 group-hover:opacity-0 transition-opacity">
+                <p className="h5 ">
+                  <i>On-Canvas UI for Figma</i>
+                </p>
+                <p className="body-2">Figma Plugin</p>
+              </div>
             </div>
-          </CardSmall>
-          <CardSmall
-            img="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/workflow.png?alt=media&token=4ce55231-3876-49d4-840e-4443c96d939f"
-            linkText="Check the worfklow guide ->"
-            link="https://backlight.dev/docs/figma-tokens"
-          >
-            <p className="body-2">
-              Now all you need to do is stitch the parts together.
-            </p>
-          </CardSmall>
+          </Link>
         </div>
       </div>
     </div>
