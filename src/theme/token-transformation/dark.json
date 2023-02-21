@@ -21,6 +21,10 @@
     "always-dark": {
       "value": "#290049",
       "type": "color"
+    },
+    "always-light": {
+      "value": "#f8f8f8",
+      "type": "color"
     }
   },
   "bg": {
