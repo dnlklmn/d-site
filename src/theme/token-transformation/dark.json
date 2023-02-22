@@ -11,7 +11,7 @@
   },
   "fg": {
     "contrast": {
-      "value": "#f3f3f3",
+      "value": "#FBEEE3",
       "type": "color"
     },
     "match-bg": {
@@ -39,11 +39,11 @@
   },
   "bg-gradient": {
     "1": {
-      "value": "#251A3D",
+      "value": "#140E21",
       "type": "color"
     },
     "2": {
-      "value": "#3E153B",
+      "value": "#2C0E29",
       "type": "color"
     },
     "3": {
