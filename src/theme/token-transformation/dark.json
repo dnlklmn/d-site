@@ -39,11 +39,11 @@
   },
   "bg-gradient": {
     "1": {
-      "value": "#5F4696",
+      "value": "#251A3D",
       "type": "color"
     },
     "2": {
-      "value": "#773B73",
+      "value": "#3E153B",
       "type": "color"
     },
     "3": {
