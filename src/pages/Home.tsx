@@ -41,56 +41,36 @@ export function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 flex-wrap">
-            <Link className="w-full h-[240px]" to="/works/this-site">
-              <div className="group h-full bg-cover rounded-md overflow-clip shadow-md hover:shadow-lg bg-[url('https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/this-site.png?alt=media&token=1245c8cd-601c-4069-a042-2807633524ab')]">
-                <div className="bg-gradient-to-tr  from-[color:#584288CC] to-[color:#99168CCC] flex flex-col  text-[color:var(--fg-always-light)] w-full h-full p-4 justify-end backdrop-blur-sm opacity-100 group-hover:opacity-0 transition-opacity">
-                  <p className="h5 ">
-                    <i>This Site</i>
-                  </p>
-                  <p className="body-2 group-hover:opacity-0 transition-opacity">
-                    Design System
-                  </p>
-                </div>
-              </div>
-            </Link>
-            <Link className="w-full h-[240px]" to="/works/address-generator">
-              <div className="group h-full bg-cover rounded-md overflow-clip shadow-md hover:shadow-lg bg-[url('https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/address-generator.png?alt=media&token=c8301039-696d-44fc-89cd-ba80c7ec7f80')]">
-                <div className="bg-gradient-to-tr   from-[color:#584288CC] to-[color:#99168CCC] flex flex-col w-full h-full text-[color:var(--fg-always-light)] p-4 justify-end backdrop-blur-sm opacity-100 group-hover:opacity-0 transition-opacity">
-                  <p className="h5 ">
-                    <i>Web3 Address Generator</i>
-                  </p>
-                  <p className="body-2">Figma Plugin</p>
-                </div>
-              </div>
-            </Link>
-            <Link className="w-full h-[240px]" to="/works/ui-3">
-              <div className="group h-full bg-cover rounded-md overflow-clip shadow-md hover:shadow-lg bg-[url('https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/ui3.png?alt=media&token=7959f422-f414-4c6d-bf01-01e5546fde9b')]">
-                <div className="bg-gradient-to-tr   from-[color:#584288CC] to-[color:#99168CCC] flex flex-col w-full h-full text-[color:var(--fg-always-light)] p-4 justify-end backdrop-blur-sm opacity-100 group-hover:opacity-0 transition-opacity">
-                  <p className="h5 ">
-                    <i>UI3</i>
-                  </p>
-                  <p className="body-2">Design System</p>
-                </div>
-              </div>
-            </Link>
-            <Link className="w-full h-[240px]" to="/works/this-site">
-              <div className="group h-full bg-cover rounded-md overflow-clip shadow-md hover:shadow-lg bg-[url('https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/on-canvas.png?alt=media&token=395d2748-d11f-4633-ac46-8fecc67a60a8')]">
-                <div className="bg-gradient-to-tr   from-[color:#584288CC] to-[color:#99168CCC] flex flex-col w-full h-full text-[color:var(--fg-always-light)] p-4 justify-end backdrop-blur-sm opacity-100 group-hover:opacity-0 transition-opacity">
-                  <p className="h5 ">
-                    <i>On-Canvas UI for Figma</i>
-                  </p>
-                  <p className="body-2">Figma Plugin</p>
-                </div>
-              </div>
-            </Link>
-            <Link className="w-full h-[240px]" to="/works/this-site">
-              <div className="flex flex-col w-full shadow-md rounded-md overflow-clip h-full bg-white p-4 justify-end">
-                <p className="h5 text-[color:var(--fg-always-dark)]">
-                  <i>One Fam</i>
-                </p>
-              </div>
-            </Link>
-            <CardFull />
+            <CardFull
+              title="This Site"
+              subtitle="Design System"
+              to="/works/this-site"
+              imageURL="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/this-site.png?alt=media&token=1245c8cd-601c-4069-a042-2807633524ab"
+            />
+            <CardFull
+              title="Web3 Address Generator"
+              subtitle="Figma Plugin"
+              to="/works/address-generator"
+              imageURL="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/address-generator.png?alt=media&token=c8301039-696d-44fc-89cd-ba80c7ec7f80"
+            />
+            <CardFull
+              title="UI3 - A Web3 Native Design System"
+              subtitle="Design System"
+              to="/works/ui-3"
+              imageURL="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/ui3.png?alt=media&token=7959f422-f414-4c6d-bf01-01e5546fde9b"
+            />
+            <CardFull
+              title="On-Canvas UI for Figma"
+              subtitle="Figma Plugin"
+              to="/works/on-canvas-ui"
+              imageURL="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/on-canvas.png?alt=media&token=395d2748-d11f-4633-ac46-8fecc67a60a8"
+            />
+            <CardFull
+              title="One Fam"
+              subtitle="UX & UI Design"
+              to="/works/one-fam"
+              imageURL=""
+            />
           </div>
         </div>
       </div>

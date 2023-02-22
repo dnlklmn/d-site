@@ -1,6 +1,6 @@
 import "./App.css";
 
-import React from "react";
+import React, { useState } from "react";
 import { Toggle } from "./components/toggle";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -63,11 +63,14 @@ function App() {
 
   const bigDiv = document.getElementById("big-div");
 
+  const [currentPage, setCurrentPage] = useState("");
+
   function ScrollToTop() {
     const { pathname } = useLocation();
 
     useEffect(() => {
       if (bigDiv) bigDiv.scrollTo(0, 0);
+      setCurrentPage(pathname);
     }, [pathname]);
 
     return null;
@@ -90,15 +93,28 @@ function App() {
           className="h-screen w-screen overflow-scroll bg-gradient-to-tr from-[color:var(--bg-gradient-1)] to-[color:var(--bg-gradient-2)] scroll-smooth"
         >
           <div className="flex justify-between px-16 py-4 absolute w-full items-center">
-            <Link
-              className="subtitle link"
-              to="/"
-              onClick={() => {
-                setSelectedNav("home");
-              }}
-            >
-              • Donnie's Awesome Website
-            </Link>
+            {currentPage === "/" ? (
+              <Link
+                className="subtitle link"
+                to="/"
+                onClick={() => {
+                  setSelectedNav("home");
+                }}
+              >
+                • Donnie's Awesome Website
+              </Link>
+            ) : (
+              <Link
+                className="subtitle link"
+                to="/"
+                onClick={() => {
+                  setSelectedNav("home");
+                  if (bigDiv) bigDiv.scrollTo(0, 100);
+                }}
+              >
+                {"<-"} Back to Works
+              </Link>
+            )}
             <div className="flex gap-10">
               <div className="flex flex-row body-2 text-[color:var(--fg-contrast)] font-semibold bg-transparent items-center ">
                 <Link
