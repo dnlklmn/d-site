@@ -74,10 +74,19 @@ export function AddressGen() {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0 text-[color:var(--fg-contrast)] ">
-          <Image big height={240} />
+          <div className="overflow-visible w-full lg:w-3/4 my-auto p-6 lg:p-0 float-right hidden lg:block">
+            <img
+              className="object-cover h-[320px] float-right w-auto rounded-md lg:rounded-none lg:rounded-l-md bg-transparent"
+              src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/address-generator%2Fthemes.png?alt=media&token=a996f4f0-428c-4aa4-99ce-c9d84f1f8b3b"
+              alt="Dark and Light Themes"
+            />
+          </div>
           <div className="flex flex-col gap-2 h-fit w-full md:w-3/4 lg:w-1/2 mx-auto  my-auto py-0 lg:py-4 px-6 md:pr-6 lg:pr-24 xl:pr-48">
             <span className="subtitle">Adjusts to your workspace</span>
-            <Image />
+            <Image
+              noShadow
+              src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/address-generator%2Fthemes.png?alt=media&token=a996f4f0-428c-4aa4-99ce-c9d84f1f8b3b"
+            />
             <p className="body-2">
               Automatic switching between dark and a light themes makes sure the
               plugin presents as little distraction from the standard Figma UI

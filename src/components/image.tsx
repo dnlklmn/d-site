@@ -4,32 +4,42 @@ interface ImageProps {
   src: string;
   alt: string;
   height?: number;
+  noShadow?: boolean;
 }
 
-export default function Image({ big, right, src, alt, height }: ImageProps) {
+export default function Image({
+  big,
+  right,
+  src,
+  alt,
+  height,
+  noShadow,
+}: ImageProps) {
   return big ? (
     right ? (
       <div
-        className={`overflow-visible bg-transparent ${
-          height ? `w-full lg:w-3/4 my-auto` : ``
-        } p-6 lg:p-0 float-left h-[${
-          height ? height : "320"
-        }px] hidden lg:block`}
+        className={` w-full overflow-visible bg-transparent my-auto p-6 lg:p-0 float-left hidden lg:block ${
+          height ? `h-[${height}px]` : `h-[460px]`
+        }`}
       >
         <img
-          className="object-cover h-full object-left w-auto shadow-md rounded-md lg:rounded-none lg:rounded-l-md bg-transparent"
+          className={`object-cover h-full object-left rounded-md lg:rounded-none lg:rounded-l-md bg-transparent ${
+            noShadow ? null : `shadow-md`
+          }`}
           src={src}
           alt={alt}
         />
       </div>
     ) : (
       <div
-        className={`overflow-visible bg-transparent ${
-          height ? `w-full lg:w-3/4 my-auto` : ``
-        } p-6 lg:p-0 float-right self-center h-[${height}px] hidden lg:block`}
+        className={` w-full overflow-visible bg-transparent my-auto p-6 lg:p-0 float-right hidden lg:block ${
+          height ? `h-[${height}px]` : `h-[460px]`
+        }`}
       >
         <img
-          className="object-cover h-full object-right w-auto shadow-md rounded-md lg:rounded-none lg:rounded-r-md bg-transparent"
+          className={`object-cover h-full object-right rounded-md lg:rounded-none lg:rounded-r-md bg-transparent ${
+            noShadow ? null : `shadow-md`
+          }`}
           src={src}
           alt={alt}
         />
@@ -42,7 +52,9 @@ export default function Image({ big, right, src, alt, height }: ImageProps) {
       } h-[${height}px] my-1 block lg:hidden`}
     >
       <img
-        className="object-cover h-full object-right w-auto shadow-md rounded-md"
+        className={`object-cover h-full object-right w-auto ${
+          noShadow ? null : `shadow-md`
+        } rounded-md`}
         src={src}
         alt={alt}
       />
