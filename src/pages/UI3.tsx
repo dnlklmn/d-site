@@ -1,11 +1,11 @@
 import Image from "../components/image";
 import { Link } from "react-router-dom";
 
-export function AddressGen() {
+export function UI3() {
   return (
     <div className="flex flex-col gap-28 overflow-visible pb-16 mt-36">
       <div className="flex text-[color:var(--fg-contrast)] flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
-        <span className="h1 ">Web3 Address Generator</span>
+        <span className="h1 ">A Web3 Native Design System</span>
         <div className="flex flex-row justify-between items-center">
           <p className="body-1 my-auto ">
             Typing random characters over and over can be annoying, <br /> so I
@@ -39,7 +39,6 @@ export function AddressGen() {
               <p className="body-2">
                 A figma plugin that can generate addresses for a particular
                 chain, eg. Ethereum addresses always start with{" "}
-                <strong>0x</strong>.
               </p>
             </div>
             <div className="w-full flex flex-col gap-1">

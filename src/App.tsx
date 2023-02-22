@@ -1,6 +1,6 @@
 import "./App.css";
 
-import React, { Fragment } from "react";
+import React from "react";
 import { Toggle } from "./components/toggle";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -15,6 +15,7 @@ import { Works } from "./pages/Works";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { AddressGen } from "./pages/AddressGen";
+import { UI3 } from "./pages/UI3";
 
 // icons: https://react-icons.github.io/react-icons/icons?name=io5
 
@@ -149,6 +150,7 @@ function App() {
             <Route path="/works/this-site" element={<DSite />} />
             <Route path="/works" element={<Works />} />
             <Route path="/works/address-generator" element={<AddressGen />} />
+            <Route path="/works/ui-3" element={<UI3 />} />
           </Routes>
         </div>
       </Router>
