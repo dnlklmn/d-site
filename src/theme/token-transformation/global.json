@@ -59,6 +59,10 @@
     "inter-4": {
       "value": "Bold",
       "type": "fontWeights"
+    },
+    "dm-serif-text-0": {
+      "value": "Regular",
+      "type": "fontWeights"
     }
   },
   "fontSize": {
@@ -95,7 +99,7 @@
       "type": "fontSizes"
     },
     "8": {
-      "value": 70,
+      "value": 64,
       "type": "fontSizes"
     },
     "9": {
@@ -143,11 +147,11 @@
   },
   "hero": {
     "fontFamily": {
-      "value": "Epilogue",
+      "value": "DM Serif Text",
       "type": "fontFamilies"
     },
     "fontWeight": {
-      "value": "Bold",
+      "value": "Regular",
       "type": "fontWeights"
     },
     "lineHeight": {
@@ -155,7 +159,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": 70,
+      "value": 106,
       "type": "fontSizes"
     },
     "letterSpacing": {
@@ -341,7 +345,7 @@
       "type": "fontWeights"
     },
     "lineHeight": {
-      "value": "AUTO",
+      "value": "100%",
       "type": "lineHeight"
     },
     "fontSize": {
@@ -371,11 +375,11 @@
   },
   "h4": {
     "fontFamily": {
-      "value": "Inter",
+      "value": "DM Serif Text",
       "type": "fontFamilies"
     },
     "fontWeight": {
-      "value": "Bold",
+      "value": "Regular",
       "type": "fontWeights"
     },
     "lineHeight": {
@@ -447,11 +451,11 @@
   },
   "h2": {
     "fontFamily": {
-      "value": "Inter",
+      "value": "DM Serif Text",
       "type": "fontFamilies"
     },
     "fontWeight": {
-      "value": "Bold",
+      "value": "Regular",
       "type": "fontWeights"
     },
     "lineHeight": {
@@ -459,7 +463,7 @@
       "type": "lineHeight"
     },
     "fontSize": {
-      "value": 48,
+      "value": 64,
       "type": "fontSizes"
     },
     "letterSpacing": {
