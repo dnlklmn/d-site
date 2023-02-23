@@ -16,6 +16,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { AddressGen } from "./pages/AddressGen";
 import { UI3 } from "./pages/UI3";
+import { About } from "./pages/About";
 
 // icons: https://react-icons.github.io/react-icons/icons?name=io5
 
@@ -112,36 +113,23 @@ function App() {
                   if (bigDiv) bigDiv.scrollTo(0, 100);
                 }}
               >
-                {"<-"} Back to Works
+                {"<-"} Back
               </Link>
             )}
             <div className="flex gap-10">
               <div className="flex flex-row body-2 text-[color:var(--fg-contrast)] font-semibold bg-transparent items-center ">
                 <Link
                   className={`body-1 px-3 py-2 rounded-md ${
-                    selectedNav === "works"
+                    selectedNav === "about"
                       ? `bg-[color:rgba(0,0,0,0.1)]`
                       : null
                   }`}
-                  to="/works"
+                  to="/about"
                   onClick={() => {
-                    setSelectedNav("works");
+                    setSelectedNav("about");
                   }}
                 >
-                  Works
-                </Link>
-                <Link
-                  className={`body-1 px-3 py-2 rounded-md ${
-                    selectedNav === "thisSite"
-                      ? `bg-[color:rgba(0,0,0,0.1)]`
-                      : null
-                  }`}
-                  to="/works/this-site"
-                  onClick={() => {
-                    setSelectedNav("thisSite");
-                  }}
-                >
-                  This Site
+                  About
                 </Link>
                 <Link
                   className={`body-1 px-3 py-2 rounded-md ${
@@ -165,6 +153,7 @@ function App() {
             <Route path="/getintouch" element={<GetInTouch />} />
             <Route path="/works/this-site" element={<DSite />} />
             <Route path="/works" element={<Works />} />
+            <Route path="/about" element={<About />} />
             <Route path="/works/address-generator" element={<AddressGen />} />
             <Route path="/works/ui-3" element={<UI3 />} />
           </Routes>

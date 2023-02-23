@@ -62,6 +62,14 @@
   font-size: var(--label-font-size);
 }
 
+.link-1 {
+  font-family: var(--body-1-font-family);
+  font-weight: 600;
+  line-height: var(--body-1-line-height);
+  font-size: var(--body-1-font-size);
+  color: var(--brand-primary);
+}
+
 .link-2 {
   font-family: var(--body-2-font-family);
   font-weight: 600;

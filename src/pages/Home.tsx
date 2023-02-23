@@ -31,7 +31,7 @@ export function Home() {
           </p>
           <Button label="Get in touch" to="/getintouch" />
         </div>
-        <div className="flex flex-col gap-6 my-24">
+        <div className="flex flex-col gap-6 my-20">
           <div className="flex items-center gap-6 ">
             <span className="h3 whitespace-nowrap">
               <i>Recent Works</i>
@@ -71,6 +71,16 @@ export function Home() {
               to="/works/one-fam"
               imageURL=""
             />
+          </div>
+        </div>
+        <div className="flex flex-col gap-6 mb-20">
+          <div className="flex items-center gap-6 ">
+            <span className="h3 whitespace-nowrap">
+              <i>Say hi</i>
+            </span>
+            <div className="mt-3 w-[10000px]">
+              <div className=" h-[2px] bg-[color:var(--fg-contrast)]" />
+            </div>
           </div>
         </div>
       </div>

@@ -3,6 +3,8 @@ import Video from "../components/video";
 import Image from "../components/image";
 import Logos from "../components/logos";
 import CardSmall from "../components/card-small";
+import { Link } from "react-router-dom";
+import CardFull from "../components/card-full";
 
 const bigDiv = document.getElementById("big-div");
 
@@ -89,12 +91,14 @@ export function DSite() {
             <Image />
             <p className="body-2">
               The components use variants and properties to make them flexible
-              enough to use, but rigid enough to stay consistent. Its a delicate
-              balance that requires experimenting and adjusting components to
-              your exact needs. <div className="mb-2" /> Once you manage to set
-              them up in such a modular way, however, you’ve basically also
-              ‘wrote’ most of the documentation.
+              enough to use, but rigid enough to stay consistent.{" "}
+              <div className="mb-2" /> Its a delicate balance, but once you
+              manage to get it right, you’ve also ‘written’ most of the
+              documentation.
             </p>
+            <a className="link-2" href="" target={"_blank"}>
+              Check out the figma file {"->"}
+            </a>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-end gap-2 lg:gap-12  px-0 text-[color:var(--fg-contrast)] ">
@@ -105,16 +109,18 @@ export function DSite() {
               src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/tokensStructure.png?alt=media&token=3d008146-2008-49ca-ba46-fd58e348ed4e"
             />
             <p className="body-2">
-              To make sure color definitions stay in sync i use a multi-level
-              setup. <div className="mb-2" />
-              The global set contains all the possible options one is allowed to
-              use, eg. a range of blacks: black.50 - 950.
-              <div className="mb-2" /> Semantic sets then attach a use case to
-              global colors, eg. text.default = global.black.{" "}
-              <div className="mb-2" />
-              Note: As an additional layer you can add component-based sets, but
-              they can overcomplicate things, so I’d recommend only doing it if
-              you absolutely have to.
+              Global tokens list all possible style choices <br />
+              like the darkest black is{" "}
+              <i>
+                <strong>black.950 = #151515</strong>
+              </i>
+              <div className="mb-2" /> The semantics then assign global tokens
+              to a use case like{" "}
+              <i>
+                <strong>fg.default = black.950</strong>
+              </i>
+              <div className="mb-2" /> Once you swap dark and light themes, the
+              token names remain, the values get updated.
             </p>
           </div>
           <Image
@@ -142,8 +148,8 @@ export function DSite() {
             <span className="subtitle">Extracting and storing styles</span>
 
             <p className="body-2">
-              Once the artefacts are created, and the mechanics documented, you
-              can extract style variables to create an independent ‘style
+              Once the artefacts are created, and the mechanics documented, I
+              extract the style variables to create an independent ‘style
               control center’ accessible both for designers and developers.
               <div className="mb-4" />
               <img
@@ -157,20 +163,15 @@ export function DSite() {
               <a className="link-2" href="https://tokens.studio/">
                 Tokens Studio for Figma
               </a>{" "}
-              plugin allows you to sync styles created in Figma to a JSON file
-              stored on Github seamlessly. This is a game changer, as the
+              plugin lets you sync styles created in Figma to Github. The
               standardized format the variables are stored in allows for a wide
               variety of use cases.
             </p>
             <div className="mb-2" />
             <span className="body1">
-              <strong>Transforming style variables</strong>
+              <strong>Figma Styles to JSON to CSS Variables</strong>
             </span>
             <p className="body-2">
-              The standardized tokens can't be used without some transformation.
-              <div className="mb-2" />
-              <Video />
-              <div className="mb-2" />
               Once you push your tokens to Github using the Tokens Studio
               plugin, the{" "}
               <a className="link-2" href="../../public/bassengweb/logout">
@@ -180,6 +181,9 @@ export function DSite() {
               transforms them to a format understandable by Style Dictionary,
               which in turn will spit out CSS variables. All configured in one
               workflow.
+              <div className="mb-2" />
+              <Video />
+              <div className="mb-2" />
             </p>
           </div>
         </div>
@@ -197,8 +201,8 @@ export function DSite() {
           <span className="subtitle">My Site is Your Site</span>
           <p className="body-2">
             I built this demo not only to show off my amazing design system
-            skills, but also for you to have a playground to try out new ideas,
-            and show up to your teams with a working prototype.
+            skills, <br /> but also for you to have a playground to try out new
+            ideas, <br /> and show up to your teams with a working prototype.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 flex-wrap">
@@ -240,6 +244,31 @@ export function DSite() {
               Now all you need to do is stitch the parts together.
             </p>
           </CardSmall>
+        </div>
+      </div>
+      <div className="flex flex-col gap-6 text-[color:var(--fg-contrast)] w-full md:w-3/4 lg:w-full mx-auto lg:mx-0 py-0 lg:py-4 px-6 lg:px-24 xl:px-48">
+        <div className="flex gap-6 items-center w-full ">
+          <span className="h3 whitespace-nowrap">
+            <i>Similar Projects</i>
+          </span>
+          <div className="mt-3 w-[10000px]">
+            <div className="w-full h-[2px] bg-[color:var(--fg-contrast)]" />
+          </div>
+        </div>
+        <div className="flex flex-col gap-2 h-fit">
+          <span className="subtitle">Design Systems</span>
+          <p className="body-2">
+            A bridge between design and developments allows <br /> for closer
+            collaboration and better alignment.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 flex-wrap">
+          <CardFull
+            title="UI3 - A Web3 Native Design System"
+            subtitle="Design System"
+            to="/works/ui-3"
+            imageURL="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/ui3.png?alt=media&token=7959f422-f414-4c6d-bf01-01e5546fde9b"
+          />
         </div>
       </div>
     </div>
