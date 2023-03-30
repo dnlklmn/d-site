@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import { Link } from "react-router-dom";
 
 interface CardFullProps {
@@ -25,7 +24,7 @@ export default function CardFull({
           backgroundImage: `url(${imageURL})`,
         }}
       >
-        <div className="bg-gradient-to-tr  from-[color:#584288CC] to-[color:#99168CCC] bg-cover flex flex-col  text-[color:var(--fg-always-light)] w-full h-full p-4 justify-end backdrop-blur-sm opacity-100 group-hover:opacity-0 transition-all duration-300">
+        <div className="bg-gradient-to-tr  from-[color:#584288CC] to-[color:#99168CCC] bg-cover flex flex-col  gap-2 text-[color:var(--fg-always-light)] w-full h-full p-4 justify-end backdrop-blur-sm opacity-100 group-hover:opacity-0 transition-all duration-300">
           <p className="h5 ">
             <i>{title}</i>
           </p>

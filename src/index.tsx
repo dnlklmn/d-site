@@ -4,8 +4,11 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import ScrollToTop from "./components/scroll-to-top";
-import { BrowserRouter } from "react-router-dom";
+import "./theme/light.css";
+import "./theme/dark.css";
+import "./theme/typography.css";
+import "./theme/semantic/typography-semantic.css";
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );

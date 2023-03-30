@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CardSmall from "../components/card-small";
 
 export function Works() {
   const [selectedCategory, setSelectedCategory] = React.useState("all");
