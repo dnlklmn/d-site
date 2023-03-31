@@ -13,6 +13,29 @@ StyleDictionaryPackage.registerFormat({
   },
 });
 
+StyleDictionaryPackage.registerFormat({
+  name: "tailwind/colors",
+  formatter: function (dictionary) {
+    return `${this.selector} {\n${dictionary.allProperties
+      .map((prop) => `"${prop.name}": "${prop.value}",`)
+      .join("\n")}\n}`;
+  },
+});
+
+StyleDictionaryPackage.registerFormat({
+  name: "tailwind/fontFamily",
+  formatter: function (dictionary) {
+    return `${this.selector} {\n${dictionary.allProperties
+      .map(
+        (prop) =>
+          `"${prop.name.substring(0, prop.name.indexOf("-font-family"))}": "${
+            prop.value
+          }",`
+      )
+      .join("\n")}\n}`;
+  },
+});
+
 StyleDictionaryPackage.registerTransform({
   name: "size/px",
   type: "value",
@@ -43,6 +66,22 @@ StyleDictionaryPackage.registerTransform({
               theme === "dark" ? `:root[data-theme="${theme}"]` : `:root`,
             filter: ({ isSource }) => {
               return isSource;
+            },
+          },
+          {
+            destination: `${theme}.js`,
+            format: "tailwind/colors",
+            selector: "module.exports = ",
+            filter: ({ isSource }) => {
+              return isSource;
+            },
+          },
+          {
+            destination: `sj/${theme}.js`,
+            format: "tailwind/fontFamily",
+            selector: "module.exports = ",
+            filter: (token) => {
+              return token.type === "fontFamilies";
             },
           },
         ],
