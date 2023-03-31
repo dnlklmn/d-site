@@ -3,7 +3,6 @@ import Video from "../components/video";
 import Image from "../components/image";
 import Logos from "../components/logos";
 import CardSmall from "../components/card-small";
-import { Link } from "react-router-dom";
 import CardFull from "../components/card-full";
 
 const bigDiv = document.getElementById("big-div");

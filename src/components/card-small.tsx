@@ -13,7 +13,7 @@ export default function CardSmall({
 }: CardSmallProps) {
   return (
     <div className="w-full shadow-md rounded-md overflow-clip h-full bg-white">
-      <img className="object-cover w-full h-[120px]" src={img} />
+      <img className="object-cover w-full h-[120px]" src={img} alt="" />
       <div className="flex flex-col justify-between p-4 gap-3">
         {children}
         {linkText ? (

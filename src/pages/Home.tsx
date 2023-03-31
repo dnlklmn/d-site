@@ -1,11 +1,3 @@
-import "../theme/light.css";
-import "../theme/dark.css";
-import "../theme/typography.css";
-import "../theme/semantic/typography-semantic.css";
-
-import { FloaterArea } from "../components/floater-area";
-import { Button } from "../components/button";
-import { Link } from "react-router-dom";
 import CardFull from "../components/card-full";
 
 export function Home() {
@@ -24,12 +16,10 @@ export function Home() {
         </span>
         <div className="flex flex-col gap-6">
           <p className="body-1 text-[color:var(--fg-contrast)]">
-            I specialize in
-            <FloaterArea id="dpd" label=" UX/UI Design " />
-            and <FloaterArea id="ds" label=" Design Systems" />. <br />I also
-            build prototypes, figma plugins and snow dragons.
+            I'm Daniel, a product designer based in Berlin. <br /> I specialize
+            in <strong>UX/UI design, design systems</strong> and{" "}
+            <strong>prototypes.</strong>
           </p>
-          <Button label="Get in touch" to="/getintouch" />
         </div>
         <div className="flex flex-col gap-6 my-20">
           <div className="flex items-center gap-6 ">
@@ -42,7 +32,7 @@ export function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 flex-wrap">
             <CardFull
-              title="This Site"
+              title="This Website - An Interconnected System Demo"
               subtitle="Design System"
               to="/works/this-site"
               imageURL="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/this-site.png?alt=media&token=1245c8cd-601c-4069-a042-2807633524ab"
@@ -73,14 +63,25 @@ export function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-6 mb-20">
+        <div className="flex flex-col gap-4 mb-20">
           <div className="flex items-center gap-6 ">
-            <span className="h3 whitespace-nowrap">
-              <i>Say hi</i>
+            <span className="h4 whitespace-nowrap">
+              <i>Contact</i>
             </span>
-            <div className="mt-3 w-[10000px]">
-              <div className=" h-[2px] bg-[color:var(--fg-contrast)]" />
-            </div>
+          </div>
+          <div className="flex text-[color:var(--fg-contrast)] justify-start gap-6 w-full ">
+            <a className="link-1" href="" target="_blank">
+              Email
+            </a>
+            <a className="link-1" href="" target="_blank">
+              Twitter
+            </a>
+            <a className="link-1" href="" target="_blank">
+              Medium
+            </a>
+            <a className="link-1" href="" target="_blank">
+              Linkedin
+            </a>
           </div>
         </div>
       </div>

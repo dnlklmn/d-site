@@ -1,81 +1,101 @@
-import { Link } from "react-router-dom";
-import Image from "../components/image";
+const tokens = require("../theme/token-transformation/light.json");
+console.log(tokens);
 
 export function About() {
   return (
-    <div className="flex flex-col gap-28 overflow-visible pb-16 mt-36">
-      <div className="flex text-[color:var(--fg-contrast)] flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
-        <span className="h1 ">Designer, builder, father.</span>
-        <div className="flex flex-row justify-between items-center">
-          <p className="body-1 my-auto ">
-            I'm Daniel Kalman, a Berlin based product designer with 12+ years of
-            professional experience. <br /> I'm currently working as a product
-            designer on{" "}
-            <a
-              className="link-1"
-              href="http://polkadot.network"
-              target="_blank"
-            >
-              Polkadot.
-            </a>
-          </p>
+    <div className="flex flex-col gap-14 overflow-visible pb-16 mt-36">
+      <div className="flex text-[color:var(--fg-contrast)] flex-col justify-start gap-20 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48 ">
+        <span className="h1 w-full lg:w-2/3">Designer, builder, father.</span>
+
+        <div className="flex gap-32 items-start">
+          <div className="flex flex-col gap-2">
+            <img
+              className="w-full sm:w-5/6  md:w-full lg:w-2/3  object-cover h-[240px] rounded-md shadow-md mb-4"
+              src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/about%2Fdk.jpeg?alt=media&token=e20625ff-dea7-4536-8464-ff6daeadd32a"
+              alt=""
+            />
+            <div className="flex w-full gap-12 lg:gap-32">
+              <div className="flex-col w-full sm:w-5/6  md:w-2/3">
+                <span className="subtitle">About Daniel Kalman</span>
+                <p className="body-1">
+                  I am a designer and developer with 12+ years of experience,
+                  passionate about improving the lives of others by building
+                  products they enjoy using. <div className="mb-2" /> Currently
+                  employed as a product designer at{" "}
+                  <a className="link-1" href="http://parity.io" target="_blank">
+                    {" "}
+                    Parity Technologies
+                  </a>
+                  , I’m working on the future of the decentralized web.
+                </p>
+                <div className="my-8" />
+
+                <span className="subtitle">Experience</span>
+                <p className="body-1">
+                  I have worked on digital products for small startups and large
+                  tech companies. <div className="mb-2" /> I excel at bringing a
+                  product's big picture potential to life through designing
+                  apps, building prototypes, and creating design systems with a
+                  high level of quality and creativity. <div className="mb-2" />{" "}
+                  In my free time, I find inspiration through running, mountain
+                  biking, and traveling with my girlfriend and two young
+                  children.
+                </p>
+              </div>
+              <div className="flex-col hidden md:block">
+                <span className="subtitle">Services</span>
+                <p className="body-1">
+                  User Research <div className="mb-2" />
+                  UX & UI Design <div className="mb-2" />
+                  Prototyping
+                  <div className="mb-2" />
+                  Design Systems
+                  <div className="mb-2" />
+                  Design Tooling
+                  <div className="mb-2" />
+                </p>
+              </div>
+            </div>
+            <div className="my-4" />
+            <div className="flex flex-col gap-2 w-1/3 block md:hidden">
+              <span className="subtitle">Services</span>
+              <p className="body-1">
+                User Research <div className="mb-2" />
+                UX & UI Design <div className="mb-2" />
+                Prototyping
+                <div className="mb-2" />
+                Design Systems
+                <div className="mb-2" />
+                Design Tooling
+                <div className="mb-2" />
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="flex flex-row gap-20 text-[color:var(--fg-contrast)]">
-        <div className="flex flex-col gap-4 lg:gap-10 h-fit w-full md:w-3/4 lg:w-1/2 mx-auto my-auto py-0 lg:py-4 px-6 md:pl-6 lg:pl-24 xl:pl-48">
-          <div className="flex flex-row items-center gap-6 ">
-            <span className="h3">
-              <i>Intro</i>
-            </span>
-            <div className="mt-3 w-[10000px]">
-              <div className=" h-[2px] bg-[color:var(--fg-contrast)]" />
-            </div>
+      <div className="flex flex-col gap-2 px-16 ">
+        <div className="flex flex-col items-start gap-6 ">
+          <div className="mt-3 w-full">
+            <div className=" h-[2px] bg-[color:var(--fg-contrast)]" />
           </div>
-          <div className="flex flex-col items-center gap-5">
-            <div className="w-full flex flex-col gap-1">
-              <span className="subtitle">Philosophy</span>
-              <p className="body-2">
-                I believe design and development are closer than we like to
-                think. <br />
-                Building design systems and prototypes taught me to think like
-                an engineer while remaining flexible in my experiments as a
-                designer.
-              </p>
-            </div>
-            <Image src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/about%2Fdk.jpeg?alt=media&token=e20625ff-dea7-4536-8464-ff6daeadd32a" />
-            <div className="w-full flex flex-col gap-1">
-              <span className="subtitle">Experience</span>
-              <p className="body-2">
-                Whether as an only designer at an early stage startup or a
-                member of a 10+ design team at a scale up, I love building user
-                interfaces people enjoy using.
-                <br />
-                Seen startups fail miserably but also witnessed success from the
-                first row. I've worked in Berlin, Paris, Silicon Valley, and
-                remote. <br />
-              </p>
-            </div>
-            <div className="w-full flex flex-col gap-1">
-              <span className="subtitle">Specialities</span>
-              <p className="body-2">
-                I have excessive experience with the entire product design
-                worfklow, from research, ideation workshops to generate
-                solutions and to present these in various fidelities. <br />
-                <br /> I'm most interested in{" "}
-                <strong>design systems, design tooling, </strong>and{" "}
-                <strong>prototyping complex interactions.</strong>
-              </p>
-            </div>
-            <div className="w-full flex flex-col gap-1">
-              <span className="subtitle">Goal</span>
-              <p className="body-2">Lorem ipsum...</p>
-            </div>
-          </div>
+          <span className="h4 whitespace-nowrap">
+            <i>Contact</i>
+          </span>
         </div>
-        <Image
-          big
-          src="https://firebasestorage.googleapis.com/v0/b/d-site-8d30a.appspot.com/o/about%2Fdk.jpeg?alt=media&token=e20625ff-dea7-4536-8464-ff6daeadd32a"
-        />
+        <div className="flex text-[color:var(--fg-contrast)] justify-start gap-6 w-full ">
+          <a className="link-1" href="" target="_blank">
+            Email
+          </a>
+          <a className="link-1" href="" target="_blank">
+            Twitter
+          </a>
+          <a className="link-1" href="" target="_blank">
+            Medium
+          </a>
+          <a className="link-1" href="" target="_blank">
+            Linkedin
+          </a>
+        </div>
       </div>
     </div>
   );

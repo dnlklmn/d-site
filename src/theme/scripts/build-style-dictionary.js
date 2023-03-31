@@ -1,11 +1,9 @@
 const StyleDictionaryPackage = require("style-dictionary");
+const { registerTransforms } = require("@tokens-studio/sd-transforms");
+const StyleDictionary = require("style-dictionary");
 
-function createArray({ dictionary }) {
-  const arr = dictionary.allTokens;
-  return JSON.stringify(arr);
-}
+registerTransforms(StyleDictionary);
 
-// HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 StyleDictionaryPackage.registerFormat({
   name: "css/variables",
   formatter: function (dictionary) {
@@ -20,26 +18,21 @@ StyleDictionaryPackage.registerTransform({
   type: "value",
   transitive: true,
 
+  matcher: (token) => ["fontWeights"].includes(token.type),
+  transformer: (token) => (token.value === "Regular" ? 400 : 700),
+
   matcher: (token) =>
     ["fontSizes", "dimension", "borderRadius", "spacing"].includes(token.type),
   transformer: (token) => parseFloat(token.value) + "px",
-
-  // matcher: (token) => ["fontWeights"].includes(token.type),
-  // transformer: function (token) {
-  //   return token.value === "Regular" ? 400 : 600;
-  // },
 });
 
-function getStyleDictionaryConfig(theme, brand, sourcePath) {
-  return {
+["light", "dark", "typography"].map((theme) => {
+  const themeVariables = StyleDictionary.extend({
     source: [`src/theme/token-transformation/${theme}.json`],
     include: [`src/theme/token-transformation/global.json`],
-    format: {
-      createArray,
-    },
     platforms: {
       web: {
-        // transformGroup: "css",
+        transformGroup: "tokens-studio",
         transforms: ["attribute/cti", "name/cti/kebab", "size/px"],
         buildPath: "src/theme/",
         files: [
@@ -55,29 +48,7 @@ function getStyleDictionaryConfig(theme, brand, sourcePath) {
         ],
       },
     },
-  };
-}
-
-console.log("Build started...");
-
-// PROCESS THE DESIGN TOKENS FOR THE DIFFERENT BRANDS
-
-const args = process.argv.slice(2);
-const brand = args[0];
-const sourcePath = args[1];
-
-["dark", "light", "typography"].map(function (theme) {
-  console.log("\n==============================================");
-  console.log(`\nProcessing: [${theme}]`);
-
-  const StyleDictionary = StyleDictionaryPackage.extend(
-    getStyleDictionaryConfig(theme, brand, sourcePath)
-  );
-
-  StyleDictionary.buildPlatform("web");
-
-  console.log("\nEnd processing");
+  });
+  themeVariables.cleanAllPlatforms();
+  themeVariables.buildAllPlatforms();
 });
-
-console.log("\n==============================================");
-console.log("\nBuild completed!");
