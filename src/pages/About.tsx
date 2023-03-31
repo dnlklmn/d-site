@@ -1,5 +1,3 @@
-import { Tokenizer } from "./Tokenizer";
-
 const tokens = require("../theme/token-transformation/light.json");
 console.log(tokens);
 
@@ -8,7 +6,6 @@ export function About() {
     <div className="flex flex-col gap-14 overflow-visible pb-16 mt-36">
       <div className="flex text-[color:var(--fg-contrast)] flex-col justify-start gap-20 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48 ">
         <span className="h1 w-full lg:w-2/3">Designer, builder, father.</span>
-        <Tokenizer />
 
         <div className="flex gap-32 items-start">
           <div className="flex flex-col gap-2">
