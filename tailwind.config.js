@@ -6,8 +6,11 @@ const typography = require("./src/theme/sj/typography.js");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors: light,
-    fontFamily: typography,
+    extend: {
+      colors: light,
+      fill: { primary: "#abcabc" },
+      fontFamily: typography,
+    },
   },
   plugins: [],
 };

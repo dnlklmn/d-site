@@ -5,7 +5,9 @@ export function About() {
   return (
     <div className="flex flex-col gap-28 overflow-visible pb-16 mt-36">
       <div className="flex flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
-        <span className="h1 text-fg-contrast">Designer, builder, father.</span>
+        <span className="h1 font- text-fg-contrast">
+          Designer, builder, father.
+        </span>
         <div className="flex flex-row justify-between items-center">
           <p className="body-1 my-auto ">
             I'm Daniel Kalman, a Berlin based product designer with 12+ years of

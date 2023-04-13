@@ -1,3 +1,4 @@
+import Card from "../components/Card";
 import CardFull from "../components/card-full";
 
 export function Home() {
@@ -11,15 +12,24 @@ export function Home() {
         url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;700&display=swap');
       </style>
       <div className="flex text-[color:var(--fg-contrast)] flex-col justify-start gap-6 w-full md:w-3/4 lg:w-full mx-auto px-6 md:px-6 lg:px-24 xl:px-48">
-        <span className="h1 ">
+        <Card>
+          <div className="flex flex-col gap-4">
+            <span>hey</span>
+            <span>ho</span>
+            <span>hooo</span>
+          </div>
+        </Card>
+
+        <span className="h1">
           I design and build <br /> user interfaces
         </span>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 bg-brand-primary">
           <p className="body-1 text-[color:var(--fg-contrast)]">
             I'm Daniel, a product designer based in Berlin. <br /> I specialize
             in <strong>UX/UI design, design systems</strong> and{" "}
             <strong>prototypes.</strong>
           </p>
+          <a>fasddsaf</a>
         </div>
         <div className="flex flex-col gap-6 my-20">
           <div className="flex items-center gap-6 ">
